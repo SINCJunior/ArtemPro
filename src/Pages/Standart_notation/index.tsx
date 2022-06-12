@@ -2,7 +2,8 @@ import React from 'react';
 
 import sinc from '../../assets/sinc.png';
 
-import Notation_bar from '../../components/Notation_bar';
+import Notation_area from '../../components/Notation_area';
+import Time_analysis from '../../components/Time_analysis';
 
 import { 
   Container,
@@ -83,7 +84,8 @@ const Standart_notation: React.FC = () => {
               </Menu_item>
           </Direx_side>
         </Menu_bar>
-        <Notation_bar />
+        <Notation_area />
+        <Time_analysis />
       </Wrapper>
       <Bottom_menu>
         <Notation_bottom_icon className = 'active' />

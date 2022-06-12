@@ -4,19 +4,33 @@ import { FilterAlt } from '../../styles/Icons';
 
 
 export const Container = styled.div`
-  justify-content: center;
-  padding: 16px;
+  display: grid;
+  background: red;
 
-  margin-top: 8vh;
+  margin-top: 64px;
+  /* padding: 8px; */
+
+  /* width: 100vw; */
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+
+  @media (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 1650px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;
+
 
 
 //Filtro e drop_down_menu
 export const Settings_bar = styled.div`
   width: 336px;
-  padding-bottom: 16px;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 `;
 
@@ -38,25 +52,5 @@ export const Filter_icon = styled(FilterAlt)`
   &:hover,
   &.active {
     fill: var(--sinc-light-color)
-  }
-`;
-
-
-//Histórico de apontamentos
-export const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 16px;
-
-  @media (min-width: 820px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 1364px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  @media (min-width: 1780px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;

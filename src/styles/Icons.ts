@@ -10,4 +10,4 @@ export {
   FilterAlt
 } from 'styled-icons/material';
 
-export { Analyse, Rocket } from 'styled-icons/boxicons-regular';
+export { Analyse, Rocket, Pulse } from 'styled-icons/boxicons-regular';

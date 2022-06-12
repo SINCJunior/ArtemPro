@@ -14,7 +14,10 @@ import {
 
 
 export const Container = styled.div`
-  background: var(--primary);
+  background: var(--white);
+
+  display: flex;
+  justify-content: center;
 `;
 
 export const Header = styled.div`
@@ -34,7 +37,7 @@ export const Header = styled.div`
 
 export const Wrapper = styled.div`
   height: 100%;
-  max-width: 100%;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
 `;
@@ -74,15 +77,15 @@ export const Menu_bar = styled.div`
     display: flex;
     flex-direction: column;
 
-    position: sticky;
-    top: 8vh;
+    position: absolute;
+    top: 64px;
     left: 0;
 
     padding: 8px 16px;
 
     border-right: 1px solid var(--secondary);
     width: min(300px, auto);
-    max-height: 92vh;
+    height: 92vh;
     overflow-y: auto;
   }
 `;
