@@ -19,7 +19,7 @@ const Notation_area: React.FC = () => {
         <Filter_icon />
       </Settings_bar>
       <Grid>
-        {/* <Add_notation_box /> */}
+        <Add_notation_box />
         <Notation_box />
         <Notation_box />
         <Notation_box />

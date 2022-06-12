@@ -1,2 +1,218 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  width: 336px;
+  height: 336px;
+  border-radius: 8px;
+
+  background: var(--secondary);
+  position: relative;
+`;
+
+
+// Parte superior
+export const Participating_members_area = styled.div`
+  width: 336px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+`;
+
+export const Time_stamp_area = styled.div`
+  width: 336px;
+  height: 64px;
+
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+`;
+
+// Parte para inserir o instante de início
+export const Time_stamp = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  
+  > p {
+    font-size: 16px;
+    color: var(--white);
+  }
+`;
+
+export const Start_day = styled.input`
+  width: 22px;
+  height: 22px;
+
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-right: 4px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Start_month = styled.input`
+  width: 28px;
+  height: 22px;
+
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-left: 4px;
+  margin-right:4px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Start_year = styled.input`
+  width: 28px;
+  height: 22px;
+
+  color: var(--white-text);;
+
+  font-size: 16px;
+  margin-left: 4px;
+  margin-right: 16px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Start_hour = styled.input`
+  width: 28px;
+  height: 22px;
+
+  color: var(--white-text);;
+
+  font-size: 16px;
+  margin-left: 16px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Start_minutes = styled.input`
+  width: 28px;
+  height: 22px;
+
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-left: 4px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+// Duração
+export const Duration = styled.div`
+  display: flex;
+  align-items: center;
+  
+  >h4 {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 500;
+  }
+  > p {
+    font-size: 16px;
+    color: var(--white);
+  }
+`;
+
+export const Hours_input = styled.input`
+  width: 28px;
+  height: 22px;
+
+  color: var(--white-text);
+  border-bottom: 1px solid var(--white);
+  padding: 4px;
+
+  font-size: 16px;
+  margin: 0 4px 0 8px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Minutes_input = styled.input`
+  width: 28px;
+  height: 22px;
+
+  color: var(--white-text);
+  border-bottom: 1px solid var(--white);
+  padding: 4px;
+
+  font-size: 16px;
+  margin: 0 4px 0 16px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+// Parte inferior
+export const Member_description_input = styled.textarea`
+  width: 336px;
+  height: 150px;
+
+  color: var(--white-text);
+
+  font-size: 16px;
+  padding: 8px;
+
+  resize: none;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Add_notation_button = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+
+  right: 8px;
+  bottom: 8px;
+
+  background: var(--sinc-light-color);
+  cursor: pointer;
+
+  > p {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-hover);
+  }
+`;

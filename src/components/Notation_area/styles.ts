@@ -4,22 +4,22 @@ import { FilterAlt } from '../../styles/Icons';
 
 
 export const Container = styled.div`
-  margin-top: 64px;
+  margin-top: 72px;
   padding: 8px;
   margin-left: 16px;
 
   //! Tabela de resolução:
-  //! 0 até 500px (celular): padrão
-  //! 501 até 960px (tablet na vertical): 1° @media
-  //! 961 até 1300px (tablet na horizontal): 2° @media
-  //! 1300 até 1650px (monitores pequenos - laptop): 3º @media
-  //! maior do que 1651px (monitores grandes - PC): 4° @media
+  //! 0 até 499px (celular): padrão
+  //! 500 até 959px (tablet na vertical): 1° @media
+  //! 960 até 1299px (tablet na horizontal): 2° @media
+  //! 1300 até 1649px (monitores pequenos - laptop): 3º @media
+  //! maior do que 1650px (monitores grandes - PC): 4° @media
   @media (min-width: 500px) {
     margin-left: 116px;
   }
 
   @media (min-width: 960px) {
-    margin-left: 316px;
+    margin-left: 300px;
   }
 
   @media (min-width: 1300px) {
@@ -47,6 +47,8 @@ export const Settings_bar = styled.div`
 export const Notation_type_menu = styled.div`
   width: 280px;
   height: 32px;
+
+  border-radius: 8px;
 
   background: var(--secondary);
 `;

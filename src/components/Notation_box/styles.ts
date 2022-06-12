@@ -3,15 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 336px;
   height: 336px;
+  border-radius: 8px;
 
-  margin-bottom: 16px;
+  background: var(--secondary);
 `;
 
 export const Participating_members_area = styled.div`
   width: 336px;
   height: 72px;
-
-  background: var(--secondary);
 
   display: flex;
   align-items: center;
@@ -29,8 +28,6 @@ export const Participating_members = styled.div`
 export const Time_stamp_area = styled.div`
   width: 336px;
   height: 64px;
-
-  background: var(--secondary);
 
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
@@ -55,8 +52,6 @@ export const Duration = styled.p`
 export const Member_description_area = styled.div`
   width: 336px;
   height: 216px;
-
-  background: var(--secondary);
 
   display: flex;
 `;

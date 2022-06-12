@@ -16,8 +16,8 @@ const Time_analysis: React.FC = () => {
       </Header>
 
       <Hours_per_member>
-        <p>Total</p>
-        <p>99h 29m</p>
+        <p style = {{fontWeight: 'bold'}}>Total</p>
+        <p style = {{fontWeight: 'bold'}}>99h 29m</p>
       </Hours_per_member>
       <Hours_per_member>
         <p>Membro 1</p>

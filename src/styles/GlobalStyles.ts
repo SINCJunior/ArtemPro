@@ -25,8 +25,10 @@ export default createGlobalStyle`
     --primary: #000;
     --secondary: #353535;
     --white: #d9d9d9;
+    --white-text: #fff;
     --sinc-light-color: #EF4136;
     --sinc-dark-color: #8B0924;
-    --sinc-hover: #170901;
+    --sinc-menu-bar-hover: #170901;
+    --sinc-button-hover: #be1e2d
   }
 `;

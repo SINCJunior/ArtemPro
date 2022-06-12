@@ -78,7 +78,7 @@ export const Menu_bar = styled.div`
     flex-direction: column;
 
     position: absolute;
-    top: 64px;
+    top: 72px;
     left: 0;
 
     padding: 8px 16px;
@@ -144,7 +144,7 @@ export const Menu_item = styled.button`
 
   &:hover,
   &.active {
-    background: var(--sinc-hover);
+    background: var(--sinc-menu-bar-hover);
     > span, svg {
       color: var(--sinc-light-color);
     }
