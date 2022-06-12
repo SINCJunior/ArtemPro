@@ -15,7 +15,6 @@ export const Container = styled.div`
     top: 64px;
     right: 0;
     padding: 8px 16px;
-    border-left: 1px solid var(--secondary);
 
     width: 300px;
     height: 92vh;
@@ -50,6 +49,7 @@ export const Hours_per_member = styled.div`
 
   width: 100%;
   padding: 8px;
+  border-bottom: 1px solid var(--secondary);
 
   > p {
     color: var(--white);

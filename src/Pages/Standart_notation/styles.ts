@@ -14,7 +14,7 @@ import {
 
 
 export const Container = styled.div`
-  background: var(--white);
+  background: var(--primary);
 
   display: flex;
   justify-content: center;
@@ -83,7 +83,6 @@ export const Menu_bar = styled.div`
 
     padding: 8px 16px;
 
-    border-right: 1px solid var(--secondary);
     width: min(300px, auto);
     height: 92vh;
     overflow-y: auto;
@@ -97,7 +96,7 @@ export const Members_side = styled.div`
 
   padding-bottom: 16px;
 
-  @media (min-width: 1100px) {
+  @media (min-width: 960px) {
     align-items: flex-start;
   }
 `;
@@ -111,7 +110,7 @@ export const Direx_side = styled.div`
   padding-top: 16px;
   border-top: 1px solid var(--secondary);
 
-  @media (min-width: 1100px) {
+  @media (min-width: 960px) {
     align-items: flex-start;
   }
 `;
@@ -125,7 +124,7 @@ export const Menu_item = styled.button`
     display: none;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 960px) {
     > span {
       display: inline;
       margin-left: 16px;

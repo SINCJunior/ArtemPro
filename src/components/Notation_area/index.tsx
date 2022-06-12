@@ -8,6 +8,7 @@ import {
   Settings_bar,
   Filter_icon,
   Notation_type_menu,
+  Grid,
 } from './styles';
 
 const Notation_area: React.FC = () => {
@@ -17,18 +18,20 @@ const Notation_area: React.FC = () => {
         <Notation_type_menu />
         <Filter_icon />
       </Settings_bar>
-      {/* <Add_notation_box /> */}
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
-      <Notation_box />
+      <Grid>
+        {/* <Add_notation_box /> */}
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+        <Notation_box />
+      </Grid>
     </Container>
   )
 }
