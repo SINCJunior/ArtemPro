@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 336px;
@@ -45,81 +45,47 @@ export const Time_stamp = styled.div`
   }
 `;
 
-export const Start_day = styled.input`
-  width: 22px;
+//! CSS dos inputs de Time_stamp_area ;)
+const input_label_CSS = css`
+  width: 28px;
   height: 22px;
 
   color: var(--white-text);
 
   font-size: 16px;
-  margin-right: 4px;
 
   &::placeholder {
     color: var(--white);
     opacity: 60%;
   }
+
+`;
+
+export const Start_day = styled.input`
+  margin-left: 4px;
+  ${input_label_CSS}
 `;
 
 export const Start_month = styled.input`
-  width: 28px;
-  height: 22px;
-
-  color: var(--white-text);
-
-  font-size: 16px;
   margin-left: 4px;
   margin-right:4px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+  ${input_label_CSS}
 `;
 
 export const Start_year = styled.input`
-  width: 28px;
-  height: 22px;
-
-  color: var(--white-text);;
-
-  font-size: 16px;
   margin-left: 4px;
   margin-right: 16px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+  ${input_label_CSS}
 `;
 
 export const Start_hour = styled.input`
-  width: 28px;
-  height: 22px;
-
-  color: var(--white-text);;
-
-  font-size: 16px;
   margin-left: 16px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+  ${input_label_CSS}
 `;
 
 export const Start_minutes = styled.input`
-  width: 28px;
-  height: 22px;
-
-  color: var(--white-text);
-
-  font-size: 16px;
   margin-left: 4px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+  ${input_label_CSS}
 `;
 
 // Duração
@@ -139,37 +105,13 @@ export const Duration = styled.div`
 `;
 
 export const Hours_input = styled.input`
-  width: 28px;
-  height: 22px;
-
-  color: var(--white-text);
-  border-bottom: 1px solid var(--white);
-  padding: 4px;
-
-  font-size: 16px;
-  margin: 0 4px 0 8px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+  margin-left: 16px;
+  ${input_label_CSS}
 `;
 
 export const Minutes_input = styled.input`
-  width: 28px;
-  height: 22px;
-
-  color: var(--white-text);
-  border-bottom: 1px solid var(--white);
-  padding: 4px;
-
-  font-size: 16px;
-  margin: 0 4px 0 16px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+  margin-left: 4px;
+  ${input_label_CSS}
 `;
 
 // Parte inferior

@@ -39,10 +39,9 @@ const Add_notation_box: React.FC = () => {
         </Time_stamp>
         <Duration>
           <h4>Duração:</h4>
-          <Hours_input type = 'text' maxLength = {2} />
-          <p>horas</p>
-          <Minutes_input type = 'text' maxLength = {2} />
-          <p>minutos</p>
+          <Hours_input type = 'text' placeholder = 'HH' maxLength = {2} />
+          <p>:</p>
+          <Minutes_input type = 'text' placeholder = 'MM' maxLength = {2} />
         </Duration>
       </Time_stamp_area>
       <Member_description_input placeholder = 'Descrição' />
