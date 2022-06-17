@@ -1,15 +1,17 @@
 import React from 'react';
 
-import Standart_notation from './Pages/Standart_notation';
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from './Routes';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <>
-      <Standart_notation />
+    <BrowserRouter>
+      <Routes />
 
       <GlobalStyles/>
-    </>
+    </BrowserRouter>
   );
 }
 

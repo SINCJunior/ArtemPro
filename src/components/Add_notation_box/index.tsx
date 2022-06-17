@@ -1,8 +1,9 @@
 import React from 'react';
 
+import Drop_down_menu_members from '../Drop_down_menu_members';
+
 import {
   Container,
-  Participating_members_area,
   Time_stamp_area,
   Time_stamp,
   Start_day,
@@ -17,14 +18,14 @@ import {
   Add_notation_button,
 } from './styles';
 
-// TODO: impolementar uma filtragem de texto nos inputs do "Time_stamp"
+// TODO: implementar uma filtragem de texto nos inputs do "Time_stamp"
 // TODO: para aceitar somente números (preguiça de fazer agr)
 
 
 const Add_notation_box: React.FC = () => {
   return (
     <Container>
-      <Participating_members_area />
+      <Drop_down_menu_members />
       <Time_stamp_area>
         <Time_stamp>
           <Start_day type = 'text' placeholder = 'DD' maxLength = {2}/>
