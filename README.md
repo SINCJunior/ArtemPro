@@ -1,10 +1,9 @@
-
 # Objetivo
 Unificar as plataformas utilizadas pela SincJr, visando melhorar a produtividade dos membros.
 
 # Funções
-### Em 2022 usas-se:
-- O Podio _apontamento_;
+### Em 2022 usa-se:
+- O Podio para _apontamento_;
 - Pipefy para _controle do SDR_ e _professores parceiros_;
 - Discord para _comunicação_;
 - Google Drive para _armazenamento_.
