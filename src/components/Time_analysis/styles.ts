@@ -13,8 +13,8 @@ export const Container = styled.div`
     align-items: center;
 
     top: 72px;
-    right: 0;
-    padding: 8px 16px;
+    right: 16px;
+    padding: 8px 0;
 
     width: 300px;
     height: 92vh;
@@ -32,6 +32,10 @@ export const Header = styled.div`
     font-size: 20px;
     font-weight: 400;
   }
+`;
+
+export const This_week_activity = styled.div`
+  width: 300px;
 `;
 
 export const Pulse_icon = styled(Pulse)`
@@ -56,4 +60,9 @@ export const Hours_per_member = styled.div`
     font-size: 16px;
     font-weight: 400;
   }
+`;
+
+export const Last_week_activity = styled.div`
+  width: 300px;
+  margin-top: 32px;
 `;

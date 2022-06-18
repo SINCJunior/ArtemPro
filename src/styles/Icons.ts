@@ -7,7 +7,8 @@ export {
   CloudQueue,
   InsertChartOutlined,
   Menu,
-  FilterAlt
+  FilterAlt,
+  CheckCircle
 } from 'styled-icons/material';
 
 export { Analyse, Rocket, Pulse } from 'styled-icons/boxicons-regular';

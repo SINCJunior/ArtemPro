@@ -58,31 +58,25 @@ const input_label_CSS = css`
     color: var(--white);
     opacity: 60%;
   }
-
 `;
-
 export const Start_day = styled.input`
   margin-left: 4px;
   ${input_label_CSS}
 `;
-
 export const Start_month = styled.input`
   margin-left: 4px;
   margin-right:4px;
   ${input_label_CSS}
 `;
-
 export const Start_year = styled.input`
   margin-left: 4px;
   margin-right: 16px;
   ${input_label_CSS}
 `;
-
 export const Start_hour = styled.input`
   margin-left: 16px;
   ${input_label_CSS}
 `;
-
 export const Start_minutes = styled.input`
   margin-left: 4px;
   ${input_label_CSS}
@@ -103,12 +97,10 @@ export const Duration = styled.div`
     color: var(--white);
   }
 `;
-
 export const Hours_input = styled.input`
   margin-left: 16px;
   ${input_label_CSS}
 `;
-
 export const Minutes_input = styled.input`
   margin-left: 4px;
   ${input_label_CSS}
@@ -131,7 +123,6 @@ export const Member_description_input = styled.textarea`
     opacity: 60%;
   }
 `;
-
 export const Add_notation_button = styled.div`
   display: flex;
   justify-content: center;

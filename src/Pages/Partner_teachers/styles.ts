@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { 
+  AccountCircle,
   Analyse,
   CloudQueue,
   InsertChartOutlined,
@@ -13,18 +14,52 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  background: var(--primary);
+  position: absolute;
 
   display: flex;
   justify-content: center;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
-  width: 100vw;
-  margin: 0 auto;
-  display: flex;
+  display: grid;
+  margin-top: 72px;
+  padding: 8px;
+
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+
+  //! Tabela de resolução:
+  //! 0 até 499px (celular): padrão
+  //! 500 até 959px (tablet na vertical): 1° @media
+  //! 960 até 1299px (tablet na horizontal): 2° @media
+  //! 1300 até 1649px (monitores pequenos - laptop): 3º @media
+  //! maior do que 1650px (monitores grandes - PC): 4° @media
+  @media (min-width: 500px) {
+    margin-left: 116px;
+  }
+
+  @media (min-width: 820px) {
+    margin-left: 116px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: 300px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 316px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1650px) {
+    margin-left: 316px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
+
 
 
 //! Side bar menu

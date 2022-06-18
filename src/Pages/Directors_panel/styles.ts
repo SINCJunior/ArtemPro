@@ -13,18 +13,105 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  background: var(--primary);
+  position: absolute;
 
   display: flex;
   justify-content: center;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
-  width: 100vw;
-  margin: 0 auto;
   display: flex;
+  position: absolute;
+  flex-direction: column;
+
+  width: 100vw;
+  top: 80px;
+  padding-bottom: 48px;
+
+  align-items: center;
+  
+  > h3 {
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: var(--white);
+  }
+  > p {
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: var(--white);
+    font-family: 400;
+  }
 `;
+
+const button_CSS = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 340px;
+  height: 40px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+
+  background: var(--primary);
+  border: 2px solid var(--sinc-light-color);
+  cursor: pointer;
+
+  > p {
+    color: var(--sinc-light-color);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
+  }
+`;
+export const Update_info_button = styled.button`${button_CSS}`;
+export const Send_message_mural_button = styled.button`${button_CSS}`;
+
+const input_label_CSS = css`
+  width: 340px;
+  height: 34px;
+
+  background: var(--secondary);
+  border-radius: 4px;
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+export const New_member_name = styled.input`${input_label_CSS}`;
+export const New_member_email = styled.input`${input_label_CSS}`;
+export const Ex_member_email = styled.input`${input_label_CSS}`;
+export const New_period_time_name = styled.input`${input_label_CSS}`;
+export const Mural_input = styled.textarea`
+  width: 336px;
+  height: 80px;
+
+  color: var(--white-text);
+  background: var(--secondary);
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 4px;
+
+  resize: none;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
 
 
 //! Side bar menu

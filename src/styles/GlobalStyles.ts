@@ -29,6 +29,8 @@ export default createGlobalStyle`
     --sinc-light-color: #EF4136;
     --sinc-dark-color: #8B0924;
     --sinc-menu-bar-hover: #170901;
-    --sinc-button-hover: #be1e2d
+    --sinc-button-hover: #be1e2d;
+    --sinc-button-dark-hover: #16181c;
+    --check: #26b81c;
   }
 `;

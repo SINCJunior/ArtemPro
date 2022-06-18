@@ -2,15 +2,12 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import teamwork from '../../assets/teamwork.png';
-
 import Header from '../../components/Header';
 
-import { 
+import {
   Container,
   Wrapper,
-  Construction_img,
-  Warning,
+  Message,
   Sidebar_menu,
   Members_side,
   Menu_item,
@@ -31,21 +28,32 @@ import {
   Menu_bottom_icon
 } from './styles';
 
-const Construction_page: React.FC = () => {
+const Sinc_wall: React.FC = () => {
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Em construção</title>
+        <title>Mural da Sinc</title>
       </Helmet>
       <Wrapper>
-        <Construction_img src = { teamwork } />
-        <Warning>
-          <h1>Calma, time!</h1>
-          <p>Em breve estará pronto<br/>para você usar...</p>
-        </Warning>
+        <Message>
+          <h3>Diretor 1 · 17/06/2022</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper massa vulputate volutpat scelerisque. Morbi et enim vehicula, viverra mi at, aliquet nisl. Morbi purus enim, malesuada non felis at, pulvinar semper mauris. Proin pretium, quam ac tempor mattis, lorem neque mollis ex, id finibus nunc mi sit amet elit. Morbi malesuada consequat nisl in vestibulum. Aliquam ut pulvinar lorem. Aenean vitae aliquet nisi. Quisque eget convallis elit. Aenean ultricies nulla lectus, et commodo erat dapibus et. Vestibulum sit amet interdum mi.</p>
+        </Message>
+        <Message>
+          <h3>Diretor 4 · 07/06/2022</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper massa vulputate volutpat scelerisque. Morbi et enim vehicula, viverra mi at, aliquet nisl. Morbi purus enim, malesuada non felis at, pulvinar semper mauris. Proin pretium, quam ac tempor mattis, lorem neque mollis ex, id finibus nunc mi sit amet elit. Morbi malesuada consequat nisl in vestibulum. Aliquam ut pulvinar lorem. Aenean vitae aliquet nisi. Quisque eget convallis elit. Aenean ultricies nulla lectus, et commodo erat dapibus et. Vestibulum sit amet interdum mi. Donec vitae lorem at nisi vulputate sagittis. Duis in urna libero. Pellentesque vitae blandit metus. Sed ultrices risus at nisl eleifend, vitae varius dui pharetra. Cras venenatis, tellus sed aliquam vehicula, dolor ligula fringilla magna, sed vestibulum eros neque in ante. Maecenas porttitor aliquet nulla, vitae rutrum mi. Nulla eu tincidunt velit. Aliquam nulla ligula, efficitur vitae commodo lacinia, posuere sed turpis. Proin tempus leo non felis faucibus, ac laoreet sem maximus. Sed nisi mauris, posuere quis blandit vitae, tempor eget sem. Proin velit libero, tincidunt at vestibulum at, auctor ut dolor. Duis auctor metus sed ultrices pretium. Sed ac efficitur nulla, non pulvinar purus. Curabitur sapien magna, molestie et nisi quis, pellentesque pellentesque libero. Donec convallis sit amet mauris non gravida. Maecenas pharetra lorem in tincidunt tempus.</p>
+        </Message>
+        <Message>
+          <h3>Diretor 2 · 17/05/2022</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper massa vulputate volutpat scelerisque. Morbi et enim vehicula, viverra mi at, aliquet nisl. Morbi purus enim, malesuada non felis at, pulvinar semper mauris. Proin pretium, quam ac tempor mattis, lorem neque mollis ex, id finibus nunc mi sit amet elit. Morbi malesuada consequat nisl in vestibulum. Aliquam ut pulvinar lorem. Aenean vitae aliquet nisi. Quisque eget convallis elit. Aenean ultricies nulla lectus, et commodo erat dapibus et. Vestibulum sit amet interdum mi.</p>
+        </Message>
+        <Message>
+          <h3>Diretor 1 · 07/05/2022</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Message>
       </Wrapper>
-
+      
       <Sidebar_menu>
         <Members_side>
           <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
@@ -63,7 +71,7 @@ const Construction_page: React.FC = () => {
           </a>
 
           <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
+            <Menu_item className='active'>
               <Mural_icon />
               <span>Mural da Sinc</span>
             </Menu_item>
@@ -116,7 +124,7 @@ const Construction_page: React.FC = () => {
           <SDR_bottom_icon />
         </a>
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <Mural_bottom_icon />
+          <Mural_bottom_icon className='active'/>
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <Calendar_bottom_icon />
@@ -129,4 +137,4 @@ const Construction_page: React.FC = () => {
   )
 }
 
-export default Construction_page;
+export default Sinc_wall;

@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { 
+  AccountCircle,
   Analyse,
   CloudQueue,
   InsertChartOutlined,
@@ -13,18 +14,135 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  background: var(--primary);
+  position: absolute;
 
   display: flex;
   justify-content: center;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
-  width: 100vw;
-  margin: 0 auto;
   display: flex;
+  position: absolute;
+  flex-direction: column;
+
+  width: 100vw;
+  top: 120px;
+
+  align-items: center;
+  
+  > h3 {
+    padding-bottom: 16px;
+    font-size: 24px;
+    color: var(--white);
+  }
 `;
+
+
+export const Header = styled.div`
+  background: var(--secondary);
+  z-index: 2;
+  width: 100vw;
+  height: 64px;
+
+  position: fixed;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--white);
+`;
+
+export const Sinc_logo = styled.img`  
+  top: 0;
+  margin-left: 16px;
+  height: 48px;
+`;
+
+export const Profile_icon = styled(AccountCircle)`
+  width: 32px;
+  height: 32px;
+
+  cursor: pointer;
+
+  fill: var(--white);
+  margin-right: 16px;
+  
+  &:hover,
+  &.active {
+    fill: var(--sinc-light-color)
+  }
+`;
+
+
+
+const input_label_CSS = css`
+  width: 340px;
+  height: 34px;
+
+  background: var(--secondary);
+  border-radius: 4px;
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const Old_pass = styled.input`
+  ${input_label_CSS}
+`;
+
+export const New_pass = styled.input`
+  ${input_label_CSS}
+`;
+
+export const Repeat_new_pass = styled.input`
+  ${input_label_CSS}
+`;
+
+export const Update_info_button = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 340px;
+  height: 40px;
+  border-radius: 16px;
+  margin-top: 16px;
+
+  background: var(--primary);
+  border: 2px solid var(--sinc-light-color);
+  cursor: pointer;
+
+  > p {
+    color: var(--sinc-light-color);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
+  }
+`;
+
+export const Retirement_button = styled.p`
+  margin-top: 80px;
+  color: var(--sinc-dark-color);
+  font-size: 20px;
+  font-weight: 400;
+  
+  &:hover {
+    color: var(--white);
+  }
+`;
+
 
 
 //! Side bar menu

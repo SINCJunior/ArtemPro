@@ -1,20 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
-import sinc from '../../assets/sinc.png';
-
+import Header from '../../components/Header';
 import Notation_area from '../../components/Notation_area';
 import Time_analysis from '../../components/Time_analysis';
 
 import { 
   Container,
-  Sinc_logo,
-  Header,
   Wrapper,
-  Profile_icon,
-  Bottom_menu,
-  Menu_bar,
+  Sidebar_menu,
   Members_side,
   Menu_item,
   Notation_icon,
@@ -26,28 +21,27 @@ import {
   Direx_side,
   Performance_icon,
   Direx_icon,
+  Bottom_menu,
   Notation_bottom_icon,
   SDR_bottom_icon,
   Mural_bottom_icon,
   Calendar_bottom_icon,
-  Menu_bottom_icon,
+  Menu_bottom_icon
 } from './styles';
 
 const Standart_notation: React.FC = () => {
   return (
     <Container>
+      <Header />
       <Helmet>
         <title>Apontamento</title>
       </Helmet>
-      <Header>
-        <Sinc_logo src = { sinc } />
-        <Profile_icon />
-      </Header>
       <Wrapper>
-        <Menu_bar>
+        
+        <Sidebar_menu>
           <Members_side>
             <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-              <Menu_item className = 'active'>
+              <Menu_item className='active'>
                 <Notation_icon />
                 <span>Apontamento</span>
               </Menu_item>
@@ -60,8 +54,7 @@ const Standart_notation: React.FC = () => {
               </Menu_item>
             </a>
 
-
-            <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+            <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
               <Menu_item>
                 <Mural_icon />
                 <span>Mural da Sinc</span>
@@ -74,8 +67,8 @@ const Standart_notation: React.FC = () => {
                 <span>Calendário</span>
               </Menu_item>
             </Link>
-            
-            <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+
+            <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
               <Menu_item>
                 <Professors_icon />
                 <span>Professores parceiros</span>
@@ -98,31 +91,34 @@ const Standart_notation: React.FC = () => {
               </Menu_item>
             </Link>
 
-            <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+            <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
               <Menu_item>
                 <Direx_icon />
                 <span>Diretoria</span>
               </Menu_item>
             </Link>
           </Direx_side>
-        </Menu_bar>
+        </Sidebar_menu>
+
         <Notation_area />
         <Time_analysis />
       </Wrapper>
+      
+
       <Bottom_menu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-          <Notation_bottom_icon className = 'active' />
+          <Notation_bottom_icon className='active'/>
         </Link>
         <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
           <SDR_bottom_icon />
         </a>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
           <Mural_bottom_icon />
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <Calendar_bottom_icon />
         </Link>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/menu'} style={{ textDecoration: 'none' }}>
           <Menu_bottom_icon />
         </Link>
       </Bottom_menu>

@@ -2,15 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import teamwork from '../../assets/teamwork.png';
-
 import Header from '../../components/Header';
 
-import { 
+import {
   Container,
   Wrapper,
-  Construction_img,
-  Warning,
+  New_member_name,
+  New_member_email,
+  Update_info_button,
+  Ex_member_email,
+  Mural_input,
+  Send_message_mural_button,
+  New_period_time_name,
   Sidebar_menu,
   Members_side,
   Menu_item,
@@ -31,21 +34,36 @@ import {
   Menu_bottom_icon
 } from './styles';
 
-const Construction_page: React.FC = () => {
+const Directors_control: React.FC = () => {
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Em construção</title>
+        <title>Direx</title>
       </Helmet>
       <Wrapper>
-        <Construction_img src = { teamwork } />
-        <Warning>
-          <h1>Calma, time!</h1>
-          <p>Em breve estará pronto<br/>para você usar...</p>
-        </Warning>
-      </Wrapper>
+        <h3>Adição de membros</h3>
+        {/* <p>Adicione novos membros colocando seu nome completo e seu e-mail da Sinc</p> */}
+        <New_member_name type='text' placeholder='Nome completo' />
+        <New_member_email type='text' placeholder='E-mail' />
+        <Update_info_button><p>Adicionar membro</p></Update_info_button>
 
+        <h3>Desligamento de membros</h3>
+        {/* <p>Desligue membros da Sinc colocando seu e-mail da Sinc</p> */}
+        <Ex_member_email type='text' placeholder='E-mail' />
+        <Update_info_button><p>Desligar membro</p></Update_info_button>
+
+        <h3>Publicar no Mural</h3>
+        {/* <p>Escreva uma mensagem para todos lerem</p> */}
+        <Mural_input placeholder='Mensagem para o Mural' />
+        <Send_message_mural_button><p>Publicar</p></Send_message_mural_button>
+
+        <h3>Criação do período</h3>
+        {/* <p>Selecione quando irá começar e escolha o nome para o novo período da Sinc</p> */}
+        <New_period_time_name type='text' placeholder='Nome do período (2022/1)' />
+        <Update_info_button><p>Iniciar novo período</p></Update_info_button>
+      </Wrapper>
+      
       <Sidebar_menu>
         <Members_side>
           <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
@@ -100,7 +118,7 @@ const Construction_page: React.FC = () => {
           </Link>
 
           <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
+            <Menu_item className='active'>
               <Direx_icon />
               <span>Diretoria</span>
             </Menu_item>
@@ -116,7 +134,7 @@ const Construction_page: React.FC = () => {
           <SDR_bottom_icon />
         </a>
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <Mural_bottom_icon />
+          <Mural_bottom_icon className='active'/>
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <Calendar_bottom_icon />
@@ -129,4 +147,4 @@ const Construction_page: React.FC = () => {
   )
 }
 
-export default Construction_page;
+export default Directors_control;

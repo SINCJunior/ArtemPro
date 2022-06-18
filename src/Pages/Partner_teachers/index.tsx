@@ -2,15 +2,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import teamwork from '../../assets/teamwork.png';
-
 import Header from '../../components/Header';
+import Partner_teachers_area from '../../components/Partner_teachers_area';
+import Add_partner_teachers_area from '../../components/Add_partner_teachers_area';
 
-import { 
+import {
   Container,
   Wrapper,
-  Construction_img,
-  Warning,
   Sidebar_menu,
   Members_side,
   Menu_item,
@@ -31,19 +29,26 @@ import {
   Menu_bottom_icon
 } from './styles';
 
-const Construction_page: React.FC = () => {
+const Profile: React.FC = () => {
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Em construção</title>
+        <title>Professores parceiros</title>
       </Helmet>
       <Wrapper>
-        <Construction_img src = { teamwork } />
-        <Warning>
-          <h1>Calma, time!</h1>
-          <p>Em breve estará pronto<br/>para você usar...</p>
-        </Warning>
+        <Add_partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
       </Wrapper>
 
       <Sidebar_menu>
@@ -77,7 +82,7 @@ const Construction_page: React.FC = () => {
           </Link>
 
           <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
+            <Menu_item className='active'>
               <Professors_icon />
               <span>Professores parceiros</span>
             </Menu_item>
@@ -125,8 +130,9 @@ const Construction_page: React.FC = () => {
           <Menu_bottom_icon />
         </Link>
       </Bottom_menu>
+
     </Container>
   )
 }
 
-export default Construction_page;
+export default Profile;

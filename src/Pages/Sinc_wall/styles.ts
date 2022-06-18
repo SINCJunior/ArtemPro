@@ -13,17 +13,58 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  background: var(--primary);
+  position: absolute;
 
   display: flex;
   justify-content: center;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
-  width: 100vw;
-  margin: 0 auto;
+  position: absolute;
+
+  justify-content: center;
+  width: 70vw;
+  height: 100vh;
+
+  top: 80px;
+  padding-bottom: 80px;
+  
+  @media (min-width: 500px) {
+    margin-left: 116px;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: 300px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 316px;
+  }
+
+  @media (min-width: 1650px) {
+    margin-left: 316px;
+  }
+`;
+
+export const Message = styled.div`
   display: flex;
+  flex-direction: column;
+  color: var(--white);
+
+  border-bottom: 1px solid var(--secondary);
+
+  > h3 {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    font-family: 500;
+  }
+  > p {
+    font-size: 20px;
+    font-family: 400;
+    padding-bottom: 16px;
+  }
 `;
 
 

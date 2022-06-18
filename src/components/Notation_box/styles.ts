@@ -51,14 +51,15 @@ export const Duration = styled.p`
 
 export const Member_description_area = styled.div`
   width: 336px;
-  height: 216px;
+  height: 200px;
 
   display: flex;
-`;
+  overflow-y: scroll;
 
-export const Member_description = styled.p`
-  font-size: 16px;
-  color: var(--white);
+  > p {
+    font-size: 16px;
+    color: var(--white);
 
-  margin: 8px;
+    margin: 8px;
+  }
 `;

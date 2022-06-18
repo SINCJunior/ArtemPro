@@ -2,15 +2,19 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import teamwork from '../../assets/teamwork.png';
+import sinc from '../../assets/sinc.png';
 
-import Header from '../../components/Header';
-
-import { 
+import {
   Container,
+  Header,
+  Sinc_logo,
+  Profile_icon,
   Wrapper,
-  Construction_img,
-  Warning,
+  Old_pass,
+  New_pass,
+  Repeat_new_pass,
+  Update_info_button,
+  Retirement_button,
   Sidebar_menu,
   Members_side,
   Menu_item,
@@ -31,19 +35,27 @@ import {
   Menu_bottom_icon
 } from './styles';
 
-const Construction_page: React.FC = () => {
+const Profile: React.FC = () => {
   return (
     <Container>
-      <Header />
+      <Header>
+        <Sinc_logo src = { sinc } />
+        <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
+          <Profile_icon className='active'/>
+        </Link>
+      </Header>
       <Helmet>
-        <title>Em construção</title>
+        <title>Perfil</title>
       </Helmet>
       <Wrapper>
-        <Construction_img src = { teamwork } />
-        <Warning>
-          <h1>Calma, time!</h1>
-          <p>Em breve estará pronto<br/>para você usar...</p>
-        </Warning>
+        <h3>Editar senha</h3>
+        <Old_pass type='text' placeholder='Senha antiga' />
+        <New_pass type='text' placeholder='Senha nova' />
+        <Repeat_new_pass type='text' placeholder='Repita sua senha nova' />
+        <Update_info_button><p>Atualizar senha</p></Update_info_button>
+        <Link to={'/desligamento'} style={{ textDecoration: 'none' }}>
+          <Retirement_button>Deseja se desvincular da Sinc?</Retirement_button>
+        </Link>
       </Wrapper>
 
       <Sidebar_menu>
@@ -125,8 +137,9 @@ const Construction_page: React.FC = () => {
           <Menu_bottom_icon />
         </Link>
       </Bottom_menu>
+
     </Container>
   )
 }
 
-export default Construction_page;
+export default Profile;

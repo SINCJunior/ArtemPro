@@ -8,7 +8,6 @@ import {
   Time_stamp,
   Duration,
   Member_description_area,
-  Member_description,
 } from './styles';
 
 const Notation_box: React.FC = () => {
@@ -24,7 +23,7 @@ const Notation_box: React.FC = () => {
         <Duration> Duração: 3h 25m</Duration>
       </Time_stamp_area>
       <Member_description_area>
-        <Member_description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus turpis, condimentum ac porttitor ac, porta sit amet ipsum.</Member_description>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus tuLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper massa vulputate volutpat scelerisque. Morbi et enim vehicula, viverra mi at, aliquet nisl. Morbi purus enim, malesuada non felis at, pulvinar semper mauris. Proin pretium, quam ac tempor mattis, lorem neque mollis ex, id finibus nunc mi sit amet elit. Morbi malesuada consequat nisl in vestibulum. Aliquam ut pulvinar lorem. Aenean vitae aliquet nisi. Quisque eget convallis elit. Aenean ultricies nulla lectus, et commodo erat dapibus et. Vestibulum sit amet interdum mi.rpis, condimentum ac porttitor ac, porta sit amet ipsum.</p>
       </Member_description_area>
     </Container>
   )
