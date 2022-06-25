@@ -6,7 +6,7 @@ export const Container = styled.div`
   border-radius: 8px;
 
   background: var(--secondary);
-  position: relative;
+  position: absolute;
 `;
 
 

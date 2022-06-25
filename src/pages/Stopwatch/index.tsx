@@ -4,16 +4,13 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 
-import {
+import no_smartphone from '../../assets/no-smartphones.png';
+import water from '../../assets/water.png';
+
+import { 
   Container,
   Wrapper,
-  New_member_name,
-  New_member_email,
-  Update_info_button,
-  Ex_member_email,
-  Mural_input,
-  Send_message_mural_button,
-  New_period_time_name,
+  Notation_page,
   Sidebar_menu,
   Members_side,
   Menu_item,
@@ -31,43 +28,33 @@ import {
   SDR_bottom_icon,
   Mural_bottom_icon,
   Calendar_bottom_icon,
-  Menu_bottom_icon
+  Menu_bottom_icon,
+  Pomodoro,
+  Counter,
+  Timer,
+  Play_icon,
+  Member,
+  Description,
+  Add_notation_button,
+  First_warning,
+  Second_warning,
+  No_smartphones_img,
+  Third_warning,
+  Water_img,
 } from './styles';
 
-const Directors_control: React.FC = () => {
+const Standart_notation: React.FC = () => {
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Direx</title>
+        <title>Cronômetro</title>
       </Helmet>
-      <Wrapper>
-        <h3>Adição de membros</h3>
-        {/* <p>Adicione novos membros colocando seu nome completo e seu e-mail da Sinc</p> */}
-        <New_member_name type='text' placeholder='Nome completo' />
-        <New_member_email type='text' placeholder='E-mail' />
-        <Update_info_button><p>Adicionar membro</p></Update_info_button>
 
-        <h3>Desligamento de membros</h3>
-        {/* <p>Desligue membros da Sinc colocando seu e-mail da Sinc</p> */}
-        <Ex_member_email type='text' placeholder='E-mail' />
-        <Update_info_button><p>Desligar membro</p></Update_info_button>
-
-        <h3>Publicar no Mural</h3>
-        {/* <p>Escreva uma mensagem para todos lerem</p> */}
-        <Mural_input placeholder='Mensagem para o Mural' />
-        <Send_message_mural_button><p>Publicar</p></Send_message_mural_button>
-
-        <h3>Criação do período</h3>
-        {/* <p>Selecione quando irá começar e escolha o nome para o novo período da Sinc</p> */}
-        <New_period_time_name type='text' placeholder='Nome do período (2022/1)' />
-        <Update_info_button><p>Iniciar novo período</p></Update_info_button>
-      </Wrapper>
-      
       <Sidebar_menu>
         <Members_side>
           <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
+            <Menu_item className='active'>
               <Notation_icon />
               <span>Apontamento</span>
             </Menu_item>
@@ -79,7 +66,7 @@ const Directors_control: React.FC = () => {
               <span>SDR Ativa</span>
             </Menu_item>
           </a>
-
+      
           <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
             <Menu_item>
               <Mural_icon />
@@ -118,7 +105,7 @@ const Directors_control: React.FC = () => {
           </Link>
 
           <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
-            <Menu_item className='active'>
+            <Menu_item>
               <Direx_icon />
               <span>Diretoria</span>
             </Menu_item>
@@ -126,15 +113,41 @@ const Directors_control: React.FC = () => {
         </Direx_side>
       </Sidebar_menu>
 
+      <Wrapper>
+        <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
+          <Notation_page>Apontamento</Notation_page>
+        </Link>
+        <Pomodoro />
+        <Counter>
+          <Timer>00:00</Timer>
+          <Play_icon />
+        </Counter>
+        <Member placeholder='Membros'/>
+        <Description placeholder='Descrição'/>
+        <Add_notation_button><p>Adicionar</p></Add_notation_button>
+        <First_warning>
+          <Notation_icon />
+          <p>Ao adicionar, seu tempo ficará visível em “Apontamento padrão”</p>
+        </First_warning>
+        <Second_warning>
+          <No_smartphones_img src={ no_smartphone } />
+          <p>A pausa da Técnica de Pomodoro tem como objetivo descansar, então levante e não mexa no celular!</p>
+        </Second_warning>
+        <Third_warning>
+          <Water_img src={ water } />
+          <p>Se hidrate!</p>
+        </Third_warning>
+      </Wrapper>
+      
       <Bottom_menu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-          <Notation_bottom_icon />
+          <Notation_bottom_icon className='active'/>
         </Link>
         <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
           <SDR_bottom_icon />
         </a>
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <Mural_bottom_icon className='active'/>
+          <Mural_bottom_icon />
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <Calendar_bottom_icon />
@@ -147,4 +160,4 @@ const Directors_control: React.FC = () => {
   )
 }
 
-export default Directors_control;
+export default Standart_notation;

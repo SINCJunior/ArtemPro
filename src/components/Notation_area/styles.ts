@@ -31,6 +31,27 @@ export const Container = styled.div`
   }
 `;
 
+export const Stopwatch_page = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 40px;
+  border-radius: 16px;
+
+  background: var(--primary);
+  border: 2px solid var(--sinc-light-color);
+  cursor: pointer;
+
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
+  }
+`;
 
 
 //Filtro e drop_down_menu
@@ -43,13 +64,24 @@ export const Settings_bar = styled.div`
   justify-content: space-between;
 `;
 
-export const Notation_type_menu = styled.div`
-  width: 280px;
+export const Notation_type_menu = styled.select`
+  /* width: 280px; */
+  width: 336px;
   height: 32px;
 
   border-radius: 8px;
+  padding: 0 8px;
 
   background: var(--secondary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+
+  > option {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+  }
 `;
 
 export const Filter_icon = styled(FilterAlt)`

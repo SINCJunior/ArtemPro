@@ -8,7 +8,8 @@ export {
   InsertChartOutlined,
   Menu,
   FilterAlt,
-  CheckCircle
+  CheckCircle,
+  PlayCircle,
 } from 'styled-icons/material';
 
 export { Analyse, Rocket, Pulse } from 'styled-icons/boxicons-regular';

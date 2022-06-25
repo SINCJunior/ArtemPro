@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { 
+  AccountCircle,
   Analyse,
   CloudQueue,
   InsertChartOutlined,
@@ -26,50 +27,55 @@ export const Wrapper = styled.div`
   flex-direction: column;
 
   width: 100vw;
-  top: 80px;
-  padding-bottom: 48px;
+  top: 120px;
 
   align-items: center;
   
   > h3 {
-    padding-bottom: 8px;
+    padding-bottom: 16px;
     font-size: 24px;
     color: var(--white);
   }
-  > p {
-    padding-bottom: 8px;
-    font-size: 16px;
-    color: var(--white);
-    font-family: 400;
-  }
 `;
 
-const button_CSS = css`
+
+export const Header = styled.div`
+  background: var(--secondary);
+  z-index: 2;
+  width: 100vw;
+  height: 64px;
+
+  position: fixed;
   display: flex;
-  justify-content: center;
+  text-align: center;
   align-items: center;
+  justify-content: space-between;
 
-  width: 340px;
-  height: 40px;
-  border-radius: 16px;
-  margin-bottom: 24px;
+  border-bottom: 1px solid var(--white);
+`;
 
-  background: var(--primary);
-  border: 2px solid var(--sinc-light-color);
+export const Sinc_logo = styled.img`  
+  top: 0;
+  margin-left: 16px;
+  height: 48px;
+`;
+
+export const Profile_icon = styled(AccountCircle)`
+  width: 32px;
+  height: 32px;
+
   cursor: pointer;
 
-  > p {
-    color: var(--sinc-light-color);
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  &:hover {
-    background: var(--sinc-button-dark-hover);
+  fill: var(--white);
+  margin-right: 16px;
+  
+  &:hover,
+  &.active {
+    fill: var(--sinc-light-color)
   }
 `;
-export const Update_info_button = styled.button`${button_CSS}`;
-export const Send_message_mural_button = styled.button`${button_CSS}`;
+
+
 
 const input_label_CSS = css`
   width: 340px;
@@ -88,27 +94,43 @@ const input_label_CSS = css`
     opacity: 60%;
   }
 `;
-export const New_member_name = styled.input`${input_label_CSS}`;
-export const New_member_email = styled.input`${input_label_CSS}`;
-export const Ex_member_email = styled.input`${input_label_CSS}`;
-export const New_period_time_name = styled.input`${input_label_CSS}`;
-export const Mural_input = styled.textarea`
-  width: 336px;
-  height: 80px;
+export const Old_pass = styled.input`${input_label_CSS}`;
+export const New_pass = styled.input`${input_label_CSS}`;
+export const Repeat_new_pass = styled.input`${input_label_CSS}`;
 
-  color: var(--white-text);
-  background: var(--secondary);
+export const Update_info_button = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding: 8px;
-  border-radius: 4px;
+  width: 340px;
+  height: 40px;
+  border-radius: 16px;
+  margin-top: 16px;
 
-  resize: none;
+  background: var(--primary);
+  border: 2px solid var(--sinc-light-color);
+  cursor: pointer;
 
-  &::placeholder {
+  > p {
+    color: var(--sinc-light-color);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
+  }
+`;
+
+export const Retirement_button = styled.p`
+  margin-top: 80px;
+  color: var(--sinc-dark-color);
+  font-size: 20px;
+  font-weight: 400;
+  
+  &:hover {
     color: var(--white);
-    opacity: 60%;
   }
 `;
 

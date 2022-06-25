@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 
 import { 
-  AccountCircle,
   Analyse,
   CloudQueue,
   InsertChartOutlined,
@@ -11,56 +10,50 @@ import {
   NotificationsNone,
   Menu, 
   CalendarToday,
+  PlayCircle
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  position: absolute;
+  background: var(--primary);
 
   display: flex;
   justify-content: center;
-  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
-  display: grid;
-  margin-top: 72px;
-  padding: 8px;
+  height: 100%;
+  width: 350px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 
-  grid-template-columns: 1fr;
-  grid-gap: 16px;
-
-  //! Tabela de resolução:
-  //! 0 até 499px (celular): padrão
-  //! 500 até 959px (tablet na vertical): 1° @media
-  //! 960 até 1299px (tablet na horizontal): 2° @media
-  //! 1300 até 1649px (monitores pequenos - laptop): 3º @media
-  //! maior do que 1650px (monitores grandes - PC): 4° @media
   @media (min-width: 500px) {
-    margin-left: 116px;
-  }
-
-  @media (min-width: 820px) {
-    margin-left: 116px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 960px) {
-    margin-left: 300px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 1300px) {
-    margin-left: 316px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media (min-width: 1650px) {
-    margin-left: 316px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 450px;
   }
 `;
 
+export const Notation_page = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  width: 180px;
+  height: 40px;
+  border-radius: 16px;
+
+  background: var(--primary);
+  border: 2px solid var(--sinc-light-color);
+  cursor: pointer;
+
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
+  }
+`;
 
 //! Side bar menu
 export const Sidebar_menu = styled.div`
@@ -144,7 +137,7 @@ export const Menu_item = styled.button`
   }
 `;
 
-//Ícones do menu lateral
+//!Ícones do menu lateral
 const iconCSS_menu_bar = css`
   flex-shrink: 0;
 
@@ -204,3 +197,143 @@ export const SDR_bottom_icon = styled(HeadsetMic)`${iconCSS_bottom_bar}`;
 export const Mural_bottom_icon = styled(NotificationsNone)`${iconCSS_bottom_bar}`;
 export const Calendar_bottom_icon = styled(CalendarToday)`${iconCSS_bottom_bar}`;
 export const Menu_bottom_icon = styled(Menu)`${iconCSS_bottom_bar}`;
+
+
+
+//! Página de cronômetro
+export const Pomodoro = styled.div`
+  margin-top: 32px;
+`;
+export const Counter = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Timer = styled.p`
+  color: var(--white);
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 32px;
+`;
+export const Play_icon = styled(PlayCircle)`
+  width: 32px;
+  height: 32px;
+  fill: var(--white);
+
+  cursor: pointer;
+  
+  &:hover,
+  &.active {
+    fill: var(--sinc-light-color)
+  }
+`;
+
+export const Member = styled.input`  
+  width: 350px;
+  height: 72px;
+  margin-bottom: 16px;
+
+  color: var(--white-text);
+  background: var(--secondary);
+  border-radius: 8px;
+
+  font-size: 16px;
+  padding: 8px;
+
+  resize: none;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+
+  @media (min-width: 500px) {
+    width: 450px;
+  }
+`;
+
+export const Description = styled.textarea`
+  width: 350px;
+  height: 150px;
+  margin-bottom: 64px;
+
+  color: var(--white-text);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+
+  font-size: 16px;
+  padding: 8px;
+
+  resize: none;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+
+  @media (min-width: 500px) {
+    width: 450px;
+  }
+`;
+
+export const Add_notation_button = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+
+  right: 8px;
+  top: 160px;
+
+  background: var(--sinc-light-color);
+  cursor: pointer;
+
+  > p {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-hover);
+  }
+`;
+
+const warning_CSS = css`
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+
+  align-items: center;
+  margin-top: 16px;
+
+  > p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+
+    margin-left: 16px;
+  }
+
+  @media (min-width: 500px) {
+    width: 450px;
+  }
+`;
+export const First_warning = styled.div`${warning_CSS}`;
+export const Second_warning = styled.div`${warning_CSS}`;
+export const Third_warning = styled.div`${warning_CSS}`;
+
+
+const img_CSS = css`
+  width: 32px;
+  height: 32px;
+`;
+export const No_smartphones_img = styled.img`${img_CSS}`;
+export const Water_img = styled.img`${img_CSS}`;

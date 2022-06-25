@@ -32,5 +32,6 @@ export default createGlobalStyle`
     --sinc-button-hover: #be1e2d;
     --sinc-button-dark-hover: #16181c;
     --check: #26b81c;
+    --select-dropdown: #d1f7fc;
   }
 `;
