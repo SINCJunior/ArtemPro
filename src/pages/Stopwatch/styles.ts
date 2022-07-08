@@ -210,6 +210,7 @@ export const Counter = styled.div`
 
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
 `;
 
 export const Timer = styled.p`
@@ -290,7 +291,7 @@ export const Add_notation_button = styled.div`
   border-radius: 16px;
 
   right: 8px;
-  top: 160px;
+  top: 380px;
 
   background: var(--sinc-light-color);
   cursor: pointer;

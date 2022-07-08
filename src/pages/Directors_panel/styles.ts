@@ -82,6 +82,7 @@ const button_CSS = css`
     background: var(--sinc-button-dark-hover);
   }
 `;
+
 export const Update_info_button = styled.button`${button_CSS}`;
 export const Send_message_mural_button = styled.button`${button_CSS}`;
 

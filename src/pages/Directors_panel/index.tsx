@@ -55,7 +55,7 @@ const Directors_control: React.FC = () => {
           <option value='assessor'>Assessor</option>
           <option value='diretor'>Diretor</option>
         </Position_label>
-        <Update_info_button><p>Desligar membro</p></Update_info_button>
+        <Update_info_button><p>Editar cargo do membro</p></Update_info_button>
 
         <h3>Desligamento de membros</h3>
         <Ex_member_email type='text' placeholder='E-mail' />
