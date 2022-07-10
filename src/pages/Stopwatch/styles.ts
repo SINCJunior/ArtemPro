@@ -10,7 +10,8 @@ import {
   NotificationsNone,
   Menu, 
   CalendarToday,
-  PlayCircle
+  PlayCircle,
+  Task
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -33,7 +34,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Notation_page = styled.div`
+export const NotationPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +57,7 @@ export const Notation_page = styled.div`
 `;
 
 //! Side bar menu
-export const Sidebar_menu = styled.div`
+export const SidebarMenu = styled.div`
   display: none;
 
   @media (min-width: 500px) {
@@ -75,7 +76,7 @@ export const Sidebar_menu = styled.div`
   }
 `;
 
-export const Members_side = styled.div`
+export const MembersSide = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +88,7 @@ export const Members_side = styled.div`
   }
 `;
 
-export const Direx_side = styled.div`
+export const DirexSide = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +102,7 @@ export const Direx_side = styled.div`
   }
 `;
 
-export const Menu_item = styled.button`
+export const MenuItem = styled.button`
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -138,7 +139,7 @@ export const Menu_item = styled.button`
 `;
 
 //!Ícones do menu lateral
-const iconCSS_menu_bar = css`
+const iconCSSMenuBar = css`
   flex-shrink: 0;
 
   width: 32px;
@@ -146,18 +147,19 @@ const iconCSS_menu_bar = css`
   color: var(--white);
 `;
 
-export const Notation_icon = styled(AddAlarm)`${iconCSS_menu_bar}`;
-export const SDR_icon = styled(HeadsetMic)`${iconCSS_menu_bar}`;
-export const Mural_icon = styled(NotificationsNone)`${iconCSS_menu_bar}`;
-export const Professors_icon = styled(Analyse)`${iconCSS_menu_bar}`;
-export const Calendar_icon = styled(CalendarToday)`${iconCSS_menu_bar}`;
-export const Cloud_icon = styled(CloudQueue)`${iconCSS_menu_bar}`;
-export const Performance_icon = styled(InsertChartOutlined)`${iconCSS_menu_bar}`;
-export const Direx_icon = styled(Rocket)`${iconCSS_menu_bar}`;
+export const NotationIcon = styled(AddAlarm)`${iconCSSMenuBar}`;
+export const TaskDoneIcon = styled(Task)`${iconCSSMenuBar}`;
+export const SDRIcon = styled(HeadsetMic)`${iconCSSMenuBar}`;
+export const MuralIcon = styled(NotificationsNone)`${iconCSSMenuBar}`;
+export const ProfessorsIcon = styled(Analyse)`${iconCSSMenuBar}`;
+export const CalendarIcon = styled(CalendarToday)`${iconCSSMenuBar}`;
+export const CloudIcon = styled(CloudQueue)`${iconCSSMenuBar}`;
+export const PerformanceIcon = styled(InsertChartOutlined)`${iconCSSMenuBar}`;
+export const DirexIcon = styled(Rocket)`${iconCSSMenuBar}`;
 
 
 //! Bottom menu
-export const Bottom_menu = styled.div`
+export const BottomMenu = styled.div`
   position: fixed;
   bottom: 0;
   left: 0;
@@ -178,7 +180,7 @@ export const Bottom_menu = styled.div`
 `;
 
 // Ícones usados na página estática
-const iconCSS_bottom_bar = css`
+const iconCSSBottomBar = css`
   width: 32px;
   height: 32px;
 
@@ -192,11 +194,11 @@ const iconCSS_bottom_bar = css`
   }
 `;
 
-export const Notation_bottom_icon = styled(AddAlarm)`${iconCSS_bottom_bar}`;
-export const SDR_bottom_icon = styled(HeadsetMic)`${iconCSS_bottom_bar}`;
-export const Mural_bottom_icon = styled(NotificationsNone)`${iconCSS_bottom_bar}`;
-export const Calendar_bottom_icon = styled(CalendarToday)`${iconCSS_bottom_bar}`;
-export const Menu_bottom_icon = styled(Menu)`${iconCSS_bottom_bar}`;
+export const NotationBottomIcon = styled(AddAlarm)`${iconCSSBottomBar}`;
+export const SDRBottomIcon = styled(HeadsetMic)`${iconCSSBottomBar}`;
+export const MuralBottomIcon = styled(NotificationsNone)`${iconCSSBottomBar}`;
+export const CalendarBottomIcon = styled(CalendarToday)`${iconCSSBottomBar}`;
+export const MenuBottomIcon = styled(Menu)`${iconCSSBottomBar}`;
 
 
 
@@ -219,7 +221,7 @@ export const Timer = styled.p`
   font-weight: 500;
   margin-right: 32px;
 `;
-export const Play_icon = styled(PlayCircle)`
+export const PlayIcon = styled(PlayCircle)`
   width: 32px;
   height: 32px;
   fill: var(--white);
@@ -280,7 +282,7 @@ export const Description = styled.textarea`
   }
 `;
 
-export const Add_notation_button = styled.div`
+export const AddNotationButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,7 +309,7 @@ export const Add_notation_button = styled.div`
   }
 `;
 
-const warning_CSS = css`
+const warningCSS = css`
   display: flex;
   flex-direction: row;
   width: 350px;
@@ -327,14 +329,14 @@ const warning_CSS = css`
     width: 450px;
   }
 `;
-export const First_warning = styled.div`${warning_CSS}`;
-export const Second_warning = styled.div`${warning_CSS}`;
-export const Third_warning = styled.div`${warning_CSS}`;
+export const FirstWarning = styled.div`${warningCSS}`;
+export const SecondWarning = styled.div`${warningCSS}`;
+export const ThirdWarning = styled.div`${warningCSS}`;
 
 
-const img_CSS = css`
+const imgCSS = css`
   width: 32px;
   height: 32px;
 `;
-export const No_smartphones_img = styled.img`${img_CSS}`;
-export const Water_img = styled.img`${img_CSS}`;
+export const NoSmartphonesImg = styled.img`${imgCSS}`;
+export const WaterImg = styled.img`${imgCSS}`;

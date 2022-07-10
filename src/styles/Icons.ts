@@ -12,4 +12,4 @@ export {
   PlayCircle,
 } from 'styled-icons/material';
 
-export { Analyse, Rocket, Pulse } from 'styled-icons/boxicons-regular';
+export { Analyse, Rocket, Pulse, Task, DotsVerticalRounded } from 'styled-icons/boxicons-regular';

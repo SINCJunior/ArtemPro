@@ -3,18 +3,17 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
+import Partner_teachers_area from '../../components/PartnerTeachersArea';
+import Add_partner_teachers_area from '../../components/AddPartnerTeachersArea';
 
-import noSmartphone from '../../assets/noSmartphones.png';
-import water from '../../assets/water.png';
-
-import { 
+import {
   Container,
   Wrapper,
-  NotationPage,
   SidebarMenu,
   MembersSide,
   MenuItem,
   NotationIcon,
+  TaskDoneIcon,
   SDRIcon,
   MuralIcon,
   CalendarIcon,
@@ -28,29 +27,30 @@ import {
   SDRBottomIcon,
   MuralBottomIcon,
   CalendarBottomIcon,
-  MenuBottomIcon,
-  Pomodoro,
-  Counter,
-  Timer,
-  PlayIcon,
-  Member,
-  Description,
-  AddNotationButton,
-  FirstWarning,
-  SecondWarning,
-  NoSmartphonesImg,
-  ThirdWarning,
-  WaterImg,
-  TaskDoneIcon,
+  MenuBottomIcon
 } from './styles';
 
-const Stopwatch: React.FC = () => {
+const Profile: React.FC = () => {
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Cronômetro</title>
+        <title>Professores parceiros</title>
       </Helmet>
+      <Wrapper>
+        <Add_partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+        <Partner_teachers_area />
+      </Wrapper>
 
       <SidebarMenu>
         <MembersSide>
@@ -60,21 +60,21 @@ const Stopwatch: React.FC = () => {
               <span>Tarefas</span>
             </MenuItem>
           </Link>
-         
+          
           <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-            <MenuItem className='active'>
+            <MenuItem>
               <NotationIcon />
               <span>Apontamento</span>
             </MenuItem>
           </Link>
-          
+
           <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
             <MenuItem>
               <SDRIcon />
               <span>SDR Ativa</span>
             </MenuItem>
           </a>
-      
+
           <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <MuralIcon />
@@ -90,13 +90,13 @@ const Stopwatch: React.FC = () => {
           </Link>
 
           <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
-            <MenuItem>
+            <MenuItem className='active'>
               <ProfessorsIcon />
               <span>Professores parceiros</span>
             </MenuItem>
           </Link>
 
-          <a href='https://drive.google.com/drive/u/1/folders/0BPfgOzEMjWhWUh6ZFVLMnFlTDg?resourcekey=0-PxBaFB5bYbpdzlfv736BVA' style={{ textDecoration: 'none' }}>
+          <a href='https://drive.google.com/drive/u/1/folders/0B_pfgOzEMjWhWUh6ZFVLMnFlTDg?resourcekey=0-PxBaFB5bYbpdzlfv736BVA' style={{ textDecoration: 'none' }}>
             <MenuItem>
               <CloudIcon />
               <span>Drive</span>
@@ -121,35 +121,9 @@ const Stopwatch: React.FC = () => {
         </DirexSide>
       </SidebarMenu>
 
-      <Wrapper>
-        <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
-          <NotationPage>Apontamento</NotationPage>
-        </Link>
-        <Pomodoro />
-        <Counter>
-          <Timer>00:00</Timer>
-          <PlayIcon />
-        </Counter>
-        <Member placeholder='Membros'/>
-        <Description placeholder='Descrição'/>
-        <AddNotationButton><p>Adicionar</p></AddNotationButton>
-        <FirstWarning>
-          <NotationIcon />
-          <p>Ao adicionar, seu tempo ficará visível em “Apontamento padrão”</p>
-        </FirstWarning>
-        <SecondWarning>
-          <NoSmartphonesImg src={ noSmartphone } />
-          <p>A pausa da Técnica de Pomodoro tem como objetivo descansar, então levante e não mexa no celular!</p>
-        </SecondWarning>
-        <ThirdWarning>
-          <WaterImg src={ water } />
-          <p>Se hidrate!</p>
-        </ThirdWarning>
-      </Wrapper>
-      
       <BottomMenu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-          <NotationBottomIcon className='active'/>
+          <NotationBottomIcon />
         </Link>
         <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
           <SDRBottomIcon />
@@ -164,8 +138,9 @@ const Stopwatch: React.FC = () => {
           <MenuBottomIcon />
         </Link>
       </BottomMenu>
+
     </Container>
   )
 }
 
-export default Stopwatch;
+export default Profile;

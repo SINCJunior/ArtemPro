@@ -6,17 +6,17 @@ import sinc from '../../assets/sinc.png';
 import {
   Container,
   Wrapper,
-  Sinc_logo,
-  Profile_icon,
+  SincLogo,
+  ProfileIcon,
 } from './styles';
 
 const Header: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        <Sinc_logo src = { sinc } />
+        <SincLogo src = { sinc } />
         <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
-          <Profile_icon />
+          <ProfileIcon />
         </Link>
       </Wrapper>
     </Container>

@@ -55,20 +55,8 @@ const loginInputCSS = css`
   }
 `;
 export const SincEmail = styled.input`${loginInputCSS}`;
-export const Password = styled.input`${loginInputCSS}`;
 
-export const PassRecover = styled.p`
-  color: var(--white);
-  font-size: 20px;
-  font-weight: 400;
-
-  &:hover {
-    color: var(--sinc-dark-color);
-  }
-`;
-
-
-export const LoginButton = styled.div`
+export const Recover = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

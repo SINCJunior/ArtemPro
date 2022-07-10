@@ -2,35 +2,43 @@ import React from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 
-import Standart_notation from './pages/Standart_notation';
-import Construction_page from './pages/Construction_page';
-import Menu from './pages/Menu_bottom';
+import StandartNotation from './pages/StandartNotation';
+import ConstructionPage from './pages/ConstructionPage';
+import Menu from './pages/MenuBottom';
 import Profile from './pages/Profile';
-import Retirement from './pages/Retirement';
-import Directors_control from './pages/Directors_panel';
-import Sinc_wall from './pages/Sinc_wall';
-import Partner_teachers from './pages/Partner_teachers';
+import Retirement from './pages/Forms/Retirement';
+import DirectorsControl from './pages/DirectorsPanel';
+import SincWall from './pages/SincWall';
+import PartnerTeachers from './pages/PartnerTeachers';
 import Stopwatch from './pages/Stopwatch';
 import Login from './pages/Login';
-import Pass_recover from './pages/Pass_recover';
+import PassRecover from './pages/PassRecover';
+import Break from './pages/Forms/Break';
+import Absence from './pages/Forms/Absence';
+import Ombudsman from './pages/Forms/Ombudsman';
+import AddNotation from './pages/AddNotation';
 
-const App_routes = () => {
+const AppRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={ <Standart_notation /> } />
-      <Route path='/apontamento' element={ <Standart_notation /> } />
-      <Route path='/em-construcao' element={ <Construction_page /> } />
+      <Route path='/' element={ <StandartNotation /> } />
+      <Route path='/apontamento' element={ <StandartNotation /> } />
+      <Route path='/em-construcao' element={ <ConstructionPage /> } />
       <Route path='/menu' element={ <Menu /> } />
       <Route path='/perfil' element={ <Profile /> } />
       <Route path='/desligamento' element={ <Retirement /> } />
-      <Route path='/direx' element={ <Directors_control /> } />
-      <Route path='/mural' element={ <Sinc_wall /> } />
-      <Route path='/professores-parceiros' element={ <Partner_teachers /> } />
+      <Route path='/afastamento' element={ <Break /> } />
+      <Route path='/justificativa-de-falta' element={ <Absence /> } />
+      <Route path='/ouvidoria' element={ <Ombudsman /> } />
+      <Route path='/direx' element={ <DirectorsControl /> } />
+      <Route path='/mural' element={ <SincWall /> } />
+      <Route path='/professores-parceiros' element={ <PartnerTeachers /> } />
       <Route path='/cronometro' element={ <Stopwatch /> } />
       <Route path='/login' element={ <Login /> } />
-      <Route path='/recuperacao-senha' element={ <Pass_recover /> } />
+      <Route path='/recuperacao-senha' element={ <PassRecover /> } />
+      <Route path='/adicionar-apontamento' element={ <AddNotation /> } />
     </Routes>
   );
 }
 
-export default App_routes;
+export default AppRoutes;

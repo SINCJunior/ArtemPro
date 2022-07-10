@@ -7,41 +7,43 @@ import sinc from '../../assets/sinc.png';
 import {
   Container,
   Header,
-  Sinc_logo,
-  Profile_icon,
+  SincLogo,
+  ProfileIcon,
   Wrapper,
-  Old_pass,
-  New_pass,
-  Repeat_new_pass,
-  Update_info_button,
-  Retirement_button,
-  Sidebar_menu,
-  Members_side,
-  Menu_item,
-  Notation_icon,
-  SDR_icon,
-  Mural_icon,
-  Calendar_icon,
-  Professors_icon,
-  Cloud_icon,
-  Direx_side,
-  Performance_icon,
-  Direx_icon,
-  Bottom_menu,
-  Notation_bottom_icon,
-  SDR_bottom_icon,
-  Mural_bottom_icon,
-  Calendar_bottom_icon,
-  Menu_bottom_icon
+  OldPass,
+  NewPass,
+  RepeatNewPass,
+  UpdateInfoButton,
+  Forms,
+  RetirementButton,
+  SidebarMenu,
+  MembersSide,
+  MenuItem,
+  NotationIcon,
+  TaskDoneIcon,
+  SDRIcon,
+  MuralIcon,
+  CalendarIcon,
+  ProfessorsIcon,
+  CloudIcon,
+  DirexSide,
+  PerformanceIcon,
+  DirexIcon,
+  BottomMenu,
+  NotationBottomIcon,
+  SDRBottomIcon,
+  MuralBottomIcon,
+  CalendarBottomIcon,
+  MenuBottomIcon
 } from './styles';
 
 const Profile: React.FC = () => {
   return (
     <Container>
       <Header>
-        <Sinc_logo src = { sinc } />
+        <SincLogo src = { sinc } />
         <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
-          <Profile_icon className='active'/>
+          <ProfileIcon className='active'/>
         </Link>
       </Header>
       <Helmet>
@@ -49,94 +51,113 @@ const Profile: React.FC = () => {
       </Helmet>
       <Wrapper>
         <h3>Editar senha</h3>
-        <Old_pass type='text' placeholder='Senha antiga' />
-        <New_pass type='text' placeholder='Senha nova' />
-        <Repeat_new_pass type='text' placeholder='Repita sua senha nova' />
-        <Update_info_button><p>Atualizar senha</p></Update_info_button>
-        <Link to={'/desligamento'} style={{ textDecoration: 'none' }}>
-          <Retirement_button>Deseja se desvincular da Sinc?</Retirement_button>
-        </Link>
+        <OldPass type='text' placeholder='Senha antiga' />
+        <NewPass type='text' placeholder='Senha nova' />
+        <RepeatNewPass type='text' placeholder='Repita sua senha nova' />
+        <UpdateInfoButton><p>Atualizar senha</p></UpdateInfoButton>
+        <Forms>
+          <h3>Formulários:</h3>
+          <Link to={'/afastamento'} style={{ textDecoration: 'none' }}>
+            <RetirementButton>·  Afastamento</RetirementButton>
+          </Link>
+          <Link to={'/desligamento'} style={{ textDecoration: 'none' }}>
+            <RetirementButton>·  Desligamento</RetirementButton>
+          </Link>
+          <Link to={'/justificativa-de-falta'} style={{ textDecoration: 'none' }}>
+            <RetirementButton>·  Justificativa de falta</RetirementButton>
+          </Link>
+          <Link to={'/ouvidoria'} style={{ textDecoration: 'none' }}>
+            <RetirementButton>·  Ouvidoria</RetirementButton>
+          </Link>
+        </Forms>
       </Wrapper>
 
-      <Sidebar_menu>
-        <Members_side>
+      <SidebarMenu>
+        <MembersSide>
+          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+            <MenuItem>
+              <TaskDoneIcon />
+              <span>Tarefas</span>
+            </MenuItem>
+          </Link>
+         
           <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Notation_icon />
+            <MenuItem>
+              <NotationIcon />
               <span>Apontamento</span>
-            </Menu_item>
+            </MenuItem>
           </Link>
 
           <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <SDR_icon />
+            <MenuItem>
+              <SDRIcon />
               <span>SDR Ativa</span>
-            </Menu_item>
+            </MenuItem>
           </a>
 
           <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Mural_icon />
+            <MenuItem>
+              <MuralIcon />
               <span>Mural da Sinc</span>
-            </Menu_item>
+            </MenuItem>
           </Link>
 
           <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Calendar_icon />
+            <MenuItem>
+              <CalendarIcon />
               <span>Calendário</span>
-            </Menu_item>
+            </MenuItem>
           </Link>
 
           <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Professors_icon />
+            <MenuItem>
+              <ProfessorsIcon />
               <span>Professores parceiros</span>
-            </Menu_item>
+            </MenuItem>
           </Link>
 
-          <a href='https://drive.google.com/drive/u/1/folders/0B_pfgOzEMjWhWUh6ZFVLMnFlTDg?resourcekey=0-PxBaFB5bYbpdzlfv736BVA' style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Cloud_icon />
+          <a href='https://drive.google.com/drive/u/1/folders/0BPfgOzEMjWhWUh6ZFVLMnFlTDg?resourcekey=0-PxBaFB5bYbpdzlfv736BVA' style={{ textDecoration: 'none' }}>
+            <MenuItem>
+              <CloudIcon />
               <span>Drive</span>
-            </Menu_item>
+            </MenuItem>
           </a>
-        </Members_side>
+        </MembersSide>
 
-        <Direx_side>
+        <DirexSide>
           <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Performance_icon />
+            <MenuItem>
+              <PerformanceIcon />
               <span>Desempenho</span>
-            </Menu_item>
+            </MenuItem>
           </Link>
 
           <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
-            <Menu_item>
-              <Direx_icon />
+            <MenuItem>
+              <DirexIcon />
               <span>Diretoria</span>
-            </Menu_item>
+            </MenuItem>
           </Link>
-        </Direx_side>
-      </Sidebar_menu>
+        </DirexSide>
+      </SidebarMenu>
 
-      <Bottom_menu>
+      <BottomMenu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-          <Notation_bottom_icon />
+          <NotationBottomIcon />
         </Link>
         <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
-          <SDR_bottom_icon />
+          <SDRBottomIcon />
         </a>
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <Mural_bottom_icon />
+          <MuralBottomIcon />
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-          <Calendar_bottom_icon />
+          <CalendarBottomIcon />
         </Link>
         <Link to = {'/menu'} style={{ textDecoration: 'none' }}>
-          <Menu_bottom_icon />
+          <MenuBottomIcon />
         </Link>
-      </Bottom_menu>
+      </BottomMenu>
 
     </Container>
   )

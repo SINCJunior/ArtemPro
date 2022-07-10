@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 
 import { 
-  AccountCircle,
   Analyse,
   CloudQueue,
   InsertChartOutlined,
@@ -9,9 +8,9 @@ import {
   AddAlarm,
   HeadsetMic, 
   NotificationsNone,
-  Task,
   Menu, 
   CalendarToday,
+  Task
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -28,55 +27,91 @@ export const Wrapper = styled.div`
   flex-direction: column;
 
   width: 100vw;
-  top: 120px;
+  top: 80px;
+  padding-bottom: 48px;
 
   align-items: center;
   
   > h3 {
-    margin-bottom: 16px;
+    padding-bottom: 8px;
     font-size: 24px;
     color: var(--white);
   }
-`;
-
-
-export const Header = styled.div`
-  background: var(--secondary);
-  z-index: 2;
-  width: 100vw;
-  height: 64px;
-
-  position: fixed;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid var(--white);
-`;
-
-export const SincLogo = styled.img`  
-  top: 0;
-  margin-left: 16px;
-  height: 48px;
-`;
-
-export const ProfileIcon = styled(AccountCircle)`
-  width: 32px;
-  height: 32px;
-
-  cursor: pointer;
-
-  fill: var(--white);
-  margin-right: 16px;
-  
-  &:hover,
-  &.active {
-    fill: var(--sinc-light-color)
+  > p {
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: var(--white);
+    font-family: 400;
   }
 `;
 
+export const Grid = styled.div`
+  display: grid;
 
+  grid-template-columns: 1fr;
+  
+  @media (min-width: 1054px) {
+    margin-left: 300px;
+    grid-gap: 48px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1336px) {
+    grid-gap: 64px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* @media (min-width: 1650px) {
+    grid-gap: 64px;
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
+`;
+
+export const DirexItem = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const PositionLabel = styled.select`
+  width: 340px;
+  height: 34px;
+
+  background: var(--secondary);
+  border-radius: 4px;
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+`;
+
+const buttonCSS = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 340px;
+  height: 40px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+
+  background: var(--primary);
+  border: 2px solid var(--sinc-light-color);
+  cursor: pointer;
+
+  > p {
+    color: var(--sinc-light-color);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
+  }
+`;
+
+export const UpdateInfoButton = styled.button`${buttonCSS}`;
+export const SendMessageMuralButton = styled.button`${buttonCSS}`;
 
 const inputLabelCSS = css`
   width: 340px;
@@ -95,61 +130,28 @@ const inputLabelCSS = css`
     opacity: 60%;
   }
 `;
-export const OldPass = styled.input`${inputLabelCSS}`;
-export const NewPass = styled.input`${inputLabelCSS}`;
-export const RepeatNewPass = styled.input`${inputLabelCSS}`;
+export const NewMemberName = styled.input`${inputLabelCSS}`;
+export const NewMemberEmail = styled.input`${inputLabelCSS}`;
+export const ExMemberEmail = styled.input`${inputLabelCSS}`;
+export const NewPeriodTimeName = styled.input`${inputLabelCSS}`;
+export const MuralInput = styled.textarea`
+  width: 336px;
+  height: 80px;
 
-export const UpdateInfoButton = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: var(--white-text);
+  background: var(--secondary);
 
-  width: 340px;
-  height: 40px;
-  border-radius: 16px;
-  margin-top: 16px;
-  margin-bottom: 48px;
-
-  background: var(--primary);
-  border: 2px solid var(--sinc-light-color);
-  cursor: pointer;
-
-  > p {
-    color: var(--sinc-light-color);
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  &:hover {
-    background: var(--sinc-button-dark-hover);
-  }
-`;
-
-export const Forms = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: initial;
-  flex-direction: column;
-
-  margin-left: -150px;
-
-  > h3 {
-    color: var(--white);
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-`;
-
-export const RetirementButton = styled.p`
+  font-size: 16px;
   margin-bottom: 16px;
-  color: var(--white);
-  font-size: 20px;
-  font-weight: 400;
-  
-  &:hover {
-    color: var(--sinc-dark-color);
-  } 
+  padding: 8px;
+  border-radius: 4px;
+
+  resize: none;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
 `;
 
 

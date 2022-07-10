@@ -2,16 +2,16 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import sinc from '../../assets/sinc.png';
+import Sinc from '../../assets/sinc.png';
 
 import {
   Container,
-  Sinc_logo,
+  SincLogo,
   Wrapper,
-  Sinc_email,
+  SincEmail,
   Password,
-  Pass_recover,
-  Login_button
+  PassRecover,
+  LoginButton
 } from './styles';
 
 const Login: React.FC = () => {
@@ -20,15 +20,15 @@ const Login: React.FC = () => {
       <Helmet>
         <title>Login</title>
       </Helmet>
-      <Sinc_logo src = { sinc } />
+      <SincLogo src = { Sinc } />
       <Wrapper>
-        <Sinc_email type='text' placeholder='E-mail' />
+        <SincEmail type='text' placeholder='E-mail' />
         <Password type='text' placeholder='Senha' />
         <Link to={'/recuperacao-senha'} style={{ textDecoration: 'none'}}>
-          <Pass_recover>Recuperar senha</Pass_recover>
+          <PassRecover>Recuperar senha</PassRecover>
         </Link>
         <Link to={'/apontamento'} style={{ textDecoration: 'none'}}>
-          <Login_button><p>Entrar</p></Login_button>
+          <LoginButton><p>Entrar</p></LoginButton>
         </Link>
       </Wrapper>
     </Container>

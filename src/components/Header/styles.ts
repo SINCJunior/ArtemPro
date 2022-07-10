@@ -25,13 +25,13 @@ export const Wrapper = styled.div`
   border-bottom: 1px solid var(--white);
 `;
 
-export const Sinc_logo = styled.img`  
+export const SincLogo = styled.img`  
   top: 0;
   margin-left: 16px;
   height: 48px;
 `;
 
-export const Profile_icon = styled(AccountCircle)`
+export const ProfileIcon = styled(AccountCircle)`
   width: 32px;
   height: 32px;
 
