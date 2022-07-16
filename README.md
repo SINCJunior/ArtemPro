@@ -9,10 +9,13 @@ Unificar as plataformas utilizadas pela SincJr, visando melhorar a produtividade
 - Google Drive para _armazenamento_.
 
 ### O que iremos adicionar?
-- _Calendário_;
+- _Cronômetro e Pomodoro_;
+- _Tarefas_;
+- _Timeline_;
+- _Sistema de recompensa (reconhecimento)_;
 
 # Versionamento
-- __V 1.0.0:__ em sua primeira versão, iremos criar o serviço de apontamento, substituindo o Podio. O serviço ficará hospedado na Vercel (talvez), com o backend e DB no Raspberry Pi 4 do Cesar Rolli, será feito backup do DB diariamente para o MongoDB. Os demais serviços serão apenas linkados no site. Também terá o controle e monitoramento da Diretoria.
+- __V 1.0.0:__ em sua primeira versão, iremos criar o serviço de apontamento, substituindo o Podio. A plataforma (front, back e DB) será hospedada no Raspberry Pi 4 do Cesar Rolli, será feito backup do DB diariamente para o MongoDB. Os demais serviços serão apenas linkados no site. Também terá o controle e monitoramento da Diretoria.
 
 - __V 1.0.1:__ estará implementado a parte de professores parceiros e o Mural da Sinc, quadro de notificações criadas pelos diretores.
 

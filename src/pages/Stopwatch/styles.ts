@@ -191,14 +191,15 @@ export const Member = styled.input`
   height: 72px;
   margin-bottom: 16px;
 
+  position: absolute;
+  top: 266px;
+
   color: var(--white-text);
   background: var(--secondary);
   border-radius: 8px;
 
   font-size: 16px;
   padding: 8px;
-
-  resize: none;
 
   &::placeholder {
     color: var(--white);
@@ -214,6 +215,9 @@ export const Description = styled.textarea`
   width: 350px;
   height: 150px;
   margin-bottom: 32px;
+
+  position: absolute;
+  top: 354px;
 
   color: var(--white-text);
   border: 2px solid var(--secondary);
@@ -265,6 +269,7 @@ const warningCSS = css`
   display: flex;
   flex-direction: row;
   width: 350px;
+  position: absolute;
 
   align-items: center;
   margin-top: 16px;
@@ -281,11 +286,18 @@ const warningCSS = css`
     width: 450px;
   }
 `;
-export const FirstWarning = styled.div`${warningCSS}`;
-export const SecondWarning = styled.div`${warningCSS}`;
+export const FirstWarning = styled.div`
+  ${warningCSS};
+  top: 564px;
+`;
+export const SecondWarning = styled.div`
+  ${warningCSS};
+  top: 628px;  
+`;
 export const ThirdWarning = styled.div`
-  ${warningCSS}
-  margin-bottom: 64px;  
+  ${warningCSS};
+  top: 716px;
+  padding-bottom: 64px;
 `;
 
 
