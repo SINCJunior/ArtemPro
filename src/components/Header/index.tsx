@@ -14,7 +14,9 @@ const Header: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        <SincLogo src = { sinc } />
+        <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
+          <SincLogo src = { sinc } />
+        </Link>
         <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
           <ProfileIcon />
         </Link>

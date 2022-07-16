@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
@@ -13,10 +13,23 @@ import {
   StartDateInput,
   EndDateInput,
   PositionWorked,
-  ConfirmRetirementButton
+  ActivePopUp,
+  ConfirmPopUpBackground,
+  PopUpContainer,
+  PopUp,
+  BottomButtons,
+  CancelButton,
+  ConfirmRetirementButton,
 } from './styles';
 
 const Retirement: React.FC = () => {
+  //Active confirm popup
+  const [isActive, setIsActive] = useState(false);
+  const toggleClass = () => {
+    setIsActive(!isActive);
+  }
+
+
   return (
     <Container>
       <Helmet>
@@ -38,9 +51,23 @@ const Retirement: React.FC = () => {
         <EndDateInput type='text' placeholder='DD/MM/AAAA' />
         <h3>Cargos que ocupou</h3>
         <PositionWorked placeholder='Cargos que ocupou' />
-        <Link to='/apontamento'>
-          <ConfirmRetirementButton><p>Enviar</p></ConfirmRetirementButton>
-        </Link>
+        <ActivePopUp onClick={toggleClass}><p>Enviar</p></ActivePopUp>
+
+        <ConfirmPopUpBackground className={isActive? 'active' : ''} />
+        <PopUpContainer className={isActive? 'active' : ''}>
+          <PopUp>
+            <h2>Você irá mesmo se desligar?</h2>
+            <p>Essa ação não terá volta!</p>
+          </PopUp>
+          <BottomButtons>
+            <Link to='/apontamento'>
+              <CancelButton><p>Cancelar</p></CancelButton>
+            </Link>
+            <Link to='/apontamento'>
+              <ConfirmRetirementButton><p>Enviar</p></ConfirmRetirementButton>
+            </Link>
+          </BottomButtons>
+        </PopUpContainer>
       </Wrapper>
     </Container>
   )

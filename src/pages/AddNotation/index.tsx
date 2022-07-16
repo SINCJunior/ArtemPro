@@ -26,7 +26,9 @@ import {
   NotationIcon,
   TaskDoneIcon,
   SDRIcon,
+  MuralWrapper,
   MuralIcon,
+  MuralDot,
   CalendarIcon,
   ProfessorsIcon,
   CloudIcon,
@@ -107,7 +109,10 @@ const AddNotation: React.FC = () => {
 
           <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
             <MenuItem>
-              <MuralIcon />
+              <MuralWrapper>
+                <MuralIcon />
+                <MuralDot />
+              </MuralWrapper>
               <span>Mural da Sinc</span>
             </MenuItem>
           </Link>
@@ -159,7 +164,10 @@ const AddNotation: React.FC = () => {
           <SDRBottomIcon />
         </a>
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <MuralBottomIcon />
+          <MuralWrapper>
+            <MuralBottomIcon />
+            <MuralDot />
+          </MuralWrapper>
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
@@ -30,9 +30,15 @@ import {
   CalendarBottomIcon,
   MenuBottomIcon,
   Pomodoro,
+  PomodoroConfig,
+  EmptyCheckbox,
+  FilledCheckbox,
+  EditTime,
+  TimeInput,
   Counter,
   Timer,
   PlayIcon,
+  PauseIcon,
   Member,
   Description,
   AddNotationButton,
@@ -45,12 +51,68 @@ import {
 } from './styles';
 
 const Stopwatch: React.FC = () => {
+  //Start stopwatch
+  const [isActive, setIsActive] = useState(false);
+  const toggleClass = () => {
+    setIsActive(!isActive);
+  }
+
+  //Set Pomodoro activation
+  const [isPomodoroActive, setPomodoroIsActive] = useState(false);
+  const changePomodoro = () => {
+    setPomodoroIsActive(!isPomodoroActive);
+  }
+
+
   return (
     <Container>
       <Header />
       <Helmet>
         <title>Cronômetro</title>
       </Helmet>
+
+      <Wrapper>
+        <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
+          <NotationPage>Apontamento</NotationPage>
+        </Link>
+        <Pomodoro>
+          <PomodoroConfig>
+            <EmptyCheckbox onClick={changePomodoro} className={isPomodoroActive? 'active' : ''} />
+            <FilledCheckbox onClick={changePomodoro} className={isPomodoroActive? 'active' : ''} />
+            <h3>Pomodoro:</h3>
+          </PomodoroConfig>
+            <EditTime>
+              <p>Tempo de pomodoro:</p>
+              <TimeInput type='text' placeholder='50' maxLength={2}/>
+              <p>min</p>
+            </EditTime>
+            <EditTime>
+              <p>Tempo de descanso:</p>
+              <TimeInput type='text' placeholder='10' maxLength={2}/>
+              <p>min</p>
+            </EditTime>
+        </Pomodoro>
+        <Counter>
+          <Timer>00:00</Timer>
+          <PlayIcon onClick={toggleClass} className={isActive? 'active' : ''} />
+          <PauseIcon onClick={toggleClass} className={isActive? 'active' : ''} />
+        </Counter>
+        <Member placeholder='Membros'/>
+        <Description placeholder='Descrição'/>
+        <AddNotationButton><p>Adicionar</p></AddNotationButton>
+        <FirstWarning>
+          <NotationIcon />
+          <p>Ao adicionar, seu tempo ficará visível em “Apontamento padrão”</p>
+        </FirstWarning>
+        <SecondWarning>
+          <NoSmartphonesImg src={ noSmartphone } />
+          <p>A pausa da Técnica de Pomodoro tem como objetivo descansar, então levante e se desconecte!</p>
+        </SecondWarning>
+        <ThirdWarning>
+          <WaterImg src={ water } />
+          <p>Mantenha-se hidratado!</p>
+        </ThirdWarning>
+      </Wrapper>
 
       <SidebarMenu>
         <MembersSide>
@@ -120,32 +182,6 @@ const Stopwatch: React.FC = () => {
           </Link>
         </DirexSide>
       </SidebarMenu>
-
-      <Wrapper>
-        <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
-          <NotationPage>Apontamento</NotationPage>
-        </Link>
-        <Pomodoro />
-        <Counter>
-          <Timer>00:00</Timer>
-          <PlayIcon />
-        </Counter>
-        <Member placeholder='Membros'/>
-        <Description placeholder='Descrição'/>
-        <AddNotationButton><p>Adicionar</p></AddNotationButton>
-        <FirstWarning>
-          <NotationIcon />
-          <p>Ao adicionar, seu tempo ficará visível em “Apontamento padrão”</p>
-        </FirstWarning>
-        <SecondWarning>
-          <NoSmartphonesImg src={ noSmartphone } />
-          <p>A pausa da Técnica de Pomodoro tem como objetivo descansar, então levante e não mexa no celular!</p>
-        </SecondWarning>
-        <ThirdWarning>
-          <WaterImg src={ water } />
-          <p>Se hidrate!</p>
-        </ThirdWarning>
-      </Wrapper>
       
       <BottomMenu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>

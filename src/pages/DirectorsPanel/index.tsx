@@ -9,13 +9,13 @@ import {
   Wrapper,
   Grid,
   DirexItem,
-  NewMemberName,
-  NewMemberEmail,
-  UpdateInfoButton,
-  PositionLabel,
-  ExMemberEmail,
+  DirexInput,
+  DirexButton,
   MuralInput,
-  SendMessageMuralButton,
+  SelectInput,
+  SmallWrapper,
+  SmallDirexInput,
+  SmallSelectInput,
   SidebarMenu,
   MembersSide,
   MenuItem,
@@ -47,33 +47,48 @@ const DirectorsControl: React.FC = () => {
       <Wrapper>
         <Grid>
           <DirexItem>
-            <h3>Adição de membros</h3>
-            <NewMemberName type='text' placeholder='Nome completo' />
-            <NewMemberEmail type='text' placeholder='E-mail' />
-            <UpdateInfoButton><p>Adicionar membro</p></UpdateInfoButton>
+            <h3>Adicionar tarefas</h3>
+            <DirexInput placeholder='Adicionar tarefa' />
+            <SmallWrapper>
+              <SmallDirexInput placeholder='Prazo: DD/MM/AAAA'/>
+              <SmallSelectInput>
+                <option value=''>Prioridade</option>
+                <option value='Baixa'>🍼 Baixa</option>
+                <option value='Media'>🧃 Media</option>
+                <option value='Alta'>☕ Alta</option>
+              </SmallSelectInput>
+            </SmallWrapper>
+            <DirexButton><p>Adicionar tarefa</p></DirexButton>
+          </DirexItem>
+
+          <DirexItem>
+            <h3>Publicar no Mural</h3>
+            <MuralInput placeholder='Mensagem para o Mural' />
+            <DirexButton><p>Publicar</p></DirexButton>
           </DirexItem>
           
           <DirexItem>
             <h3>Edição de cargos</h3>
-            <NewMemberEmail type='text' placeholder='E-mail' />
-            <PositionLabel>
+            <DirexInput type='text' placeholder='E-mail' />
+            <SelectInput>
               <option value='membro'>Membro</option>
               <option value='assessor'>Assessor</option>
               <option value='diretor'>Diretor</option>
-            </PositionLabel>
-            <UpdateInfoButton><p>Editar cargo do membro</p></UpdateInfoButton>
+            </SelectInput>
+            <DirexButton><p>Editar cargo do membro</p></DirexButton>
+          </DirexItem>
+
+          <DirexItem>
+            <h3>Adição de membros</h3>
+            <DirexInput type='text' placeholder='Nome completo' />
+            <DirexInput type='text' placeholder='E-mail' />
+            <DirexButton><p>Adicionar membro</p></DirexButton>
           </DirexItem>
 
           <DirexItem>
             <h3>Desligamento de membros</h3>
-            <ExMemberEmail type='text' placeholder='E-mail' />
-            <UpdateInfoButton><p>Desligar membro</p></UpdateInfoButton>
-          </DirexItem>
-          
-          <DirexItem>
-            <h3>Publicar no Mural</h3>
-            <MuralInput placeholder='Mensagem para o Mural' />
-            <SendMessageMuralButton><p>Publicar</p></SendMessageMuralButton>
+            <DirexInput type='text' placeholder='E-mail' />
+            <DirexButton><p>Desligar membro</p></DirexButton>
           </DirexItem>
         </Grid>
       </Wrapper>

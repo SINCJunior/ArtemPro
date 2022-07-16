@@ -57,17 +57,17 @@ const Profile: React.FC = () => {
         <UpdateInfoButton><p>Atualizar senha</p></UpdateInfoButton>
         <Forms>
           <h3>Formulários:</h3>
-          <Link to={'/afastamento'} style={{ textDecoration: 'none' }}>
-            <RetirementButton>·  Afastamento</RetirementButton>
-          </Link>
-          <Link to={'/desligamento'} style={{ textDecoration: 'none' }}>
-            <RetirementButton>·  Desligamento</RetirementButton>
-          </Link>
           <Link to={'/justificativa-de-falta'} style={{ textDecoration: 'none' }}>
             <RetirementButton>·  Justificativa de falta</RetirementButton>
           </Link>
           <Link to={'/ouvidoria'} style={{ textDecoration: 'none' }}>
             <RetirementButton>·  Ouvidoria</RetirementButton>
+          </Link>
+          <Link to={'/afastamento'} style={{ textDecoration: 'none' }}>
+            <RetirementButton>·  Afastamento</RetirementButton>
+          </Link>
+          <Link to={'/desligamento'} style={{ textDecoration: 'none' }}>
+            <RetirementButton>·  Desligamento</RetirementButton>
           </Link>
         </Forms>
       </Wrapper>

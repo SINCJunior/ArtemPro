@@ -31,18 +31,6 @@ export const Wrapper = styled.div`
   padding-bottom: 48px;
 
   align-items: center;
-  
-  > h3 {
-    padding-bottom: 8px;
-    font-size: 24px;
-    color: var(--white);
-  }
-  > p {
-    padding-bottom: 8px;
-    font-size: 16px;
-    color: var(--white);
-    font-family: 400;
-  }
 `;
 
 export const Grid = styled.div`
@@ -61,18 +49,50 @@ export const Grid = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 
-  /* @media (min-width: 1650px) {
+  @media (min-width: 1650px) {
     grid-gap: 64px;
     grid-template-columns: 1fr 1fr 1fr;
-  } */
+  }
 `;
 
 export const DirexItem = styled.div`
   display: flex;
   flex-direction: column;
+
+  
+  > h3 {
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: var(--white);
+  }
+  > p {
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: var(--white);
+    font-family: 400;
+  }
 `;
 
-export const PositionLabel = styled.select`
+export const SmallWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const SmallSelectInput = styled.select`
+  width: 165px;
+  height: 34px;
+
+  background: var(--secondary);
+  border-radius: 4px;
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+`;
+
+export const SelectInput = styled.select`
   width: 340px;
   height: 34px;
 
@@ -85,7 +105,7 @@ export const PositionLabel = styled.select`
   padding-left: 8px;
 `;
 
-const buttonCSS = css`
+export const DirexButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,10 +130,25 @@ const buttonCSS = css`
   }
 `;
 
-export const UpdateInfoButton = styled.button`${buttonCSS}`;
-export const SendMessageMuralButton = styled.button`${buttonCSS}`;
+export const SmallDirexInput = styled.input`
+  width: 165px;
+  height: 34px;
 
-const inputLabelCSS = css`
+  background: var(--secondary);
+  border-radius: 4px;
+  color: var(--white-text);
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 60%;
+  }
+`;
+
+export const DirexInput = styled.input`
   width: 340px;
   height: 34px;
 
@@ -130,10 +165,7 @@ const inputLabelCSS = css`
     opacity: 60%;
   }
 `;
-export const NewMemberName = styled.input`${inputLabelCSS}`;
-export const NewMemberEmail = styled.input`${inputLabelCSS}`;
-export const ExMemberEmail = styled.input`${inputLabelCSS}`;
-export const NewPeriodTimeName = styled.input`${inputLabelCSS}`;
+
 export const MuralInput = styled.textarea`
   width: 336px;
   height: 80px;

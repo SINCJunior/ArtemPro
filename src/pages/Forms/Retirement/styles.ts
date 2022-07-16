@@ -79,7 +79,7 @@ export const PositionWorked = styled.textarea`
   }
 `;
 
-export const ConfirmRetirementButton = styled.div`
+const retirementButtonCSS = css`
   display: flex;
   position: absolute;
   justify-content: center;
@@ -92,16 +92,112 @@ export const ConfirmRetirementButton = styled.div`
   bottom: 10px;
   right: 0;
 
-  background: var(--sinc-light-color);
   cursor: pointer;
 
   > p {
-    color: var(--primary);
     font-size: 20px;
     font-weight: 400;
+  }
+`;
+
+export const ActivePopUp = styled.div`
+  ${retirementButtonCSS};
+  background: var(--sinc-light-color);
+
+  > p {
+    color: var(--primary);
   }
 
   &:hover {
     background: var(--sinc-button-hover);
+  }
+`;
+
+export const ConfirmPopUpBackground = styled.div`
+  display: none;
+
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+
+    width: 340px;
+    height: 101vh;
+
+    background: var(--primary);
+    opacity: 0.9;
+  }
+`;
+
+
+export const PopUpContainer = styled.div`
+  display: none;
+
+  &.active{
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    z-index: 3;
+
+    position: absolute;
+    opacity: 1;
+    height: 160px;
+    width: 340px;
+  }
+`;
+
+export const PopUp = styled.div`
+  display: flex;
+  align-items: initial;
+  justify-content: center;
+  flex-direction: column;
+
+  > h2 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 24px;
+  }
+  > p {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+  }
+`;
+
+export const BottomButtons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+`;
+
+export const CancelButton = styled.div`
+  ${retirementButtonCSS};
+  background: var(--sinc-light-color);
+
+  > p {
+    color: var(--primary);
+  }
+
+  &:hover {
+    background: var(--sinc-button-hover);
+  }
+`;
+
+export const ConfirmRetirementButton = styled.div`
+  ${retirementButtonCSS};
+  background: var(--primary);
+  left: 0;
+  border: 2px solid var(--secondary);
+
+  > p {
+    color: var(--secondary);
+  }
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
   }
 `;
