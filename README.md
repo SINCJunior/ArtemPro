@@ -21,3 +21,5 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 - __V 1.0.1:__ iremos implementar a Timeline, DropDownMenu personalizado e os Filtros nas páginas de Apontamento e Tarefas.
 
 - __V 1.0.2:__ os usuários irão adicionar foto de perfil para ter o funcionamento esperado do DropDownMenu. Adição do sistema de recompensa, semelhante aos tacos da Enfitec. Iremos implementar tela de loading e refatorar algumas partes do código para usar Grid-Areas, otimizando a UX. 
+
+testando 
