@@ -39,22 +39,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-
-export const Header = styled.div`
-  background: var(--secondary);
-  z-index: 2;
-  width: 100vw;
-  height: 64px;
-
-  position: fixed;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid var(--white);
-`;
-
 export const SincLogo = styled.img`  
   top: 0;
   margin-left: 16px;

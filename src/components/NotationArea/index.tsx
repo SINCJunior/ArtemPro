@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import {
   Container,
   SettingsBar,
-  FilterIcon,
+  // FilterIcon,
   StopwatchPage,
   AddNotationPage,
   Grid,

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import sinc from '../../assets/sinc.png';
+import artempro_black from '../../assets/artempro_black.png';
 
 import {
   Container,
   Wrapper,
-  SincLogo,
+  ArtemProLogo,
   ProfileIcon,
 } from './styles';
 
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     <Container>
       <Wrapper>
         <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
-          <SincLogo src = { sinc } />
+          <ArtemProLogo src = { artempro_black } />
         </Link>
         <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
           <ProfileIcon />

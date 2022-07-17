@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
   border-bottom: 1px solid var(--white);
 `;
 
-export const SincLogo = styled.img`  
+export const ArtemProLogo = styled.img`  
   top: 0;
   margin-left: 16px;
   height: 48px;

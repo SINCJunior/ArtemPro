@@ -2,13 +2,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import sinc from '../../assets/sinc.png';
+import Header from '../../components/Header';
 
 import {
   Container,
-  Header,
-  SincLogo,
-  ProfileIcon,
   Wrapper,
   OldPass,
   NewPass,
@@ -40,12 +37,7 @@ import {
 const Profile: React.FC = () => {
   return (
     <Container>
-      <Header>
-        <SincLogo src = { sinc } />
-        <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
-          <ProfileIcon className='active'/>
-        </Link>
-      </Header>
+      <Header />
       <Helmet>
         <title>Perfil</title>
       </Helmet>

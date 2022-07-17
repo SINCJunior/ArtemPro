@@ -47,36 +47,42 @@ import {
   ThirdWarning,
   WaterImg,
   TaskDoneIcon,
+  PopUpMessage,
 } from './styles';
+
 
 const Stopwatch: React.FC = () => {
   //Set Pomodoro activation
-  const [isPomodoroActive, setPomodoroIsActive] = useState(false);
+  const [isPomodoroActive, setIsPomodoroActive] = useState(false);
   const changePomodoro = () => {
-    setPomodoroIsActive(!isPomodoroActive);
+    setIsPomodoroActive(!isPomodoroActive);
   }
+  
 
-  //Stopwatch logic
+  //Time logic 
   const [time, setTime] = useState(0);
-  const [running, setRunning] = useState(false);
+  const [isRunning, setIsRunning] = useState(false);
+  
 
-  useEffect(() =>{
+  // Stopwatch logic
+  useEffect(() => {
     let interval: string | number | NodeJS.Timeout | undefined;
-    if (running) {
+    if (isRunning) {
       interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 10);
-      }, 10);
-    } else if (!running) {
+        setTime((prevTime) => prevTime + 1);
+      }, 1000);
+    } else if (!isRunning) {
       clearInterval(interval);
     }
     return () => clearInterval(interval);
-  }, [running]);
-
+  }, [isRunning]);
+  
+  
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Cronômetro</title>
+        <title>Cronômetro</title> //!
       </Helmet>
 
       <Wrapper>
@@ -101,19 +107,19 @@ const Stopwatch: React.FC = () => {
             </EditTime>
         </Pomodoro>
         <Counter>
-          {/* The time is calculated by dividing the time by the number of milliseconds for each unit of time.*/}
-          <span>{("0" + Math.floor((time / (24*60*10*100)) % 24)).slice(-2)} :</span>
-          <span>{("0" + Math.floor((time / (60*10*100)) % 60)).slice(-2)} :</span> 
-          <span>{("0" + Math.floor((time / (10*100)) % 60)).slice(-2)}</span>
-          <PlayIcon onClick={() => setRunning(true)} className={running? 'active' : ''} />
-          <PauseIcon onClick={() => setRunning(false)} className={running? 'active' : ''} />
+          {/* The time is calculated by dividing the time by the number of seconds for each unit of time.*/}
+          <span>{("0" + Math.floor((time / (60*60)) % 60)).slice(-2)} :</span>
+          <span>{("0" + Math.floor((time / (60)) % 60)).slice(-2)} :</span> 
+          <span>{("0" + Math.floor((time / (1)) % 60)).slice(-2)}</span>
+          <PlayIcon onClick={() => setIsRunning(true)} className={isRunning? 'active' : ''} />
+          <PauseIcon onClick={() => setIsRunning(false)} className={isRunning? 'active' : ''} />
         </Counter>
         <Member placeholder='Membros'/>
         <Description placeholder='Descrição'/>
         <AddNotationButton><p>Adicionar</p></AddNotationButton>
         <FirstWarning>
           <NotationIcon />
-          <p>Ao adicionar, seu tempo ficará visível em “Apontamento padrão”</p>
+          <p>Ao adicionar, seu tempo ficará visível no histórico de apontamentos.</p>
         </FirstWarning>
         <SecondWarning>
           <NoSmartphonesImg src={ noSmartphone } />

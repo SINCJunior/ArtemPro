@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
-import Notation_area from '../../components/NotationArea';
-import Time_analysis from '../../components/TimeAnalysis';
+import NotationArea from '../../components/NotationArea';
+import TimeAnalysis from '../../components/TimeAnalysis';
 
 import { 
   Container,
@@ -108,8 +108,8 @@ const StandartNotation: React.FC = () => {
           </DirexSide>
         </SidebarMenu>
 
-        <Notation_area />
-        <Time_analysis />
+        <NotationArea />
+        <TimeAnalysis />
       </Wrapper>
       
 

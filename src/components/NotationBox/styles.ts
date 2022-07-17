@@ -59,7 +59,7 @@ export const Duration = styled.p`
   color: var(--white);
 `;
 
-export const Member_description_area = styled.div`
+export const MemberDescriptionArea = styled.div`
   width: 336px;
   height: 200px;
 

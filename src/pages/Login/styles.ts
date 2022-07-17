@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 `;
 
-export const SincLogo = styled.img`
+export const ArtemProLogo = styled.img`
   height: 100px;
   margin-bottom: 24px;
 

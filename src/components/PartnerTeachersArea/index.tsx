@@ -9,7 +9,7 @@ import {
   Historic,
 } from './styles';
 
-const Partner_teachers_area: React.FC = () => {
+const PartnerTeachersArea: React.FC = () => {
   return (
     <Container>
       <Header>
@@ -32,4 +32,4 @@ const Partner_teachers_area: React.FC = () => {
   )
 }
 
-export default Partner_teachers_area;
+export default PartnerTeachersArea;

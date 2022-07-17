@@ -143,9 +143,11 @@ export const TimeInput = styled.input`
 export const Counter = styled.div`
   display: flex;
   flex-direction: row;
+  position: absolute;
 
+  top: 202px;
+  left: 80px;
   align-items: center;
-  justify-content: center;
   margin-bottom: 16px;
   
   > span {
@@ -153,6 +155,9 @@ export const Counter = styled.div`
     font-size: 32px;
     font-weight: bold;
     margin-left: 4px;
+  }
+  @media (min-width: 500px) {
+    left: 170px;
   }
 `;
 
@@ -323,6 +328,18 @@ const imgCSS = css`
 `;
 export const NoSmartphonesImg = styled.img`${imgCSS}`;
 export const WaterImg = styled.img`${imgCSS}`;
+
+
+export const PopUpMessage = styled.div`
+  display: none;
+
+  &.active {
+    display: flex;
+    background: #f0f;
+    width: 400px;
+    height: 400px;
+  }
+`;
 
 
 

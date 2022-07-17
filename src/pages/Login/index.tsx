@@ -2,11 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import Sinc from '../../assets/sinc.png';
+import artempro_black from '../../assets/artempro_black.png';
 
 import {
   Container,
-  SincLogo,
+  ArtemProLogo,
   Wrapper,
   SincEmail,
   Password,
@@ -20,7 +20,7 @@ const Login: React.FC = () => {
       <Helmet>
         <title>Login</title>
       </Helmet>
-      <SincLogo src = { Sinc } />
+      <ArtemProLogo src = { artempro_black } />
       <Wrapper>
         <SincEmail type='text' placeholder='E-mail' />
         <Password type='text' placeholder='Senha' />

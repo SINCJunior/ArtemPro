@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
-import Partner_teachers_area from '../../components/PartnerTeachersArea';
-import Add_partner_teachers_area from '../../components/AddPartnerTeachersArea';
+import PartnerTeachersArea from '../../components/PartnerTeachersArea';
+import AddPartnerTeachersArea from '../../components/AddPartnerTeachersArea';
 
 import {
   Container,
@@ -38,18 +38,18 @@ const Profile: React.FC = () => {
         <title>Professores parceiros</title>
       </Helmet>
       <Wrapper>
-        <Add_partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
-        <Partner_teachers_area />
+        <AddPartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
+        <PartnerTeachersArea />
       </Wrapper>
 
       <SidebarMenu>
