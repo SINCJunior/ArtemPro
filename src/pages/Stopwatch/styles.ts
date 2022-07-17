@@ -36,6 +36,9 @@ export const Wrapper = styled.div`
     width: 450px;
     height: 90%;
   }
+  @media (min-width: 960px) {
+    padding-left: 64px;
+  }
 `;
 
 export const NotationPage = styled.div`
@@ -144,6 +147,13 @@ export const Counter = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  
+  > span {
+    color: var(--white-text);
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 4px;
+  }
 `;
 
 export const Timer = styled.p`
@@ -157,6 +167,8 @@ const playPauseIconCSS = css`
   width: 32px;
   height: 32px;
   fill: var(--white);
+
+  margin-left: 32px;
 
   cursor: pointer;
 `;
@@ -253,7 +265,11 @@ export const AddNotationButton = styled.div`
 
   background: var(--sinc-light-color);
   cursor: pointer;
-
+  
+  @media (min-width: 960px) {
+    right: -64px;
+  }
+  
   > p {
     color: var(--primary);
     font-size: 20px;

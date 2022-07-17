@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
@@ -36,7 +36,6 @@ import {
   EditTime,
   TimeInput,
   Counter,
-  Timer,
   PlayIcon,
   PauseIcon,
   Member,
@@ -51,18 +50,27 @@ import {
 } from './styles';
 
 const Stopwatch: React.FC = () => {
-  //Start stopwatch
-  const [isActive, setIsActive] = useState(false);
-  const toggleClass = () => {
-    setIsActive(!isActive);
-  }
-
   //Set Pomodoro activation
   const [isPomodoroActive, setPomodoroIsActive] = useState(false);
   const changePomodoro = () => {
     setPomodoroIsActive(!isPomodoroActive);
   }
 
+  //Stopwatch logic
+  const [time, setTime] = useState(0);
+  const [running, setRunning] = useState(false);
+
+  useEffect(() =>{
+    let interval: string | number | NodeJS.Timeout | undefined;
+    if (running) {
+      interval = setInterval(() => {
+        setTime((prevTime) => prevTime + 10);
+      }, 10);
+    } else if (!running) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [running]);
 
   return (
     <Container>
@@ -93,9 +101,12 @@ const Stopwatch: React.FC = () => {
             </EditTime>
         </Pomodoro>
         <Counter>
-          <Timer>00:00</Timer>
-          <PlayIcon onClick={toggleClass} className={isActive? 'active' : ''} />
-          <PauseIcon onClick={toggleClass} className={isActive? 'active' : ''} />
+          {/* The time is calculated by dividing the time by the number of milliseconds for each unit of time.*/}
+          <span>{("0" + Math.floor((time / (24*60*10*100)) % 24)).slice(-2)} :</span>
+          <span>{("0" + Math.floor((time / (60*10*100)) % 60)).slice(-2)} :</span> 
+          <span>{("0" + Math.floor((time / (10*100)) % 60)).slice(-2)}</span>
+          <PlayIcon onClick={() => setRunning(true)} className={running? 'active' : ''} />
+          <PauseIcon onClick={() => setRunning(false)} className={running? 'active' : ''} />
         </Counter>
         <Member placeholder='Membros'/>
         <Description placeholder='Descrição'/>

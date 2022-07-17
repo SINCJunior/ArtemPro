@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
   margin-top: 150px;
 
   @media (min-width: 500px) {
-    margin-left: 150px;
+    margin-left: 250px;
   }
 
   @media (min-width: 960px) {

@@ -1,5 +1,5 @@
 # Objetivo
-Unificar as plataformas utilizadas pela SincJr, visando melhorar a produtividade dos membros.
+Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade dos membros.
 
 # Funções
 ### Em 2022 usa-se:
@@ -7,6 +7,7 @@ Unificar as plataformas utilizadas pela SincJr, visando melhorar a produtividade
 - Pipefy para _controle do SDR_ e _professores parceiros_;
 - Discord para _comunicação_;
 - Google Drive para _armazenamento_.
+- Google Agenda para _calendário_;
 
 ### O que iremos adicionar?
 - _Cronômetro e Pomodoro_;

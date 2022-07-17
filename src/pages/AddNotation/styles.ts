@@ -35,6 +35,10 @@ export const Wrapper = styled.div`
 
   @media (min-width: 500px) {
     width: 450px;
+    margin-left: 50px;
+  }
+  @media (min-width: 960px) {
+    margin-left: 150px;
   }
 `;
 
