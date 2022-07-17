@@ -16,10 +16,8 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 - _Sistema de recompensa (reconhecimento)_;
 
 # Versionamento
-- __V 1.0.0:__ em sua primeira versão, iremos criar o serviço de apontamento, substituindo o Podio. A plataforma (front, back e DB) será hospedada no Raspberry Pi 4 do Cesar Rolli, será feito backup do DB diariamente para o MongoDB. Os demais serviços serão apenas linkados no site. Também terá o controle e monitoramento da Diretoria.
+- __V 1.0.0:__ em sua primeira versão, iremos criar o serviço de apontamento (com cronômetro e Pomodoro), substituindo o Podio. O Mural da Sinc e as Tarefas também estarão em funcionamento. A plataforma (front, back e DB) será hospedada no Raspberry Pi 4 do Cesar Rolli, será feito backup do DB diariamente para o MongoDB. Os demais serviços serão apenas linkados no site. Também terá o controle e monitoramento da Diretoria.
 
-- __V 1.0.1:__ estará implementado a parte de professores parceiros e o Mural da Sinc, quadro de notificações criadas pelos diretores.
+- __V 1.0.1:__ iremos implementar a Timeline, DropDownMenu personalizado e os Filtros nas páginas de Apontamento e Tarefas.
 
-- __V 1.0.2:__ deixaremos de usar o Pipefy, pois estará rodando o KanBan no site.
-
-- __V 1.0.3:__ implementaremos o calendário, a última funcionalidade (por enquanto) necessária.
+- __V 1.0.2:__ os usuários irão adicionar foto de perfil para ter o funcionamento esperado do DropDownMenu. Adição do sistema de recompensa, semelhante aos tacos da Enfitec. Iremos implementar tela de loading e refatorar algumas partes do código para usar Grid-Areas, otimizando a UX. 
