@@ -3,17 +3,17 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 
 # Como baixar?
 ``` javascript
-    # Clone the repository
-	$ git clone https://github.com/SINCJunior/ArtemPro
+# Clone the repository
+$ git clone https://github.com/SINCJunior/ArtemPro
 
-	# Enter directory
-	$ cd ArtemPro
+# Enter directory
+$ cd ArtemPro
 
-	# Install dependencies
-	$ yarn
+# Install dependencies
+$ yarn
 
-	# Start the project
-	$ yarn start
+# Start the project
+$ yarn start
 ```
 
 # Funções
