@@ -2,6 +2,7 @@
 Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade dos membros.
 
 # Como baixar?
+``` javascript
     # Clone the repository
 	$ git clone https://github.com/SINCJunior/ArtemPro
 
@@ -13,7 +14,7 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 
 	# Start the project
 	$ yarn start
-
+```
 
 # Funções
 ### Em 2022 usa-se:
