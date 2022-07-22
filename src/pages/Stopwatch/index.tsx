@@ -47,7 +47,6 @@ import {
   ThirdWarning,
   WaterImg,
   TaskDoneIcon,
-  PopUpMessage,
 } from './styles';
 
 
@@ -82,7 +81,7 @@ const Stopwatch: React.FC = () => {
     <Container>
       <Header />
       <Helmet>
-        <title>Cronômetro</title> //!
+        <title>Cronômetro</title> 
       </Helmet>
 
       <Wrapper>
@@ -133,7 +132,7 @@ const Stopwatch: React.FC = () => {
 
       <SidebarMenu>
         <MembersSide>
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+          <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <TaskDoneIcon />
               <span>Tarefas</span>

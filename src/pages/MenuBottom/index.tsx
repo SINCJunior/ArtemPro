@@ -30,7 +30,7 @@ const MenuBottom: React.FC = () => {
       </Helmet>
       <Header />
       <Wrapper>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
           <MenuItem>
             <TaskDoneIcon />
             <span>Tarefas</span>

@@ -49,7 +49,7 @@ const ConstructionPage: React.FC = () => {
 
       <SidebarMenu>
         <MembersSide>
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+          <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <TaskDone />
               <span>Tarefas</span>

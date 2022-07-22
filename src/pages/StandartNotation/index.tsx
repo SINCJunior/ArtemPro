@@ -41,7 +41,7 @@ const StandartNotation: React.FC = () => {
         
         <SidebarMenu>
           <MembersSide>
-            <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+            <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
               <MenuItem>
                 <TaskDoneIcon />
                 <span>Tarefas</span>

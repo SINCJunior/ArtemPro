@@ -7,12 +7,9 @@ import Header from '../../components/Header';
 import {
   Container,
   Wrapper,
-  OldPass,
-  NewPass,
-  RepeatNewPass,
-  UpdateInfoButton,
-  Forms,
-  RetirementButton,
+  UpperArea,
+  TasksList,
+
   SidebarMenu,
   MembersSide,
   MenuItem,
@@ -31,43 +28,28 @@ import {
   SDRBottomIcon,
   MuralBottomIcon,
   CalendarBottomIcon,
-  MenuBottomIcon
+  MenuBottomIcon,
 } from './styles';
 
-const Profile: React.FC = () => {
+const Tasks: React.FC = () => {
+
   return (
     <Container>
       <Header />
       <Helmet>
-        <title>Perfil</title>
+        <title>Tarefas</title>
       </Helmet>
       <Wrapper>
-        <h3>Editar senha</h3>
-        <OldPass type='text' placeholder='Senha antiga' />
-        <NewPass type='text' placeholder='Senha nova' />
-        <RepeatNewPass type='text' placeholder='Repita sua senha nova' />
-        <UpdateInfoButton><p>Atualizar senha</p></UpdateInfoButton>
-        <Forms>
-          <h3>Formulários:</h3>
-          <Link to={'/justificativa-de-falta'} style={{ textDecoration: 'none' }}>
-            <RetirementButton>·  Justificativa de falta</RetirementButton>
-          </Link>
-          <Link to={'/ouvidoria'} style={{ textDecoration: 'none' }}>
-            <RetirementButton>·  Ouvidoria</RetirementButton>
-          </Link>
-          <Link to={'/afastamento'} style={{ textDecoration: 'none' }}>
-            <RetirementButton>·  Afastamento</RetirementButton>
-          </Link>
-          <Link to={'/desligamento'} style={{ textDecoration: 'none' }}>
-            <RetirementButton>·  Desligamento</RetirementButton>
-          </Link>
-        </Forms>
+        <h1>Membros</h1>
+        <UpperArea/>
+        <h1>Lista de tarefas</h1>
+        <TasksList/>
       </Wrapper>
 
       <SidebarMenu>
         <MembersSide>
           <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
-            <MenuItem>
+            <MenuItem className='active'>
               <TaskDoneIcon />
               <span>Tarefas</span>
             </MenuItem>
@@ -79,14 +61,14 @@ const Profile: React.FC = () => {
               <span>Apontamento</span>
             </MenuItem>
           </Link>
-
+          
           <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
             <MenuItem>
               <SDRIcon />
               <span>SDR Ativa</span>
             </MenuItem>
           </a>
-
+      
           <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <MuralIcon />
@@ -132,10 +114,10 @@ const Profile: React.FC = () => {
           </Link>
         </DirexSide>
       </SidebarMenu>
-
+      
       <BottomMenu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-          <NotationBottomIcon />
+          <NotationBottomIcon className='active'/>
         </Link>
         <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
           <SDRBottomIcon />
@@ -150,9 +132,8 @@ const Profile: React.FC = () => {
           <MenuBottomIcon />
         </Link>
       </BottomMenu>
-
     </Container>
   )
 }
 
-export default Profile;
+export default Tasks;
