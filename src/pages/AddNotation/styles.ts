@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
     width: 450px;
     margin-left: 50px;
   }
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     margin-left: 150px;
   }
 `;
@@ -220,7 +220,7 @@ export const MembersSide = styled.div`
 
   padding-bottom: 16px;
 
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     align-items: flex-start;
   }
 `;
@@ -234,7 +234,7 @@ export const DirexSide = styled.div`
   padding-top: 16px;
   border-top: 1px solid var(--secondary);
 
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     align-items: flex-start;
   }
 `;
@@ -248,7 +248,7 @@ export const MenuItem = styled.button`
     display: none;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     > span {
       display: inline;
       margin-left: 16px;

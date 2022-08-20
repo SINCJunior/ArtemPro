@@ -10,23 +10,23 @@ export const Container = styled.div`
 
   //! Tabela de resolução:
   //! 0 até 499px (celular): padrão
-  //! 500 até 959px (tablet na vertical): 1° @media
-  //! 960 até 1299px (tablet na horizontal): 2° @media
-  //! 1300 até 1649px (monitores pequenos - laptop): 3º @media
-  //! maior do que 1650px (monitores grandes - PC): 4° @media
+  //! 500 até 989px (tablet na vertical): 1° @media
+  //! 990 até 1299px (tablet na horizontal): 2° @media
+  //! 1300 até 1689px (monitores pequenos - laptop): 3º @media
+  //! maior do que 1690px (monitores grandes - PC): 4° @media
   @media (min-width: 500px) {
     margin-left: 116px;
   }
 
-  @media (min-width: 960px) {
-    margin-left: 300px;
+  @media (min-width: 990px) {
+    margin-left: 316px;
   }
 
   @media (min-width: 1300px) {
     margin-left: 316px;
   }
 
-  @media (min-width: 1650px) {
+  @media (min-width: 1690px) {
     margin-left: 316px;
   }
 `;
@@ -123,12 +123,11 @@ export const Grid = styled.div`
   grid-template-columns: 1fr;
   grid-gap: 16px;
 
-
   @media (min-width: 1336px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1650px) {
+  @media (min-width: 1690px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
