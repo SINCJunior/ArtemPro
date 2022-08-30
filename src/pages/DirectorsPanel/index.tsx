@@ -47,6 +47,25 @@ const DirectorsControl: React.FC = () => {
       <Wrapper>
         <Grid>
           <DirexItem>
+            <h3>Distribuir pontuação</h3>
+            <SelectInput>
+              <option>Membro</option>
+              <option>Cesar Rolli Bevilaqua</option>
+              <option>Nicolas Ludwig</option>
+              <option>Ingrid</option>
+              <option>Gabrielle Grassi</option>
+            </SelectInput>
+            <SelectInput>
+              <option>Pontuação</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </SelectInput>
+            <DirexButton><p>Adicionar pontuação</p></DirexButton>
+          </DirexItem>
+
+          <DirexItem>
             <h3>Adicionar tarefas</h3>
             <DirexInput placeholder='Adicionar tarefa' />
             <SmallWrapper>

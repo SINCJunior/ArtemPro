@@ -117,7 +117,7 @@ const Tasks: React.FC = () => {
       
       <BottomMenu>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
-          <NotationBottomIcon className='active'/>
+          <NotationBottomIcon />
         </Link>
         <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
           <SDRBottomIcon />

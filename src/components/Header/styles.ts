@@ -25,6 +25,19 @@ export const Wrapper = styled.div`
   border-bottom: 1px solid var(--white);
 `;
 
+export const RightSpace = styled.div`
+  display: flex;
+  text-align: center;
+  align-items: center;
+`;
+
+export const TaskScore = styled.p`
+  font-size: 18px;
+  color: var(--white);
+  font-weight: bold;
+  margin-right: 16px;
+`;
+
 export const ArtemProLogo = styled.img`  
   top: 0;
   margin-left: 16px;

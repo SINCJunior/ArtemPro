@@ -6,6 +6,8 @@ import artempro_black from '../../assets/artempro_black.png';
 import {
   Container,
   Wrapper,
+  RightSpace,
+  TaskScore,
   ArtemProLogo,
   ProfileIcon,
 } from './styles';
@@ -17,9 +19,12 @@ const Header: React.FC = () => {
         <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
           <ArtemProLogo src = { artempro_black } />
         </Link>
-        <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
-          <ProfileIcon />
-        </Link>
+        <RightSpace>
+          <TaskScore>86</TaskScore>
+          <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
+            <ProfileIcon />
+          </Link>
+        </RightSpace>
       </Wrapper>
     </Container>
   )
