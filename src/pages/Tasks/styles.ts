@@ -42,6 +42,9 @@ const taskAreasCSS = css`
   background: var(--secondary);
   margin: 8px 0;
   border-radius: 16px;
+  
+  display: flex;
+  flex-direction: row;
 
   @media (min-width: 500px) {
     width: 80vw;
@@ -65,6 +68,33 @@ export const TasksList = styled.div`
   @media (min-width: 500px) {
     height: 25vh;
     margin-bottom: 0;
+  }
+`;
+
+export const MemberTasks = styled.div`
+  width: 70vw;
+  border-radius: 8px;
+  
+  margin: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  justify-content: center;
+  
+  > h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--primary );
+  }
+  
+  @media (min-width: 500px) {
+    width: 20vw;
+  }
+  
+  @media (min-width: 960px) {
+    width: 12vw;
   }
 `;
 

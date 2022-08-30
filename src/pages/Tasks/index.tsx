@@ -9,6 +9,7 @@ import {
   Wrapper,
   UpperArea,
   TasksList,
+  MemberTasks,
 
   SidebarMenu,
   MembersSide,
@@ -32,7 +33,6 @@ import {
 } from './styles';
 
 const Tasks: React.FC = () => {
-
   return (
     <Container>
       <Header />
@@ -41,9 +41,18 @@ const Tasks: React.FC = () => {
       </Helmet>
       <Wrapper>
         <h1>Membros</h1>
-        <UpperArea/>
+        <UpperArea>
+            <MemberTasks>
+              <h3>Cesar Rolli Bevilaqua</h3>
+            </MemberTasks>
+            <MemberTasks>
+              <h3>Ingrid Moraes Führ</h3>
+            </MemberTasks>
+        </UpperArea>
         <h1>Lista de tarefas</h1>
-        <TasksList/>
+        <TasksList>
+          
+        </TasksList>
       </Wrapper>
 
       <SidebarMenu>
