@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
     left: 100px;
   }
   @media (min-width: 960px) {
-    left: 250px;
+    left: 316px;
   }
 `;
 

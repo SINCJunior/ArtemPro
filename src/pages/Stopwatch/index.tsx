@@ -170,7 +170,7 @@ const Stopwatch: React.FC = () => {
           <Link to = {'/parcerias'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <ProfessorsIcon />
-              <span>Professores parceiros</span>
+              <span>Parcerias</span>
             </MenuItem>
           </Link>
 

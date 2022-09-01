@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: 960px) {
-    margin-left: 300px;
+    margin-left: 316px;
   }
 
   @media (min-width: 1300px) {
