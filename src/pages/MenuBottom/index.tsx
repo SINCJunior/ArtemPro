@@ -8,7 +8,7 @@ import {
   Container,
   Wrapper,
   MenuItem,
-  TaskDoneIcon,
+  SDRIcon,
   ProfessorsIcon,
   CloudIcon,
   DirexSide,
@@ -16,7 +16,7 @@ import {
   DirexIcon,
   BottomMenu,
   NotationBottomIcon,
-  SDRBottomIcon,
+  TaskDoneBottomIcon,
   MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon
@@ -30,16 +30,16 @@ const MenuBottom: React.FC = () => {
       </Helmet>
       <Header />
       <Wrapper>
-        <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
+        <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
           <MenuItem>
-            <TaskDoneIcon />
-            <span>Tarefas</span>
+            <SDRIcon />
+            <span>Pipefy</span>
           </MenuItem>
-        </Link>
-        <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
+        </a>
+        <Link to = {'/parcerias'} style={{ textDecoration: 'none' }}>
           <MenuItem>
             <ProfessorsIcon />
-            <span>Professores parceiros</span>
+            <span>Parcerias</span>
           </MenuItem>
         </Link>
         <a href='https://drive.google.com/drive/u/1/folders/0B_pfgOzEMjWhWUh6ZFVLMnFlTDg?resourcekey=0-PxBaFB5bYbpdzlfv736BVA' style={{ textDecoration: 'none' }}>
@@ -65,12 +65,12 @@ const MenuBottom: React.FC = () => {
         </DirexSide>
       </Wrapper>
       <BottomMenu>
+        <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
+          <TaskDoneBottomIcon />
+        </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
         </Link>
-        <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
-          <SDRBottomIcon />
-        </a>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <MuralBottomIcon />
         </Link>

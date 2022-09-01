@@ -27,7 +27,7 @@ import {
   DirexIcon,
   BottomMenu,
   NotationBottomIcon,
-  SDRBottomIcon,
+  TaskDoneBottomIcon,
   MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon,
@@ -90,7 +90,7 @@ const Tasks: React.FC = () => {
             </MenuItem>
           </Link>
 
-          <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
+          <Link to = {'/parcerias'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <ProfessorsIcon />
               <span>Parcerias</span>
@@ -123,12 +123,12 @@ const Tasks: React.FC = () => {
       </SidebarMenu>
       
       <BottomMenu>
+        <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
+          <TaskDoneBottomIcon  className='active'/>
+        </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
         </Link>
-        <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
-          <SDRBottomIcon />
-        </a>
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
           <MuralBottomIcon />
         </Link>

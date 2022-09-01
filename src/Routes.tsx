@@ -22,7 +22,7 @@ import Tasks from './pages/Tasks';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={ <StandartNotation /> } />
+      <Route path='/' element={ <Tasks /> } />
       <Route path='/apontamento' element={ <StandartNotation /> } />
       <Route path='/em-construcao' element={ <ConstructionPage /> } />
       <Route path='/menu' element={ <Menu /> } />
@@ -33,7 +33,7 @@ const AppRoutes = () => {
       <Route path='/ouvidoria' element={ <Ombudsman /> } />
       <Route path='/direx' element={ <DirectorsControl /> } />
       <Route path='/mural' element={ <SincWall /> } />
-      <Route path='/professores-parceiros' element={ <PartnerTeachers /> } />
+      <Route path='/parcerias' element={ <PartnerTeachers /> } />
       <Route path='/cronometro' element={ <Stopwatch /> } />
       <Route path='/login' element={ <Login /> } />
       <Route path='/recuperacao-senha' element={ <PassRecover /> } />

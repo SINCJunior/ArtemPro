@@ -349,6 +349,7 @@ const iconCSSBottomBar = css`
   }
 `;
 
+export const TaskDoneBottomIcon = styled(Task)`${iconCSSMenuBar}`;
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSSBottomBar}`;
 export const SDRBottomIcon = styled(HeadsetMic)`${iconCSSBottomBar}`;
 export const MuralBottomIcon = styled(NotificationsNone)`${iconCSSBottomBar}`;

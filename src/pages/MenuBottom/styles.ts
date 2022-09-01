@@ -87,13 +87,14 @@ export const ProfileIcon = styled(AccountCircle)`
   margin-right: 16px;
 `;
 export const ProfessorsIcon = styled(Analyse)`${iconCSS}`;
+export const SDRIcon = styled(HeadsetMic)`${iconCSS}`;
 export const CloudIcon = styled(CloudQueue)`${iconCSS}`;
 export const PerformanceIcon = styled(InsertChartOutlined)`${iconCSS}`;
 export const DirexIcon = styled(Rocket)`${iconCSS}`;
 export const TaskDoneIcon = styled(Task)`${iconCSS}`;
 
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSS}`;
-export const SDRBottomIcon = styled(HeadsetMic)`${iconCSS}`;
+export const TaskDoneBottomIcon = styled(Task)`${iconCSS}`;
 export const MuralBottomIcon = styled(NotificationsNone)`${iconCSS}`;
 export const CalendarBottomIcon = styled(CalendarToday)`${iconCSS}`;
 export const MenuBottomIcon = styled(Menu)`${iconCSS}`;
