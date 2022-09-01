@@ -55,13 +55,21 @@ const DirectorsControl: React.FC = () => {
               <option>Ingrid</option>
               <option>Gabrielle Grassi</option>
             </SelectInput>
-            <SelectInput>
-              <option>Pontuação</option>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </SelectInput>
+            <SmallWrapper>
+              <SmallSelectInput>
+                <option>Pontuação</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </SmallSelectInput>
+              <SmallSelectInput>
+                <option value=''>Área</option>
+                <option value='comercial'>Comercial</option>
+                <option value='projetos'>Projetos</option>
+                <option value=''>...</option>
+              </SmallSelectInput>
+            </SmallWrapper>
             <DirexButton><p>Adicionar pontuação</p></DirexButton>
           </DirexItem>
 
@@ -72,9 +80,9 @@ const DirectorsControl: React.FC = () => {
               <SmallDirexInput placeholder='Prazo: DD/MM/AAAA'/>
               <SmallSelectInput>
                 <option value=''>Prioridade</option>
-                <option value='Baixa'>🍼 Baixa</option>
-                <option value='Media'>🧃 Media</option>
-                <option value='Alta'>☕ Alta</option>
+                <option value='baixa'>🍼 Baixa</option>
+                <option value='media'>🧃 Media</option>
+                <option value='alta'>☕ Alta</option>
               </SmallSelectInput>
             </SmallWrapper>
             <DirexButton><p>Adicionar tarefa</p></DirexButton>
