@@ -3,13 +3,14 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
+import MemberCard from '../../components/MemberCard';
+import TaskCard from '../../components/TaskCard';
 
 import {
   Container,
   Wrapper,
   UpperArea,
   TasksList,
-  MemberTasks,
 
   SidebarMenu,
   MembersSide,
@@ -42,16 +43,13 @@ const Tasks: React.FC = () => {
       <Wrapper>
         <h1>Membros</h1>
         <UpperArea>
-            <MemberTasks>
-              <h3>Cesar Rolli Bevilaqua</h3>
-            </MemberTasks>
-            <MemberTasks>
-              <h3>Ingrid Moraes Führ</h3>
-            </MemberTasks>
+          <MemberCard />
         </UpperArea>
         <h1>Lista de tarefas</h1>
         <TasksList>
-          
+          <TaskCard />
+          <TaskCard />
+          <TaskCard />
         </TasksList>
       </Wrapper>
 
@@ -95,7 +93,7 @@ const Tasks: React.FC = () => {
           <Link to = {'/professores-parceiros'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <ProfessorsIcon />
-              <span>Professores parceiros</span>
+              <span>Parcerias</span>
             </MenuItem>
           </Link>
 

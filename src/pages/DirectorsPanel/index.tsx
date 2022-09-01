@@ -42,7 +42,7 @@ const DirectorsControl: React.FC = () => {
     <Container>
       <Header />
       <Helmet>
-        <title>Direx</title>
+        <title>Diretoria</title>
       </Helmet>
       <Wrapper>
         <Grid>

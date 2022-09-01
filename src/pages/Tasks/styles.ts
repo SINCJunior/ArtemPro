@@ -14,8 +14,11 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
+  position: absolute;
+
   display: flex;
   justify-content: center;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
@@ -30,10 +33,10 @@ export const Wrapper = styled.div`
     margin-top: 40px;
   }
   @media (min-width: 500px) {
-    left: 116px;
+    left: 100px;
   }
   @media (min-width: 960px) {
-    left: 316px;
+    left: 250px;
   }
 `;
 
@@ -47,7 +50,7 @@ const taskAreasCSS = css`
   flex-direction: row;
 
   @media (min-width: 500px) {
-    width: 80vw;
+    width: 85vw;
   }
 `;
 
@@ -76,13 +79,17 @@ export const MemberTasks = styled.div`
   border-radius: 8px;
   
   margin: 16px;
-  padding: 16px;
   background: rgba(255, 255, 255, 0.3);
 
   display: flex;
   justify-content: center;
+
+  border-top: 32px solid rgba(230, 236, 245, 0.5);
+  cursor: grab;
   
   > h3 {
+    font-size: 20px;
+    margin-top: -26px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
