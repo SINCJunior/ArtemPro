@@ -8,7 +8,6 @@ import Menu from './pages/MenuBottom';
 import Profile from './pages/Profile';
 import Retirement from './pages/Forms/Retirement';
 import DirectorsControl from './pages/DirectorsPanel';
-import SincWall from './pages/SincWall';
 import PartnerTeachers from './pages/PartnerTeachers';
 import Stopwatch from './pages/Stopwatch';
 import Login from './pages/Login';
@@ -32,7 +31,6 @@ const AppRoutes = () => {
       <Route path='/justificativa-de-falta' element={ <Absence /> } />
       <Route path='/ouvidoria' element={ <Ombudsman /> } />
       <Route path='/direx' element={ <DirectorsControl /> } />
-      <Route path='/mural' element={ <SincWall /> } />
       <Route path='/parcerias' element={ <PartnerTeachers /> } />
       <Route path='/cronometro' element={ <Stopwatch /> } />
       <Route path='/login' element={ <Login /> } />

@@ -200,7 +200,6 @@ const iconCSSMenuBar = css`
 export const NotationIcon = styled(AddAlarm)`${iconCSSMenuBar}`;
 export const TaskDoneIcon = styled(Task)`${iconCSSMenuBar}`;
 export const SDRIcon = styled(HeadsetMic)`${iconCSSMenuBar}`;
-export const MuralIcon = styled(NotificationsNone)`${iconCSSMenuBar}`;
 export const ProfessorsIcon = styled(Analyse)`${iconCSSMenuBar}`;
 export const CalendarIcon = styled(CalendarToday)`${iconCSSMenuBar}`;
 export const CloudIcon = styled(CloudQueue)`${iconCSSMenuBar}`;

@@ -15,7 +15,6 @@ import {
   NotationIcon,
   TaskDoneIcon,
   SDRIcon,
-  MuralIcon,
   CalendarIcon,
   ProfessorsIcon,
   CloudIcon,
@@ -71,16 +70,9 @@ const Profile: React.FC = () => {
           <a href='https://app.pipefy.com/organizations/300611579' style={{ textDecoration: 'none' }}>
             <MenuItem>
               <SDRIcon />
-              <span>SDR Ativa</span>
+              <span>Pipefy</span>
             </MenuItem>
           </a>
-
-          <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-            <MenuItem>
-              <MuralIcon />
-              <span>Mural da Sinc</span>
-            </MenuItem>
-          </Link>
 
           <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
             <MenuItem>
