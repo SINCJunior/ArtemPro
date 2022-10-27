@@ -26,8 +26,6 @@ import {
   NotationIcon,
   TaskDoneIcon,
   SDRIcon,
-  MuralWrapper,
-  MuralDot,
   CalendarIcon,
   ProfessorsIcon,
   CloudIcon,
@@ -37,7 +35,6 @@ import {
   BottomMenu,
   NotationBottomIcon,
   TaskDoneBottomIcon,
-  MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon
 } from './styles';
@@ -151,12 +148,6 @@ const AddNotation: React.FC = () => {
         </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
-        </Link>
-        <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <MuralWrapper>
-            <MuralBottomIcon />
-            <MuralDot />
-          </MuralWrapper>
         </Link>
         <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />

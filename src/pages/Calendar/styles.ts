@@ -23,21 +23,87 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   position: absolute;
 
-  padding-left: 8px;
-  margin-top: 50vh;
-  border: 2px solid var(--white);
+  top: 100px;
+  left: 120px;
   
+  height: 70vh;
+  width: 2px;
+  background: var(--white);
+
   @media (min-width: 500px) {
-    width: 450px;
-    margin-left: 50px;
-  }
-  @media (min-width: 990px) {
     width: 75vw;
-    margin-left: 150px;
+    margin-left: 116px;
+    width: 2px;
   }
+  @media (min-width: 960px) {
+    width: 75vw;
+    margin-left: 316px;
+    width: 2px;
+  }
+  @media (min-width: 1054px) {
+    width: 450px;
+    margin-left: 316px;
+    width: 2px;
+  }
+`;
+
+const eventCSS = css`
+  display: flex;
+  align-items: center;
+  position: fixed;
+
+  height: 80px;
+  margin-bottom: 100px;
+
+  > p {
+    position: absolute;
+    color: var(--white);
+    left: -100px;
+
+    @media (min-width: 960px) {
+      left: -110px;
+    }
+  }
+
+  > h3 {
+    position: absolute;
+    color: var(--white);
+    left: 24px;
+    width: 50vw;
+  }
+`;
+
+export const Event = styled.div`
+  ${eventCSS};
+  top: 100px;
+`;
+
+export const Event2 = styled.div`
+  ${eventCSS};
+  top: 200px;
+`;
+
+export const Event3 = styled.div`
+  ${eventCSS};
+  top: 300px;
+`;
+
+export const Event4 = styled.div`
+  ${eventCSS};
+  top: 400px;
+`;
+
+export const BallIndicator = styled.div`
+  display: flex;
+  position: absolute;
+  left: -14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: var(--sinc-light-color);
+  border: 6px solid var(--primary);
 `;
 
 
@@ -69,7 +135,7 @@ export const MembersSide = styled.div`
 
   padding-bottom: 16px;
 
-  @media (min-width: 990px) {
+  @media (min-width: 960px) {
     align-items: flex-start;
   }
 `;
@@ -83,7 +149,7 @@ export const DirexSide = styled.div`
   padding-top: 16px;
   border-top: 1px solid var(--secondary);
 
-  @media (min-width: 990px) {
+  @media (min-width: 960px) {
     align-items: flex-start;
   }
 `;
@@ -97,7 +163,7 @@ export const MenuItem = styled.button`
     display: none;
   }
 
-  @media (min-width: 990px) {
+  @media (min-width: 960px) {
     > span {
       display: inline;
       margin-left: 16px;
@@ -142,25 +208,6 @@ export const CloudIcon = styled(CloudQueue)`${iconCSSMenuBar}`;
 export const PerformanceIcon = styled(InsertChartOutlined)`${iconCSSMenuBar}`;
 export const DirexIcon = styled(Rocket)`${iconCSSMenuBar}`;
 
-export const MuralWrapper = styled.div`
-  display: flex;
-`;
-
-export const MuralDot = styled.div`
-  /* display: none;
-
-  &.active{} */
-  display: flex;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background: var(--sinc-button-hover);
-
-  position: absolute;
-  margin-left: 24px;
-  margin-top: 24px;
-`;
-
 //! Bottom menu
 export const BottomMenu = styled.div`
   position: fixed;
@@ -200,6 +247,5 @@ const iconCSSBottomBar = css`
 export const TaskDoneBottomIcon = styled(Task)`${iconCSSMenuBar}`;
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSSBottomBar}`;
 export const SDRBottomIcon = styled(HeadsetMic)`${iconCSSBottomBar}`;
-export const MuralBottomIcon = styled(NotificationsNone)`${iconCSSBottomBar}`;
 export const CalendarBottomIcon = styled(CalendarToday)`${iconCSSBottomBar}`;
 export const MenuBottomIcon = styled(Menu)`${iconCSSBottomBar}`;

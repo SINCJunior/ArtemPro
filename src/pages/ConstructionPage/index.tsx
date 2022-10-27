@@ -25,7 +25,6 @@ import {
   BottomMenu,
   NotationBottomIcon,
   TaskDoneBottomIcon,
-  MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon,
   TaskDone
@@ -115,9 +114,6 @@ const ConstructionPage: React.FC = () => {
         </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
-        </Link>
-        <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <MuralBottomIcon />
         </Link>
         <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />

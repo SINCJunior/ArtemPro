@@ -246,6 +246,5 @@ const iconCSSBottomBar = css`
 export const TaskDoneBottomIcon = styled(Task)`${iconCSSBottomBar}`;
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSSBottomBar}`;
 export const SDRBottomIcon = styled(HeadsetMic)`${iconCSSBottomBar}`;
-export const MuralBottomIcon = styled(NotificationsNone)`${iconCSSBottomBar}`;
 export const CalendarBottomIcon = styled(CalendarToday)`${iconCSSBottomBar}`;
 export const MenuBottomIcon = styled(Menu)`${iconCSSBottomBar}`;

@@ -30,7 +30,6 @@ import {
   BottomMenu,
   NotationBottomIcon,
   TaskDoneBottomIcon,
-  MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon
 } from './styles';
@@ -85,6 +84,15 @@ const DirectorsControl: React.FC = () => {
             </SmallWrapper>
             <DirexButton><p>Adicionar tarefa</p></DirexButton>
           </DirexItem>
+          
+          <DirexItem>
+            <h3>Adicionar no calendário</h3>
+            <DirexInput placeholder='Adicionar no calendário' />
+            <SmallWrapper>
+              <DirexInput placeholder='Data: DD/MM/AAAA'/>
+            </SmallWrapper>
+            <DirexButton><p>Adicionar no calendário</p></DirexButton>
+          </DirexItem>
 
           <DirexItem>
             <h3>Publicar no Mural</h3>
@@ -97,11 +105,11 @@ const DirectorsControl: React.FC = () => {
             <h3>Edição de cargos</h3>
             <DirexInput type='text' placeholder='E-mail' />
             <SelectInput>
-              <option value='membro'>Membro</option>
+              <option value='consultor'>Consultor</option>
               <option value='assessor'>Assessor</option>
               <option value='diretor'>Diretor</option>
             </SelectInput>
-            <DirexButton><p>Editar cargo do membro</p></DirexButton>
+            <DirexButton><p>Editar cargo</p></DirexButton>
           </DirexItem>
 
           <DirexItem>
@@ -187,9 +195,6 @@ const DirectorsControl: React.FC = () => {
         </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
-        </Link>
-        <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <MuralBottomIcon />
         </Link>
         <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />

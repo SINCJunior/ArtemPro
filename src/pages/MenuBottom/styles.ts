@@ -95,6 +95,5 @@ export const TaskDoneIcon = styled(Task)`${iconCSS}`;
 
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSS}`;
 export const TaskDoneBottomIcon = styled(Task)`${iconCSS}`;
-export const MuralBottomIcon = styled(NotificationsNone)`${iconCSS}`;
 export const CalendarBottomIcon = styled(CalendarToday)`${iconCSS}`;
 export const MenuBottomIcon = styled(Menu)`${iconCSS}`;

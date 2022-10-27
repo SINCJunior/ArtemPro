@@ -17,7 +17,6 @@ import {
   BottomMenu,
   NotationBottomIcon,
   TaskDoneBottomIcon,
-  MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon
 } from './styles';
@@ -70,9 +69,6 @@ const MenuBottom: React.FC = () => {
         </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
-        </Link>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-          <MuralBottomIcon />
         </Link>
         <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />

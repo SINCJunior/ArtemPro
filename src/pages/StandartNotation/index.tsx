@@ -23,7 +23,6 @@ import {
   BottomMenu,
   NotationBottomIcon,
   TaskDoneBottomIcon,
-  MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon,
   TaskDoneIcon
@@ -111,9 +110,6 @@ const StandartNotation: React.FC = () => {
         </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon className='active'/>
-        </Link>
-        <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-          <MuralBottomIcon />
         </Link>
         <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />

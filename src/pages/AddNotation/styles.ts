@@ -293,24 +293,6 @@ export const CloudIcon = styled(CloudQueue)`${iconCSSMenuBar}`;
 export const PerformanceIcon = styled(InsertChartOutlined)`${iconCSSMenuBar}`;
 export const DirexIcon = styled(Rocket)`${iconCSSMenuBar}`;
 
-export const MuralWrapper = styled.div`
-  display: flex;
-`;
-
-export const MuralDot = styled.div`
-  /* display: none;
-
-  &.active{} */
-  display: flex;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background: var(--sinc-button-hover);
-
-  position: absolute;
-  margin-left: 24px;
-  margin-top: 24px;
-`;
 
 //! Bottom menu
 export const BottomMenu = styled.div`
@@ -351,6 +333,5 @@ const iconCSSBottomBar = css`
 export const TaskDoneBottomIcon = styled(Task)`${iconCSSMenuBar}`;
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSSBottomBar}`;
 export const SDRBottomIcon = styled(HeadsetMic)`${iconCSSBottomBar}`;
-export const MuralBottomIcon = styled(NotificationsNone)`${iconCSSBottomBar}`;
 export const CalendarBottomIcon = styled(CalendarToday)`${iconCSSBottomBar}`;
 export const MenuBottomIcon = styled(Menu)`${iconCSSBottomBar}`;

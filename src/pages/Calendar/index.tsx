@@ -7,14 +7,18 @@ import Header from '../../components/Header';
 import {
   Container,
   Wrapper,
+  Event,
+  BallIndicator,
+  Event2,
+  Event3,
+  Event4,
+  
   SidebarMenu,
   MembersSide,
   MenuItem,
   NotationIcon,
   TaskDoneIcon,
   SDRIcon,
-  MuralWrapper,
-  MuralDot,
   CalendarIcon,
   ProfessorsIcon,
   CloudIcon,
@@ -24,7 +28,6 @@ import {
   BottomMenu,
   NotationBottomIcon,
   TaskDoneBottomIcon,
-  MuralBottomIcon,
   CalendarBottomIcon,
   MenuBottomIcon} from './styles';
 
@@ -33,10 +36,29 @@ const Calendar: React.FC = () => {
     <Container>
     <Header />
     <Helmet>
-      <title>Adicionar apontamento</title>
+      <title>Calendário</title>
     </Helmet>
     <Wrapper>
-      
+      <Event>
+        <p>27/10/2022</p>
+        <BallIndicator />
+        <h3>RG presencial às 9h</h3>
+      </Event>
+      <Event2>
+        <p>31/10/2022</p>
+        <BallIndicator />
+        <h3>Início da CapaSINCtação</h3>
+      </Event2>
+      <Event3>
+        <p>02/11/2022</p>
+        <BallIndicator />
+        <h3>Final da CapaSINCtação</h3>
+      </Event3>
+      <Event4>
+        <p>17/11/2022</p>
+        <BallIndicator />
+        <h3>Não sei mais o que botar lalalal lalalalla lalalalal allalalala allalalal</h3>
+      </Event4>
     </Wrapper>
 
     <SidebarMenu>
@@ -108,14 +130,8 @@ const Calendar: React.FC = () => {
       <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
         <NotationBottomIcon />
       </Link>
-      <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
-        <MuralWrapper>
-          <MuralBottomIcon />
-          <MuralDot />
-        </MuralWrapper>
-      </Link>
       <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
-        <CalendarBottomIcon />
+        <CalendarBottomIcon className='active'/>
       </Link>
       <Link to = {'/menu'} style={{ textDecoration: 'none' }}>
         <MenuBottomIcon />

@@ -18,7 +18,7 @@ export const Container = styled.div`
     margin-left: 116px;
   }
 
-  @media (min-width: 990px) {
+  @media (min-width: 960px) {
     margin-left: 316px;
   }
 
