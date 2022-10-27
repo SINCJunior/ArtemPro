@@ -23,149 +23,22 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   position: absolute;
-  flex-direction: column;
 
-  width: 100vw;
-  top: 80px;
-  padding-bottom: 48px;
-
-  align-items: center;
-`;
-
-export const Grid = styled.div`
-  display: grid;
-
-  grid-template-columns: 1fr;
+  padding-left: 8px;
+  margin-top: 50vh;
+  border: 2px solid var(--white);
   
-  @media (min-width: 1054px) {
-    margin-left: 300px;
-    grid-gap: 48px;
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: 500px) {
+    width: 450px;
+    margin-left: 50px;
   }
-
-  @media (min-width: 1336px) {
-    grid-gap: 64px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 1650px) {
-    grid-gap: 64px;
-    grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: 990px) {
+    width: 75vw;
+    margin-left: 150px;
   }
 `;
-
-export const DirexItem = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  
-  > h3 {
-    padding-bottom: 8px;
-    font-size: 24px;
-    color: var(--white);
-  }
-  > p {
-    padding-bottom: 8px;
-    font-size: 16px;
-    color: var(--white);
-    font-family: 400;
-  }
-`;
-
-export const SmallWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-export const SmallSelectInput = styled.select`
-  width: 165px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
-`;
-
-export const SelectInput = styled.select`
-  width: 340px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
-`;
-
-export const DirexButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 340px;
-  height: 40px;
-  border-radius: 16px;
-  margin-bottom: 24px;
-
-  background: var(--primary);
-  border: 2px solid var(--sinc-light-color);
-  cursor: pointer;
-
-  > p {
-    color: var(--sinc-light-color);
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  &:hover {
-    background: var(--sinc-button-dark-hover);
-  }
-`;
-
-export const SmallDirexInput = styled.input`
-  width: 165px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
-`;
-
-export const DirexInput = styled.input`
-  width: 340px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
-`;
-
 
 
 
@@ -196,7 +69,7 @@ export const MembersSide = styled.div`
 
   padding-bottom: 16px;
 
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     align-items: flex-start;
   }
 `;
@@ -210,7 +83,7 @@ export const DirexSide = styled.div`
   padding-top: 16px;
   border-top: 1px solid var(--secondary);
 
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     align-items: flex-start;
   }
 `;
@@ -224,7 +97,7 @@ export const MenuItem = styled.button`
     display: none;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 990px) {
     > span {
       display: inline;
       margin-left: 16px;
@@ -269,6 +142,24 @@ export const CloudIcon = styled(CloudQueue)`${iconCSSMenuBar}`;
 export const PerformanceIcon = styled(InsertChartOutlined)`${iconCSSMenuBar}`;
 export const DirexIcon = styled(Rocket)`${iconCSSMenuBar}`;
 
+export const MuralWrapper = styled.div`
+  display: flex;
+`;
+
+export const MuralDot = styled.div`
+  /* display: none;
+
+  &.active{} */
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--sinc-button-hover);
+
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 24px;
+`;
 
 //! Bottom menu
 export const BottomMenu = styled.div`
@@ -306,7 +197,7 @@ const iconCSSBottomBar = css`
   }
 `;
 
-export const TaskDoneBottomIcon = styled(Task)`${iconCSSBottomBar}`;
+export const TaskDoneBottomIcon = styled(Task)`${iconCSSMenuBar}`;
 export const NotationBottomIcon = styled(AddAlarm)`${iconCSSBottomBar}`;
 export const SDRBottomIcon = styled(HeadsetMic)`${iconCSSBottomBar}`;
 export const MuralBottomIcon = styled(NotificationsNone)`${iconCSSBottomBar}`;

@@ -86,7 +86,7 @@ const Profile: React.FC = () => {
             </MenuItem>
           </a>
 
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+          <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <CalendarIcon />
               <span>Calendário</span>
@@ -135,7 +135,7 @@ const Profile: React.FC = () => {
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
           <MuralBottomIcon />
         </Link>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />
         </Link>
         <Link to = {'/menu'} style={{ textDecoration: 'none' }}>

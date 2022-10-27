@@ -11,7 +11,6 @@ import {
   DirexItem,
   DirexInput,
   DirexButton,
-  MuralInput,
   SelectInput,
   SmallWrapper,
   SmallDirexInput,
@@ -89,7 +88,8 @@ const DirectorsControl: React.FC = () => {
 
           <DirexItem>
             <h3>Publicar no Mural</h3>
-            <MuralInput placeholder='Mensagem para o Mural' />
+            <DirexInput type='text' placeholder='Assunto' />
+            <DirexInput type='text' placeholder='Mensagem' />
             <DirexButton><p>Publicar</p></DirexButton>
           </DirexItem>
           
@@ -142,7 +142,7 @@ const DirectorsControl: React.FC = () => {
             </MenuItem>
           </a>
 
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+          <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <CalendarIcon />
               <span>Calendário</span>
@@ -191,7 +191,7 @@ const DirectorsControl: React.FC = () => {
         <Link to = {'/mural'} style={{ textDecoration: 'none' }}>
           <MuralBottomIcon />
         </Link>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />
         </Link>
         <Link to = {'/menu'} style={{ textDecoration: 'none' }}>

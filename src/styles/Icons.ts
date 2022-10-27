@@ -15,4 +15,6 @@ export {
   CheckBoxOutlineBlank,
 } from 'styled-icons/material';
 
+export { CloseCircle } from 'styled-icons/ionicons-outline';
+
 export { Analyse, Rocket, Pulse, Task, DotsVerticalRounded } from 'styled-icons/boxicons-regular';

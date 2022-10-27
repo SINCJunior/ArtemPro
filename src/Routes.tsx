@@ -17,6 +17,7 @@ import Absence from './pages/Forms/Absence';
 import Ombudsman from './pages/Forms/Ombudsman';
 import AddNotation from './pages/AddNotation';
 import Tasks from './pages/Tasks';
+import Calendar from './pages/Calendar';
 
 const AppRoutes = () => {
   return (
@@ -37,6 +38,7 @@ const AppRoutes = () => {
       <Route path='/recuperacao-senha' element={ <PassRecover /> } />
       <Route path='/adicionar-apontamento' element={ <AddNotation /> } />
       <Route path='/tarefas' element={ <Tasks />} />
+      <Route path='/calendario' element={ <Calendar />} />
     </Routes>
   );
 }

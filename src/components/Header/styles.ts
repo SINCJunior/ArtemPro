@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { AccountCircle } from '../../styles/Icons';
+import { AccountCircle, CloseCircle } from '../../styles/Icons';
 
 export const Container = styled.div`
   background: var(--secondary);
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   background: var(--secondary);
-  z-index: 2;
+  z-index: 1;
   width: 100vw;
   height: 64px;
 
@@ -23,6 +23,41 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   border-bottom: 1px solid var(--white);
+`;
+
+export const AlertMessage = styled.div`
+  display: none;
+
+  &.active{
+    display: flex;
+    position: fixed;
+    background: var(--white);
+    margin-top: 4px;
+    height: 56px;
+    width: 400px;
+    border-radius: 8px;
+    z-index: 2;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  > h3 {
+    color: var(--sinc-light-color);
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+
+  > p {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 24px;
+    left: 4px;
+  }
 `;
 
 export const RightSpace = styled.div`
@@ -39,9 +74,27 @@ export const TaskScore = styled.p`
 `;
 
 export const ArtemProLogo = styled.img`  
-  top: 0;
-  margin-left: 16px;
+  position: fixed;
+  top: 8px;
+  left: 16px;
   height: 48px;
+`;
+
+export const CloseButton = styled(CloseCircle)`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 3;
+  top: 4px;
+  right: 4px;
+
+  cursor: pointer;
+
+  color: var(--sinc-light-color);    
+  
+  &:hover {
+    color: var(--sinc-button-hover);
+  }
 `;
 
 export const ProfileIcon = styled(AccountCircle)`
@@ -55,6 +108,6 @@ export const ProfileIcon = styled(AccountCircle)`
   
   &:hover,
   &.active {
-    fill: var(--sinc-light-color)
+    fill: var(--sinc-light-color);
   }
 `;

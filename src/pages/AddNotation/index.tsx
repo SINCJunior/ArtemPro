@@ -106,7 +106,7 @@ const AddNotation: React.FC = () => {
             </MenuItem>
           </a>
 
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+          <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <CalendarIcon />
               <span>Calendário</span>
@@ -158,7 +158,7 @@ const AddNotation: React.FC = () => {
             <MuralDot />
           </MuralWrapper>
         </Link>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />
         </Link>
         <Link to = {'/menu'} style={{ textDecoration: 'none' }}>
