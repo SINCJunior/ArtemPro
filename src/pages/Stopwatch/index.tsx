@@ -171,16 +171,16 @@ const Stopwatch: React.FC = () => {
               <span>Drive</span>
             </MenuItem>
           </a>
+          
+          <Link to = {'/feedback'} style={{ textDecoration: 'none' }}>
+            <MenuItem>
+              <PerformanceIcon />
+              <span>Feedback</span>
+            </MenuItem>
+          </Link>
         </MembersSide>
 
         <DirexSide>
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-            <MenuItem>
-              <PerformanceIcon />
-              <span>Desempenho</span>
-            </MenuItem>
-          </Link>
-
           <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <DirexIcon />

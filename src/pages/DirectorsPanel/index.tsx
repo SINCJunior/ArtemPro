@@ -44,33 +44,6 @@ const DirectorsControl: React.FC = () => {
       <Wrapper>
         <Grid>
           <DirexItem>
-            <h3>Distribuir pontuação</h3>
-            <SelectInput>
-              <option>Membro</option>
-              <option>Cesar Rolli Bevilaqua</option>
-              <option>Nicolas Ludwig</option>
-              <option>Ingrid</option>
-              <option>Gabrielle Grassi</option>
-            </SelectInput>
-            <SmallWrapper>
-              <SmallSelectInput>
-                <option>Pontuação</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </SmallSelectInput>
-              <SmallSelectInput>
-                <option value=''>Área</option>
-                <option value='comercial'>Comercial</option>
-                <option value='projetos'>Projetos</option>
-                <option value=''>...</option>
-              </SmallSelectInput>
-            </SmallWrapper>
-            <DirexButton><p>Adicionar pontuação</p></DirexButton>
-          </DirexItem>
-
-          <DirexItem>
             <h3>Adicionar tarefas</h3>
             <DirexInput placeholder='Adicionar tarefa' />
             <SmallWrapper>
@@ -170,16 +143,16 @@ const DirectorsControl: React.FC = () => {
               <span>Drive</span>
             </MenuItem>
           </a>
+          
+          <Link to = {'/feedback'} style={{ textDecoration: 'none' }}>
+            <MenuItem>
+              <PerformanceIcon />
+              <span>Feedback</span>
+            </MenuItem>
+          </Link>
         </MembersSide>
 
         <DirexSide>
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-            <MenuItem>
-              <PerformanceIcon />
-              <span>Desempenho</span>
-            </MenuItem>
-          </Link>
-
           <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
             <MenuItem className='active'>
               <DirexIcon />

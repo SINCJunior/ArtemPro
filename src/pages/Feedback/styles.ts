@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 import { 
   Analyse,
@@ -9,7 +9,7 @@ import {
   HeadsetMic, 
   Menu, 
   CalendarToday,
-  Task
+  Task,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -22,41 +22,24 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
   position: absolute;
+  top: 100px;
   flex-direction: column;
 
-  width: 100vw;
-  top: 80px;
-  padding-bottom: 48px;
-
-  align-items: center;
-`;
-
-export const Grid = styled.div`
-  display: grid;
-
-  grid-template-columns: 1fr;
-  
-  @media (min-width: 1054px) {
-    margin-left: 300px;
-    grid-gap: 48px;
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: 500px) {
+    left: 100px;
   }
-
-  @media (min-width: 1336px) {
-    grid-gap: 64px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 1650px) {
-    grid-gap: 64px;
-    grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: 960px) {
+    left: 40vw;
   }
 `;
 
-export const DirexItem = styled.div`
+export const FeedbackItem = styled.div`
   display: flex;
   flex-direction: column;
+  width: 80vw;
+  padding-bottom: 32px;
 
   > h3 {
     padding-bottom: 8px;
@@ -64,34 +47,19 @@ export const DirexItem = styled.div`
     color: var(--white);
   }
   > p {
-    padding-bottom: 8px;
-    font-size: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
     color: var(--white);
     font-family: 400;
   }
-`;
-
-export const SmallWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-export const SmallSelectInput = styled.select`
-  width: 165px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
+  
+  @media (min-width: 500px) {
+    width: 500px;
+  }
 `;
 
 export const SelectInput = styled.select`
-  width: 340px;
+  width: 80vw;
   height: 34px;
 
   background: var(--secondary);
@@ -101,14 +69,18 @@ export const SelectInput = styled.select`
   font-size: 16px;
   margin-bottom: 16px;
   padding-left: 8px;
+
+  @media (min-width: 500px) {
+    width: 500px;
+  }
 `;
 
-export const DirexButton = styled.button`
+export const FeedbackButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 340px;
+  width: 80vw;
   height: 40px;
   border-radius: 16px;
   margin-bottom: 24px;
@@ -126,45 +98,15 @@ export const DirexButton = styled.button`
   &:hover {
     background: var(--sinc-button-dark-hover);
   }
-`;
 
-export const SmallDirexInput = styled.input`
-  width: 165px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
+  @media (min-width: 500px) {
+    width: 500px;
   }
 `;
 
-export const DirexInput = styled.input`
-  width: 340px;
-  height: 34px;
-
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
-
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-left: 8px;
-
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+export const BlackBar = styled.div`
+  height: 40px;
 `;
-
-
 
 
 //! Side bar menu
@@ -249,7 +191,7 @@ export const MenuItem = styled.button`
   }
 `;
 
-//Ícones do menu lateral
+//!Ícones do menu lateral
 const iconCSSMenuBar = css`
   flex-shrink: 0;
 

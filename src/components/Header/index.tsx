@@ -8,8 +8,6 @@ import {
   Wrapper,
   AlertMessage,
   CloseButton,
-  RightSpace,
-  TaskScore,
   ArtemProLogo,
   ProfileIcon,
 } from './styles';
@@ -26,15 +24,12 @@ const Header: React.FC = () => {
         <p>Mensagem do comercial Mensagem do comercial Mensagem do comercial Mensagem do comercial Mensagem do comercial Mensagem do comercial</p>
       </AlertMessage>
       <Wrapper>
-        <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>
+        <Link to={'/tarefas'} style={{ textDecoration: 'none' }}>
           <ArtemProLogo src = { artempro_black } />
         </Link>
-        <RightSpace>
-          <TaskScore>86</TaskScore>
           <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
             <ProfileIcon />
           </Link>
-        </RightSpace>
       </Wrapper>
     </Container>
   )

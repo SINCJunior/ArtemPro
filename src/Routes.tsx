@@ -18,6 +18,7 @@ import Ombudsman from './pages/Forms/Ombudsman';
 import AddNotation from './pages/AddNotation';
 import Tasks from './pages/Tasks';
 import Calendar from './pages/Calendar';
+import Feedback from './pages/Feedback';
 
 const AppRoutes = () => {
   return (
@@ -37,8 +38,9 @@ const AppRoutes = () => {
       <Route path='/login' element={ <Login /> } />
       <Route path='/recuperacao-senha' element={ <PassRecover /> } />
       <Route path='/adicionar-apontamento' element={ <AddNotation /> } />
-      <Route path='/tarefas' element={ <Tasks />} />
-      <Route path='/calendario' element={ <Calendar />} />
+      <Route path='/tarefas' element={ <Tasks /> } />
+      <Route path='/calendario' element={ <Calendar /> } />
+      <Route path='/feedback' element={ <Feedback /> } />
     </Routes>
   );
 }

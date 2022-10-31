@@ -8,10 +8,12 @@ import {
   Container,
   Wrapper,
   Event,
-  BallIndicator,
   Event2,
   Event3,
   Event4,
+  Event5,
+  Event6,
+  BallIndicator,
   
   SidebarMenu,
   MembersSide,
@@ -59,6 +61,16 @@ const Calendar: React.FC = () => {
         <BallIndicator />
         <h3>Não sei mais o que botar lalalal lalalalla lalalalal allalalala allalalal</h3>
       </Event4>
+      <Event5>
+        <p>17/11/2022</p>
+        <BallIndicator />
+        <h3>Não sei mais o que botar</h3>
+      </Event5>
+      <Event6>
+        <p>17/11/2022</p>
+        <BallIndicator />
+        <h3>Não sei mais o que botar</h3>
+      </Event6>
     </Wrapper>
 
     <SidebarMenu>
@@ -104,16 +116,16 @@ const Calendar: React.FC = () => {
             <span>Drive</span>
           </MenuItem>
         </a>
+
+        <Link to = {'/feedback'} style={{ textDecoration: 'none' }}>
+          <MenuItem>
+            <PerformanceIcon />
+            <span>Feedback</span>
+          </MenuItem>
+        </Link>
       </MembersSide>
 
       <DirexSide>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-          <MenuItem>
-            <PerformanceIcon />
-            <span>Desempenho</span>
-          </MenuItem>
-        </Link>
-
         <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
           <MenuItem>
             <DirexIcon />

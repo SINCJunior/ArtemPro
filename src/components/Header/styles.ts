@@ -60,19 +60,6 @@ export const AlertMessage = styled.div`
   }
 `;
 
-export const RightSpace = styled.div`
-  display: flex;
-  text-align: center;
-  align-items: center;
-`;
-
-export const TaskScore = styled.p`
-  font-size: 18px;
-  color: var(--white);
-  font-weight: bold;
-  margin-right: 16px;
-`;
-
 export const ArtemProLogo = styled.img`  
   position: fixed;
   top: 8px;

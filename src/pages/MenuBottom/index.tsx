@@ -46,15 +46,16 @@ const MenuBottom: React.FC = () => {
             <CloudIcon />
             <span>Drive</span>
           </MenuItem>
+          
+          <Link to = {'/feedback'} style={{ textDecoration: 'none' }}>
+            <MenuItem>
+              <PerformanceIcon />
+              <span>Feedback</span>
+            </MenuItem>
+          </Link>
         </a>
 
         <DirexSide>
-          <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
-            <MenuItem>
-              <PerformanceIcon />
-              <span>Desempenho</span>
-            </MenuItem>
-          </Link>
           <Link to = {'/direx'} style={{ textDecoration: 'none' }}>
             <MenuItem>
               <DirexIcon />
@@ -70,7 +71,7 @@ const MenuBottom: React.FC = () => {
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />
         </Link>
-        <Link to = {'/em-construcao'} style={{ textDecoration: 'none' }}>
+        <Link to = {'/calendario'} style={{ textDecoration: 'none' }}>
           <CalendarBottomIcon />
         </Link>
         <Link to = {'/menu'} style={{ textDecoration: 'none' }}>

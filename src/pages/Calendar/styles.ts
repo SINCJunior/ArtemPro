@@ -7,7 +7,6 @@ import {
   Rocket,
   AddAlarm,
   HeadsetMic, 
-  NotificationsNone,
   Menu, 
   CalendarToday,
   Task
@@ -19,6 +18,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 `;
 
 export const Wrapper = styled.div`
@@ -28,24 +28,27 @@ export const Wrapper = styled.div`
   top: 100px;
   left: 120px;
   
-  height: 70vh;
+  height: 80vh;
   width: 2px;
   background: var(--white);
 
   @media (min-width: 500px) {
-    width: 75vw;
     margin-left: 116px;
-    width: 2px;
   }
   @media (min-width: 960px) {
-    width: 75vw;
     margin-left: 316px;
-    width: 2px;
   }
   @media (min-width: 1054px) {
-    width: 450px;
     margin-left: 316px;
-    width: 2px;
+  }
+
+  // Tela de celular
+  @media (min-height: 750px) {
+    height: 70vh;
+  }
+  // Tela de Notebook
+  @media (min-height: 768px) {
+    height: 62vh;
   }
 `;
 
@@ -55,6 +58,7 @@ const eventCSS = css`
   position: fixed;
 
   height: 80px;
+  width: 60vw;
   margin-bottom: 100px;
 
   > p {
@@ -69,9 +73,11 @@ const eventCSS = css`
 
   > h3 {
     position: absolute;
-    color: var(--white);
+    color: var(--primary);
     left: 24px;
-    width: 50vw;
+    padding: 8px;
+    background: var(--sinc-light-color);
+    border-radius: 8px;
   }
 `;
 
@@ -93,6 +99,16 @@ export const Event3 = styled.div`
 export const Event4 = styled.div`
   ${eventCSS};
   top: 400px;
+`;
+
+export const Event5 = styled.div`
+  ${eventCSS};
+  top: 500px;
+`;
+
+export const Event6 = styled.div`
+  ${eventCSS};
+  top: 600px;
 `;
 
 export const BallIndicator = styled.div`
