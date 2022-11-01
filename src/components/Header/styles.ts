@@ -32,8 +32,7 @@ export const AlertMessage = styled.div`
     display: flex;
     position: fixed;
     background: var(--white);
-    margin-top: 4px;
-    height: 56px;
+    height: 64px;
     width: 400px;
     border-radius: 8px;
     z-index: 2;

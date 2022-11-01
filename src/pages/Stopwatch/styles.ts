@@ -7,7 +7,6 @@ import {
   Rocket,
   AddAlarm,
   HeadsetMic, 
-  NotificationsNone,
   Menu, 
   CalendarToday,
   PlayCircle,

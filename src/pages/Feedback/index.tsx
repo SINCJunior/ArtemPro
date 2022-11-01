@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
@@ -6,6 +6,9 @@ import Header from '../../components/Header';
 
 import {
   Container,
+  TargetConfig,
+  EmptyCheckbox,
+  FilledCheckbox,
   Wrapper,
   FeedbackItem,
   SelectInput,
@@ -32,20 +35,35 @@ import {
 } from './styles';
 
 const Feedback: React.FC = () => {
+  //Seleciona feedback para consultor ou para diretor
+  const [isFeedbackForDirexActive, setIsFeedbackForDirexActive] = useState(false);
+  const changeFeedbackTarget = () => {
+    setIsFeedbackForDirexActive(!isFeedbackForDirexActive);
+  }
+
   return (
     <Container>
       <Header />
       <Helmet>
         <title>Feedback</title>
       </Helmet>
-      <Wrapper>
+      <TargetConfig>
+        <h3>Diretor?</h3>
+        <EmptyCheckbox onClick={changeFeedbackTarget} className={isFeedbackForDirexActive? 'active' : ''} />
+        <FilledCheckbox onClick={changeFeedbackTarget} className={isFeedbackForDirexActive? 'active' : ''} />
+        <p className={isFeedbackForDirexActive? '' : 'active'}>Não</p>
+        <p className={isFeedbackForDirexActive? 'active' : ''}>Sim</p>
+      </TargetConfig>
+
+
+      <Wrapper className={isFeedbackForDirexActive? '' : 'active'}>
         <FeedbackItem>
           <h3>Selecione o consultor</h3>
           <SelectInput>
             <option value=''>Selecione uma opção</option>
             <option value='Cesar_Rolli'>Cesar Rolli</option>
-            <option value='Paulo_Brito'>Paulo Brito</option>
-            <option value='Milena_Müller'>Milena Müller</option>
+            <option value='Nicolas_Ludwig'>Nicolas Ludwig</option>
+            <option value='Marcelo_Welzel'>Marcelo Welzel</option>
             <option value='Gabrielle_Grassi'>Gabrielle Grassi</option>
           </SelectInput>
         </FeedbackItem>
@@ -138,6 +156,20 @@ const Feedback: React.FC = () => {
         <BlackBar />
       </Wrapper>
 
+      <Wrapper className={isFeedbackForDirexActive? 'active' : ''}>
+        <FeedbackItem>
+          <h3>Selecione o diretor</h3>
+          <SelectInput>
+            <option value=''>Selecione uma opção</option>
+            <option value='Paulo_Brito'>Paulo Brito</option>
+            <option value='Milena_Müller'>Milena Müller</option>
+            <option value='Lucas_Wegner'>Lucas Wegner</option>
+            <option value='Joao_Victor'>João Victor</option>
+          </SelectInput>
+        </FeedbackItem>
+        
+      </Wrapper>
+
       <SidebarMenu>
         <MembersSide>
           <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
@@ -202,7 +234,7 @@ const Feedback: React.FC = () => {
       
       <BottomMenu>
         <Link to = {'/tarefas'} style={{ textDecoration: 'none' }}>
-          <TaskDoneBottomIcon  className='active'/>
+          <TaskDoneBottomIcon />
         </Link>
         <Link to = {'/apontamento'} style={{ textDecoration: 'none' }}>
           <NotationBottomIcon />

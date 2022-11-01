@@ -10,6 +10,8 @@ import {
   Menu, 
   CalendarToday,
   Task,
+  CheckBox,
+  CheckBoxOutlineBlank,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -20,13 +22,32 @@ export const Container = styled.div`
   width: 100vw;
 `;
 
-export const Wrapper = styled.div`
+
+export const TargetConfig = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+
+  align-items: center;
+
   position: absolute;
   top: 100px;
-  flex-direction: column;
+  left: 40px;
 
+  > h3 {
+    color: var(--white-text);
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 32px;
+  }
+  > p {
+    font-size: 0;
+    &.active{
+      color: var(--white-text);
+      font-size: 20px;
+      margin-left: 8px;
+    }
+  }
+ 
   @media (min-width: 500px) {
     left: 100px;
   }
@@ -35,11 +56,61 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const EmptyCheckbox = styled(CheckBoxOutlineBlank)`
+  display: flex;
+  width: 32px;
+  height: 32px;
+  fill: var(--white);
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--sinc-light-color);
+  }
+  &.active {
+    display: none;
+  }
+`;
+
+export const FilledCheckbox = styled(CheckBox)`
+  display: none;
+
+  &.active {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    fill: var(--sinc-light-color);
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--sinc-dark-color);
+    }
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: none;
+  
+  &.active {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 160px;
+    flex-direction: column;
+
+    @media (min-width: 500px) {
+      left: 100px;
+    }
+    @media (min-width: 960px) {
+      left: 40vw;
+    }
+  }
+`;
+
 export const FeedbackItem = styled.div`
   display: flex;
   flex-direction: column;
   width: 80vw;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
 
   > h3 {
     padding-bottom: 8px;
