@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import teamwork from '../../assets/teamwork.png';
 
 import Header from '../../components/Header';
+import SincAlerts from '../../components/SincAlerts';
 
 import { 
   Container,
@@ -37,6 +38,7 @@ const ConstructionPage: React.FC = () => {
       <Helmet>
         <title>Em construção</title>
       </Helmet>
+      <SincAlerts />
       <Wrapper>
         <ConstructionImg src = { teamwork } />
         <Warning>

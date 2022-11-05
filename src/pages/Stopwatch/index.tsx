@@ -46,6 +46,7 @@ import {
   WaterImg,
   TaskDoneIcon,
 } from './styles';
+import SincAlerts from '../../components/SincAlerts';
 
 
 const Stopwatch: React.FC = () => {
@@ -81,6 +82,7 @@ const Stopwatch: React.FC = () => {
       <Helmet>
         <title>Cronômetro</title> 
       </Helmet>
+      <SincAlerts />
 
       <Wrapper>
         <Link to={'/apontamento'} style={{ textDecoration: 'none' }}>

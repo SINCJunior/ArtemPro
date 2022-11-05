@@ -18,16 +18,16 @@ export const Container = styled.div`
     margin-left: 116px;
   }
 
-  @media (min-width: 960px) {
-    margin-left: 316px;
+  @media (min-width: 950px) {
+    margin-left: 250px;
   }
 
   @media (min-width: 1300px) {
-    margin-left: 316px;
+    margin-left: 250px;
   }
 
   @media (min-width: 1690px) {
-    margin-left: 316px;
+    margin-left: 250px;
   }
 `;
 

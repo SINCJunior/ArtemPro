@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import artempro_black from '../../assets/artempro_black.png';
+import SincAlerts from '../../components/SincAlerts';
 
 import {
   Container,
@@ -20,6 +21,7 @@ const Login: React.FC = () => {
       <Helmet>
         <title>Login</title>
       </Helmet>
+      <SincAlerts />
       <ArtemProLogo src = { artempro_black } />
       <Wrapper>
         <SincEmail type='text' placeholder='E-mail' />

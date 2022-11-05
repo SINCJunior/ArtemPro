@@ -6,8 +6,7 @@ import {
   InsertChartOutlined,
   Rocket,
   AddAlarm,
-  HeadsetMic, 
-  NotificationsNone,
+  HeadsetMic,
   Menu, 
   CalendarToday,
   Task,
@@ -33,10 +32,10 @@ export const Wrapper = styled.div`
     margin-top: 40px;
   }
   @media (min-width: 500px) {
-    left: 100px;
+    left: 116px;
   }
   @media (min-width: 960px) {
-    left: 316px;
+    left: 258px;
   }
 `;
 

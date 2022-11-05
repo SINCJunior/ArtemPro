@@ -13,7 +13,7 @@ export const Container = styled.div`
     align-items: center;
 
     top: 72px;
-    right: 8px;
+    right: 40px;
     padding: 8px 0;
 
     width: 300px;

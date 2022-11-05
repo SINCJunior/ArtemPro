@@ -36,10 +36,7 @@ export const Wrapper = styled.div`
     margin-left: 116px;
   }
   @media (min-width: 960px) {
-    margin-left: 316px;
-  }
-  @media (min-width: 1054px) {
-    margin-left: 316px;
+    margin-left: 250px;
   }
 
   // Tela de celular

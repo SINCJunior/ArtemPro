@@ -2,8 +2,6 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import TaskCard from '../TaskCard';
-
 const MemberCard: React.FC = () => {
   return(
     <Container>

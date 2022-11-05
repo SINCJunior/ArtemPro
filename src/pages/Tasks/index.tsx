@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 import MemberCard from '../../components/MemberCard';
-import TaskCard from '../../components/TaskCard';
+import SincAlerts from '../../components/SincAlerts';
 
 import {
   Container,
   Wrapper,
   UpperArea,
-  TasksList,
 
   SidebarMenu,
   MembersSide,
@@ -38,17 +37,12 @@ const Tasks: React.FC = () => {
       <Helmet>
         <title>Tarefas</title>
       </Helmet>
+      <SincAlerts />
       <Wrapper>
         <h1>Membros</h1>
         <UpperArea>
           <MemberCard />
         </UpperArea>
-        <h1>Lista de tarefas</h1>
-        <TasksList>
-          <TaskCard />
-          <TaskCard />
-          <TaskCard />
-        </TasksList>
       </Wrapper>
 
       <SidebarMenu>

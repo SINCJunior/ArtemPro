@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 import NotationArea from '../../components/NotationArea';
+import SincAlerts from '../../components/SincAlerts';
 import TimeAnalysis from '../../components/TimeAnalysis';
 
 import { 
@@ -35,6 +36,7 @@ const StandartNotation: React.FC = () => {
       <Helmet>
         <title>Apontamento</title>
       </Helmet>
+      <SincAlerts />
       <Wrapper>
         
         <SidebarMenu>

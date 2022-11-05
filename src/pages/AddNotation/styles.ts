@@ -6,8 +6,7 @@ import {
   InsertChartOutlined,
   Rocket,
   AddAlarm,
-  HeadsetMic, 
-  NotificationsNone,
+  HeadsetMic,
   Menu, 
   CalendarToday,
   Task

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
+import SincAlerts from '../../components/SincAlerts';
 
 import {
   Container,
@@ -47,6 +48,7 @@ const Feedback: React.FC = () => {
       <Helmet>
         <title>Feedback</title>
       </Helmet>
+      <SincAlerts />
       <TargetConfig>
         <h3>Diretor?</h3>
         <EmptyCheckbox onClick={changeFeedbackTarget} className={isFeedbackForDirexActive? 'active' : ''} />

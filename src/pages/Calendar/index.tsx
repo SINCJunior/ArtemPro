@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
+import SincAlerts from '../../components/SincAlerts';
 
 import {
   Container,
@@ -40,6 +41,7 @@ const Calendar: React.FC = () => {
     <Helmet>
       <title>Calendário</title>
     </Helmet>
+    <SincAlerts />
     <Wrapper>
       <Event>
         <p>27/10/2022</p>

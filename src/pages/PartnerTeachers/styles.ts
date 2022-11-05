@@ -7,8 +7,7 @@ import {
   Rocket,
   Task,
   AddAlarm,
-  HeadsetMic, 
-  NotificationsNone,
+  HeadsetMic,
   Menu, 
   CalendarToday,
 } from '../../styles/Icons';

@@ -8,7 +8,6 @@ import {
   HeadsetMic,
   InsertChartOutlined,
   Menu,
-  NotificationsNone,
   Rocket,
   Task
 } from '../../styles/Icons';

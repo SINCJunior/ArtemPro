@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
+import SincAlerts from '../../components/SincAlerts';
 
 import {
   Container,
@@ -46,6 +47,7 @@ const AddNotation: React.FC = () => {
       <Helmet>
         <title>Adicionar apontamento</title>
       </Helmet>
+      <SincAlerts />
       <Wrapper>
         <MemberSelection>
           <option>Cesar Rolli</option>

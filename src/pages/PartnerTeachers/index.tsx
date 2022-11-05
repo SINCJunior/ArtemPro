@@ -27,6 +27,7 @@ import {
   CalendarBottomIcon,
   MenuBottomIcon
 } from './styles';
+import SincAlerts from '../../components/SincAlerts';
 
 const Profile: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ const Profile: React.FC = () => {
       <Helmet>
         <title>Professores parceiros</title>
       </Helmet>
+      <SincAlerts />
       <Wrapper>
         <AddPartnerTeachersArea />
         <PartnerTeachersArea />
