@@ -1,40 +1,125 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import {
+  CheckBox,
+  CheckBoxOutlineBlank,
+} from '../../styles/Icons';
+
 
 export const Container = styled.div`
-  width: 70vw;
+  align-items: center;
+
+  width: 300px;
+  height: 440px;
   border-radius: 8px;
+  margin-right: 16px;
+  padding-top: 28px;
   
-  margin: 16px;
+  overflow-y: scroll;
+  flex: 0 0 300px;
+
   background: rgba(255, 255, 255, 0.3);
 
-  display: flex;
-  flex-direction: column;
-  
-  border-top: 32px solid rgba(230, 236, 245, 0.5);
-  
   > h3 {
-    color: var(--primary );
-    margin-top: -26px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    align-self: center;
-  }
+    position: absolute;
+    top: 16px;
+    width: 300px;
+    padding: 8px 8px 8px 16px;
     
-  @media (min-width: 500px) {
-    width: 20vw;
-  }
-  
-  @media (min-width: 960px) {
-    width: 12vw;
+    border-radius: 8px;
+    
+    color: var(--sinc-dark-color);
+    background: var(--white);
+    z-index: 2;
   }
 `;
 
-export const Header = styled.div`
+const taskN_CSS = css`
+  width: 252px;
+  height: 200px;
+  background: var(--white);;
+  border-radius: 8px;
+  margin: 24px;
+  
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+  > h1 {
+    font-size: 16px;
+    color: var(--primary);
+    background: var(--sinc-dark-color); // muda conforme o banco de dados
+    
+    position: sticky;
+    border-radius: 8px;
+    width: 268px;
+    padding: 8px;
+  }
+  
+  > p {    
+    font-size: 16px;
+    color: var(--primary);
+    
+    margin: 8px;
+  }
+  `;
+
+export const Task1 = styled.div`${taskN_CSS}`;
+export const Task2 = styled.div`${taskN_CSS}`;
+export const Task3 = styled.div`${taskN_CSS}`;
+export const Task4 = styled.div`${taskN_CSS}`;
+export const Task5 = styled.div`${taskN_CSS}`;
+
+
+export const TaskDone = styled.div`
+  display: none;
+
+  &.active{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+
+    background: var(--white);
+    z-index: 1;
+    bottom: 0;
+
+    padding: 4px;
+    align-items: center;
+    justify-content: space-around;
+
+    > p {
+      font-size: 16px;
+      color: var(--primary);
+    }
+  }
+`;
+
+export const EmptyCheckbox = styled(CheckBoxOutlineBlank)`
   display: flex;
-  width: 90%;
-  margin: 0 16px;
-  flex-direction: row;
-  margin-top: -26px;
-  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+  fill: var(--primary);
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--sinc-light-color);
+  }
+  &.active {
+    display: none;
+  }
+`;
+
+export const FilledCheckbox = styled(CheckBox)`
+  display: none;
+
+  &.active {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    fill: var(--sinc-light-color);
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--sinc-dark-color);
+    }
+  }
 `;

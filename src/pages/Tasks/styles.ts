@@ -18,89 +18,36 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
+  flex-direction: row;
   position: absolute;
-  top: 40px;
-  flex-direction: column;
+  display: flex;
+  top: 100px;
+  
+  width: 90vw;
+  height: 472px;
+  padding: 16px;
+  
+  overflow-y: hidden;
+  overflow-x: scroll;
 
-  > h1 {
-    color: #fff;
-    margin-top: 40px;
-  }
+  border: 2px solid var(--secondary);
+  border-radius: 16px;
+
   @media (min-width: 500px) {
     left: 116px;
+    width: 70vh;
   }
   @media (min-width: 960px) {
-    left: 258px;
+    left: 250px;
+    width: 70vw;
   }
-`;
-
-const taskAreasCSS = css`
-  width: 90vw;
-  background: var(--secondary);
-  margin: 8px 0;
-  border-radius: 16px;
-  
-  display: flex;
-  flex-direction: row;
-
-  @media (min-width: 500px) {
-    width: 85vw;
-  }
-`;
-
-export const UpperArea = styled.div`
-  ${taskAreasCSS}
-  height: 60vh;
-  
-  @media (min-width: 500px) {
-    height: 50vh;
-  }
-`;
-
-export const TasksList = styled.div`
-  ${taskAreasCSS}
-  height: 30vh;
-  margin-bottom: 64px;
-
-  @media (min-width: 500px) {
-    height: 25vh;
-    margin-bottom: 0;
-  }
-`;
-
-export const MemberTasks = styled.div`
-  width: 70vw;
-  border-radius: 8px;
-  
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
-
-  display: flex;
-  justify-content: center;
-
-  border-top: 32px solid rgba(230, 236, 245, 0.5);
-  cursor: grab;
-  
-  > h3 {
-    font-size: 20px;
-    margin-top: -26px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: var(--primary );
-  }
-  
-  @media (min-width: 500px) {
-    width: 20vw;
-  }
-  
-  @media (min-width: 960px) {
-    width: 12vw;
+  @media (min-width: 1299px) {
+    left: 250px;
+    width: 80vw;
   }
 `;
 

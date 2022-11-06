@@ -9,8 +9,7 @@ import SincAlerts from '../../components/SincAlerts';
 import {
   Container,
   Wrapper,
-  UpperArea,
-
+  
   SidebarMenu,
   MembersSide,
   MenuItem,
@@ -38,11 +37,16 @@ const Tasks: React.FC = () => {
         <title>Tarefas</title>
       </Helmet>
       <SincAlerts />
+      
       <Wrapper>
-        <h1>Membros</h1>
-        <UpperArea>
-          <MemberCard />
-        </UpperArea>
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
+        <MemberCard />
       </Wrapper>
 
       <SidebarMenu>

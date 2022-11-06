@@ -40,7 +40,7 @@ export const Wrapper = styled.div`
   }
 
   // Tela de celular
-  @media (min-height: 750px) {
+  @media (min-height: 751px) {
     height: 70vh;
   }
   // Tela de Notebook

@@ -21,14 +21,6 @@ export const Container = styled.div`
   @media (min-width: 950px) {
     margin-left: 250px;
   }
-
-  @media (min-width: 1300px) {
-    margin-left: 250px;
-  }
-
-  @media (min-width: 1690px) {
-    margin-left: 250px;
-  }
 `;
 
 const ButtonPageCSS = css`

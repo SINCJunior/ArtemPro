@@ -48,13 +48,20 @@ const DirectorsControl: React.FC = () => {
           <DirexItem>
             <h3>Adicionar tarefas</h3>
             <DirexInput placeholder='Adicionar tarefa' />
+            <SelectInput>
+              <option value=''>Selecione uma opção</option>
+              <option value='Cesar_Rolli'>Cesar Rolli</option>
+              <option value='Nicolas_Ludwig'>Nicolas Ludwig</option>
+              <option value='Marcelo_Welzel'>Marcelo Welzel</option>
+              <option value='Gabrielle_Grassi'>Gabrielle Grassi</option>
+            </SelectInput>
             <SmallWrapper>
               <SmallDirexInput placeholder='Prazo: DD/MM/AAAA'/>
               <SmallSelectInput>
                 <option value=''>Prioridade</option>
-                <option value='baixa'>🍼 Baixa</option>
-                <option value='media'>🧃 Media</option>
-                <option value='alta'>☕ Alta</option>
+                <option value='baixa'>Baixa</option>
+                <option value='media'>Media</option>
+                <option value='alta'>Alta</option>
               </SmallSelectInput>
             </SmallWrapper>
             <DirexButton><p>Adicionar tarefa</p></DirexButton>
