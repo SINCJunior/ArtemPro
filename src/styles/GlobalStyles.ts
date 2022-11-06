@@ -26,6 +26,7 @@ export default createGlobalStyle`
     --secondary: #353535;
     --white: #d9d9d9;
     --white-text: #fff;
+    --sinc-beige: #e7b6a0;
     --sinc-light-color: #EF4136;
     --sinc-dark-color: #8B0924;
     --sinc-menu-bar-hover: #170901;

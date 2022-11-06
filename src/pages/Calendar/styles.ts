@@ -20,12 +20,12 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
-  overflow-x: scroll;
+  overflow-y: hidden;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
-  position: absolute;
+  position: fixed;
 
   top: 100px;
   left: 120px;
@@ -72,55 +72,85 @@ const eventCSS = css`
 
   > h3 {
     position: absolute;
-    color: var(--white-text);
     left: 24px;
     padding: 8px;
-    background: var(--sinc-dark-color);
     border-radius: 8px;
   }
 `;
 
 export const Event = styled.div`
   ${eventCSS};
+  > h3 {
+    background: var(--sinc-dark-color);
+    color: var(--white-text);
+  }
   top: 100px;
 `;
 
 export const Event2 = styled.div`
   ${eventCSS};
+  > h3 {
+    background: var(--sinc-beige);
+    color: var(--primary);
+  }
   top: 200px;
 `;
 
 export const Event3 = styled.div`
   ${eventCSS};
+  > h3 {
+    background: var(--sinc-beige);
+    color: var(--primary);
+  }
   top: 300px;
 `;
 
 export const Event4 = styled.div`
   ${eventCSS};
+  > h3 {
+    background: var(--sinc-beige);
+    color: var(--primary);
+  }
   top: 400px;
 `;
 
 export const Event5 = styled.div`
   ${eventCSS};
+  > h3 {
+    background: var(--sinc-beige);
+    color: var(--primary);
+  }
   top: 500px;
 `;
 
 export const Event6 = styled.div`
   ${eventCSS};
+  > h3 {
+    background: var(--sinc-beige);
+    color: var(--primary);
+  }
   top: 600px;
 `;
 
-export const BallIndicator = styled.div`
+const BallIndicatorCSS = css`
   display: flex;
   position: absolute;
   left: -14px;
   width: 32px;
   height: 32px;
   border-radius: 16px;
-  background: var(--sinc-dark-color);
   border: 6px solid var(--primary);
 `;
 
+export const BallIndicator = styled.div`
+  ${BallIndicatorCSS};
+  background: var(--sinc-dark-color);
+`;
+
+export const BallIndicator2 = styled.div`
+  ${BallIndicatorCSS};
+  background: var(--sinc-beige);
+`;
 
 
 //! Side bar menu

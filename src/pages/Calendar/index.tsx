@@ -15,6 +15,7 @@ import {
   Event5,
   Event6,
   BallIndicator,
+  BallIndicator2,
   
   SidebarMenu,
   MembersSide,
@@ -50,27 +51,27 @@ const Calendar: React.FC = () => {
       </Event>
       <Event2>
         <p>31/10/2022</p>
-        <BallIndicator />
+        <BallIndicator2 />
         <h3>Início da CapaSINCtação</h3>
       </Event2>
       <Event3>
         <p>02/11/2022</p>
-        <BallIndicator />
+        <BallIndicator2 />
         <h3>Final da CapaSINCtação</h3>
       </Event3>
       <Event4>
         <p>17/11/2022</p>
-        <BallIndicator />
+        <BallIndicator2 />
         <h3>Não sei mais o que botar lalalal lalalalla lalalalal allalalala allalalal</h3>
       </Event4>
       <Event5>
         <p>17/11/2022</p>
-        <BallIndicator />
+        <BallIndicator2 />
         <h3>Não sei mais o que botar</h3>
       </Event5>
       <Event6>
         <p>17/11/2022</p>
-        <BallIndicator />
+        <BallIndicator2 />
         <h3>Não sei mais o que botar</h3>
       </Event6>
     </Wrapper>
