@@ -13,7 +13,7 @@ export const Container = styled.div`
     height: 64px;
     width: 95vw;
     border-radius: 8px;
-    z-index: 2;
+    z-index: 3;
     align-items: center;
     overflow-y: scroll;
   }

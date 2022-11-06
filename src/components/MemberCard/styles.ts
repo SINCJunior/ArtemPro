@@ -36,7 +36,7 @@ export const Container = styled.div`
 
 const taskN_CSS = css`
   width: 240px;
-  height: 200px;
+  max-height: 200px;
   background: var(--white);;
   border-radius: 8px;
   margin: 30px;
@@ -61,7 +61,12 @@ const taskN_CSS = css`
     
     margin: 8px;
   }
-  `;
+
+  @media (min-width: 500px) {
+    width: 268px;
+    margin: 16px;
+  }
+`;
 
 export const Task1 = styled.div`${taskN_CSS}`;
 export const Task2 = styled.div`${taskN_CSS}`;
@@ -75,7 +80,6 @@ export const TaskDone = styled.div`
 
   &.active{
     display: flex;
-    position: sticky;
     flex-direction: row;
 
     background: var(--sinc-dark-color);

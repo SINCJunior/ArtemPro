@@ -42,7 +42,7 @@ const MemberCard: React.FC = () => {
       <h3>Cesar Rolli Bevilaqua</h3>
       <Task1>
         <h1>Prioridade: alta</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus tuLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper massa vulputate volutpat scelerisque. Morbi et enim vehicula, viverra mi at, aliquet nisl. Morbi purus enim, malesuada non felis at, pulvinar semper mauris. Proin pretium, quam ac tempor mattis, lorem neque mollis ex, id finibus nunc mi sit amet elit. Morbi malesuada consequat nisl in vestibulum. Aliquam ut pulvinar lorem. Aenean vitae aliquet nisi. Quisque eget convallis elit. Aenean ultricies nulla lectus, et commodo erat dapibus et. Vestibulum sit amet interdum mi.rpis, condimentum ac porttitor ac, porta sit amet ipsum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <TaskDone className={isShowToDirexsActive? 'active' : ''}>
           <p>Tarefa feita?</p>
           <EmptyCheckbox onClick={changeTaskDone1} className={isTaskDone1? 'active' : ''} />
@@ -52,7 +52,7 @@ const MemberCard: React.FC = () => {
 
       <Task2>
         <h1>Prioridade: alta</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus tuLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper massa vulputate volutpat scelerisque. Morbi et enim vehicula, viverra mi at, aliquet nisl. Morbi purus enim, malesuada non felis at, pulvinar semper mauris. Proin pretium, quam ac tempor mattis, lorem neque mollis ex, id finibus nunc mi sit amet elit. Morbi malesuada consequat nisl in vestibulum. Aliquam ut pulvinar lorem. Aenean vitae aliquet nisi. Quisque eget convallis elit. Aenean ultricies nulla lectus, et commodo erat dapibus et. Vestibulum sit amet interdum mi.rpis, condimentum ac porttitor ac, porta sit amet ipsum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus tuLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <TaskDone className={isShowToDirexsActive? 'active' : ''}>
           <p>Tarefa feita?</p>
           <EmptyCheckbox onClick={changeTaskDone2} className={isTaskDone2? 'active' : ''} />
