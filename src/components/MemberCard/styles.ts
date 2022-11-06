@@ -35,18 +35,18 @@ export const Container = styled.div`
 `;
 
 const taskN_CSS = css`
-  width: 252px;
+  width: 240px;
   height: 200px;
   background: var(--white);;
   border-radius: 8px;
-  margin: 24px;
+  margin: 30px;
   
   overflow-y: scroll;
   overflow-x: hidden;
   
   > h1 {
     font-size: 16px;
-    color: var(--white); // Cor da letra: branca - mas se o fundo for amarelo: preta
+    color: var(--white-text); // Cor da letra: branca - mas se o fundo for amarelo: preta
     background: var(--sinc-dark-color); // muda conforme o banco de dados
     
     position: sticky;
@@ -78,7 +78,7 @@ export const TaskDone = styled.div`
     position: sticky;
     flex-direction: row;
 
-    background: rgb(110, 110, 110);
+    background: var(--sinc-dark-color);
     z-index: 1;
     bottom: 0;
 
@@ -88,7 +88,7 @@ export const TaskDone = styled.div`
 
     > p {
       font-size: 16px;
-      color: var(--primary);
+      color: var(--white-text);
     }
   }
 `;
@@ -97,7 +97,7 @@ export const EmptyCheckbox = styled(CheckBoxOutlineBlank)`
   display: flex;
   width: 24px;
   height: 24px;
-  fill: var(--primary);
+  fill: var(--white-text);
   cursor: pointer;
 
   &:hover {

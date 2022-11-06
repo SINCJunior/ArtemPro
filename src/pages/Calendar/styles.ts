@@ -72,10 +72,10 @@ const eventCSS = css`
 
   > h3 {
     position: absolute;
-    color: var(--primary);
+    color: var(--white-text);
     left: 24px;
     padding: 8px;
-    background: var(--sinc-light-color);
+    background: var(--sinc-dark-color);
     border-radius: 8px;
   }
 `;
@@ -117,7 +117,7 @@ export const BallIndicator = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 16px;
-  background: var(--sinc-light-color);
+  background: var(--sinc-dark-color);
   border: 6px solid var(--primary);
 `;
 
