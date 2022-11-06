@@ -46,7 +46,7 @@ const taskN_CSS = css`
   
   > h1 {
     font-size: 16px;
-    color: var(--primary);
+    color: var(--white); // Cor da letra: branca - mas se o fundo for amarelo: preta
     background: var(--sinc-dark-color); // muda conforme o banco de dados
     
     position: sticky;
@@ -78,7 +78,7 @@ export const TaskDone = styled.div`
     position: sticky;
     flex-direction: row;
 
-    background: var(--white);
+    background: rgb(110, 110, 110);
     z-index: 1;
     bottom: 0;
 

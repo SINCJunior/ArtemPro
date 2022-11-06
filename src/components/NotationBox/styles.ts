@@ -2,20 +2,28 @@ import styled from "styled-components";
 import { DotsVerticalRounded } from '../../styles/Icons';
 
 export const Container = styled.div`
-  width: 336px;
-  height: 336px;
+  width: 300px;
+  height: 336;
   border-radius: 8px;
 
   background: var(--secondary);
+
+  @media (min-width: 500px) {
+    width: 336px;
+  }
 `;
 
 export const ParticipatingMembersArea = styled.div`
-  width: 336px;
+  width: 300px;
   height: 72px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: 500px) {
+    width: 336px;
+  }
 `;
 
 export const ParticipatingMembers = styled.select`
@@ -36,7 +44,7 @@ export const EditNotation = styled(DotsVerticalRounded)`
 `;
 
 export const TimeStampArea = styled.div`
-  width: 336px;
+  width: 300px;
   height: 64px;
 
   border-top: 1px solid var(--white);
@@ -46,6 +54,10 @@ export const TimeStampArea = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 8px;
+
+  @media (min-width: 500px) {
+    width: 336px;
+  }
 `;
 
 export const TimeStamp = styled.p`
@@ -60,7 +72,7 @@ export const Duration = styled.p`
 `;
 
 export const MemberDescriptionArea = styled.div`
-  width: 336px;
+  width: 300px;
   height: 200px;
 
   display: flex;
@@ -71,5 +83,9 @@ export const MemberDescriptionArea = styled.div`
     color: var(--white);
 
     margin: 8px;
+  }
+
+  @media (min-width: 500px) {
+    width: 336px;
   }
 `;

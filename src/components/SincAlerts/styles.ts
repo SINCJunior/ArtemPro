@@ -11,13 +11,13 @@ export const Container = styled.div`
     bottom: 10vh;
     background: var(--white);
     height: 64px;
-    width: 400px;
+    width: 95vw;
     border-radius: 8px;
     z-index: 2;
     align-items: center;
     overflow-y: scroll;
   }
-
+  
   > h3 {
     color: var(--sinc-light-color);
     font-size: 18px;
@@ -26,7 +26,7 @@ export const Container = styled.div`
     top: 4px;
     left: 4px;
   }
-
+  
   > p {
     color: var(--primary);
     font-size: 16px;
@@ -35,9 +35,13 @@ export const Container = styled.div`
     top: 24px;
     left: 4px;
   }
-
+  
   @media (min-width: 500px) {
     right: 40px;
+    
+    &.active{
+      width: 400px;
+    }
   }
 `;
 

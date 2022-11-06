@@ -6,7 +6,7 @@ import { FilterAlt } from '../../styles/Icons';
 export const Container = styled.div`
   margin-top: 72px;
   padding: 8px;
-  margin-left: 16px;
+  margin-left: 40px;
 
   //! Tabela de resolução:
   //! 0 até 499px (celular): padrão
