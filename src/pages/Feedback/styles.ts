@@ -22,7 +22,6 @@ export const Container = styled.div`
   width: 100vw;
 `;
 
-
 export const TargetConfig = styled.div`
   display: flex;
   flex-direction: row;

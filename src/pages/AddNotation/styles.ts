@@ -9,7 +9,7 @@ import {
   HeadsetMic,
   Menu, 
   CalendarToday,
-  Task
+  Task,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -23,13 +23,12 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   position: absolute;
 
   padding-left: 8px;
   width: 350px;
   margin-top: 100px;
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
   border-radius: 8px;
 
   @media (min-width: 500px) {
@@ -39,16 +38,6 @@ export const Wrapper = styled.div`
   @media (min-width: 990px) {
     margin-left: 150px;
   }
-`;
-
-export const MemberSelection = styled.select`
-  width: 250px;
-  height: 64px;
-
-  margin-left: 8px;
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 400;
 `;
 
 export const TimeStampArea = styled.div`
@@ -161,6 +150,34 @@ export const MemberDescriptionInput = styled.textarea`
 
   @media (min-width: 500px) {
     width: 434px;
+  }
+`;
+
+export const DeleteNotationButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+
+  left: 0;
+  bottom: -48px;
+
+  border: 2px solid var(--sinc-light-color);
+  border-radius: 16px;
+  cursor: pointer;
+
+  > p {
+    color: var(--white-text);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: var(--sinc-button-dark-hover);
   }
 `;
 

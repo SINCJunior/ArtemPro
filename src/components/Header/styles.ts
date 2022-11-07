@@ -8,11 +8,12 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
+  z-index: 2;
 `;
 
 export const Wrapper = styled.div`
   background: var(--secondary);
-  z-index: 1;
+  /* z-index: 2; */
   width: 100vw;
   height: 64px;
 

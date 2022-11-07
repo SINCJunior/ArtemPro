@@ -1,5 +1,3 @@
-[ ] Fazer o DropDownMenu para seleção múltipla
-
 [ ] Usar ... para mostrar ou não o que é da diretoria
 ``` js
     //Set Show to Direx
@@ -8,4 +6,10 @@
 
     <Direx className={isShowToDirexsActive? 'active' : ''}>
 ```
-[ ] Alterar as cores do calendário (salvar cor aleatória e alterar no frontend)
+[ ] Alterar as cores do calendário por dia (caso tenha mais de um evento no dia)
+
+## Aparece a barra de movimento da esquerda para a direita no PC
+- Parcerias
+- Feedback
+- Diretoria
+- Calendario

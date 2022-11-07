@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import DropDownMenu from '../../components/DropDownMenu';
 
 import Header from '../../components/Header';
 import SincAlerts from '../../components/SincAlerts';
@@ -48,13 +49,7 @@ const DirectorsControl: React.FC = () => {
           <DirexItem>
             <h3>Adicionar tarefas</h3>
             <DirexInput placeholder='Adicionar tarefa' />
-            <SelectInput>
-              <option value=''>Selecione uma opção</option>
-              <option value='Cesar_Rolli'>Cesar Rolli</option>
-              <option value='Nicolas_Ludwig'>Nicolas Ludwig</option>
-              <option value='Marcelo_Welzel'>Marcelo Welzel</option>
-              <option value='Gabrielle_Grassi'>Gabrielle Grassi</option>
-            </SelectInput>
+            <DropDownMenu />
             <SmallWrapper>
               <SmallDirexInput placeholder='Prazo: DD/MM/AAAA'/>
               <SmallSelectInput>

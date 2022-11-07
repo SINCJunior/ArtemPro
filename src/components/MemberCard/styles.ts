@@ -18,7 +18,7 @@ export const Container = styled.div`
   overflow-y: scroll;
   flex: 0 0 300px;
 
-  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--secondary);
 
   > h3 {
     position: absolute;
@@ -28,8 +28,8 @@ export const Container = styled.div`
     
     border-radius: 8px;
     
-    color: var(--sinc-dark-color);
-    background: var(--white);
+    color: var(--white-text);
+    background: var(--secondary);
     z-index: 2;
   }
 `;
@@ -37,7 +37,7 @@ export const Container = styled.div`
 const taskN_CSS = css`
   width: 240px;
   max-height: 200px;
-  background: var(--white);;
+  background: var(--secondary);
   border-radius: 8px;
   margin: 30px;
   
@@ -57,7 +57,7 @@ const taskN_CSS = css`
   
   > p {    
     font-size: 16px;
-    color: var(--primary);
+    color: var(--white-text);
     
     margin: 8px;
   }

@@ -17,9 +17,9 @@ const Header: React.FC = () => {
         <Link to={'/tarefas'} style={{ textDecoration: 'none' }}>
           <ArtemProLogo src = { artempro_black } />
         </Link>
-          <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
-            <ProfileIcon />
-          </Link>
+        <Link to={'/perfil'} style={{ textDecoration: 'none'}}>
+          <ProfileIcon />
+        </Link>
       </Wrapper>
     </Container>
   )

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import DropDownMenu from '../../components/DropDownMenu';
 
 import Header from '../../components/Header';
 import SincAlerts from '../../components/SincAlerts';
@@ -8,7 +9,6 @@ import SincAlerts from '../../components/SincAlerts';
 import {
   Container,
   Wrapper,
-  MemberSelection,
   TimeStampArea,
   TimeStamp,
   StartDay,
@@ -20,7 +20,9 @@ import {
   HoursInput,
   MinutesInput,
   MemberDescriptionInput,
+  DeleteNotationButton,
   AddNotationButton,
+
   SidebarMenu,
   MembersSide,
   MenuItem,
@@ -49,12 +51,7 @@ const AddNotation: React.FC = () => {
       </Helmet>
       <SincAlerts />
       <Wrapper>
-        <MemberSelection>
-          <option>Cesar Rolli</option>
-          <option>Paulo Brito</option>
-          <option>Augusto Danellus</option>
-          <option>Enzo Burille</option>
-        </MemberSelection>
+        <DropDownMenu />
         <TimeStampArea>
           <TimeStamp>
             <StartDay type='text' placeholder='DD' maxLength={2}/>
@@ -75,6 +72,11 @@ const AddNotation: React.FC = () => {
           </Duration>
         </TimeStampArea>
         <MemberDescriptionInput placeholder='Descrição' />
+        <Link to={'/apontamento'}>
+          <DeleteNotationButton>
+            <p>Excluir</p>
+          </DeleteNotationButton>
+        </Link>
         <Link to={'/apontamento'}>
           <AddNotationButton>
             <p>Adicionar</p>
