@@ -13,7 +13,7 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  position: absolute;
+  /* position: absolute; */
 
   display: flex;
   justify-content: center;
