@@ -42,7 +42,11 @@ export const Wrapper = styled.div`
 `;
 
 export const BlackBar = styled.div`
-  height: 80px;
+  height: 100px;
+  width: 80px;
+  background: pink;
+  position: absolute;
+  bottom: -100px;
 `;
 
 const eventCSS = css`
