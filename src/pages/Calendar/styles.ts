@@ -42,9 +42,9 @@ export const Wrapper = styled.div`
   }
 
   // Tela de celular
-  @media (min-height: 750px) {
+  /* @media (min-height: 750px) {
     height: 70vh;
-  }
+  } */
   // Tela de Notebook
   @media (min-height: 768px) {
     height: 62vh;
