@@ -41,6 +41,10 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const BlackBar = styled.div`
+  height: 80px;
+`;
+
 const eventCSS = css`
   display: flex;
   align-items: center;
