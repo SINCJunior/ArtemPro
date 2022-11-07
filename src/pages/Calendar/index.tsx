@@ -16,7 +16,6 @@ import {
   Event6,
   BallIndicator,
   BallIndicator2,
-  BlackBar,
   
   SidebarMenu,
   MembersSide,
@@ -75,7 +74,6 @@ const Calendar: React.FC = () => {
         <BallIndicator2 />
         <h3>Não sei mais o que botar</h3>
       </Event6>
-      <BlackBar />
     </Wrapper>
 
     <SidebarMenu>

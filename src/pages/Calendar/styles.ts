@@ -20,7 +20,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
-  overflow-y: hidden;
+  overflow-y: scroll;
 `;
 
 export const Wrapper = styled.div`
@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
   top: 100px;
   left: 120px;
   
-  height: 75vh;
+  height: 590px;
   width: 2px;
   background: var(--white);
 
@@ -40,20 +40,6 @@ export const Wrapper = styled.div`
   @media (min-width: 960px) {
     margin-left: 250px;
   }
-
-  @media (min-height: 900px) {
-    height: 62vh;
-  }
-`;
-
-export const BlackBar = styled.div`
-  position: absolute;
-  height: 120px;
-  width: 50vw;
-  top: 600px;
-  left: -100px;
-  background: var(--primary);
-  z-index: 1;
 `;
 
 const eventCSS = css`
