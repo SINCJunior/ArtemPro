@@ -13,8 +13,6 @@ import {
 } from '../../styles/Icons';
 
 export const Container = styled.div`
-  /* position: absolute; */
-
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -25,7 +23,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
-  position: fixed;
+  position: absolute;
 
   top: 100px;
   left: 120px;
@@ -45,7 +43,7 @@ export const Wrapper = styled.div`
 const eventCSS = css`
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
 
   height: 80px;
   width: 60vw;
@@ -75,7 +73,6 @@ export const Event = styled.div`
     background: var(--sinc-dark-color);
     color: var(--white-text);
   }
-  top: 100px;
 `;
 
 export const Event2 = styled.div`
@@ -84,7 +81,7 @@ export const Event2 = styled.div`
     background: var(--sinc-beige);
     color: var(--primary);
   }
-  top: 200px;
+  top: 100px;
 `;
 
 export const Event3 = styled.div`
@@ -93,7 +90,7 @@ export const Event3 = styled.div`
     background: var(--sinc-beige);
     color: var(--primary);
   }
-  top: 300px;
+  top: 200px;
 `;
 
 export const Event4 = styled.div`
@@ -102,7 +99,7 @@ export const Event4 = styled.div`
     background: var(--sinc-beige);
     color: var(--primary);
   }
-  top: 400px;
+  top: 300px;
 `;
 
 export const Event5 = styled.div`
@@ -111,7 +108,7 @@ export const Event5 = styled.div`
     background: var(--sinc-beige);
     color: var(--primary);
   }
-  top: 500px;
+  top: 400px;
 `;
 
 export const Event6 = styled.div`
@@ -120,7 +117,7 @@ export const Event6 = styled.div`
     background: var(--sinc-beige);
     color: var(--primary);
   }
-  top: 600px;
+  top: 500px;
 `;
 
 const BallIndicatorCSS = css`
