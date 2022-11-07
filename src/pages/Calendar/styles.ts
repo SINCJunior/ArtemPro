@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
   top: 100px;
   left: 120px;
   
-  height: 80vh;
+  height: 75vh;
   width: 2px;
   background: var(--white);
 
@@ -41,14 +41,19 @@ export const Wrapper = styled.div`
     margin-left: 250px;
   }
 
-  // Tela de celular
-  /* @media (min-height: 750px) {
-    height: 70vh;
-  } */
-  // Tela de Notebook
-  @media (min-height: 768px) {
+  @media (min-height: 900px) {
     height: 62vh;
   }
+`;
+
+export const BlackBar = styled.div`
+  position: absolute;
+  height: 120px;
+  width: 50vw;
+  top: 600px;
+  left: -100px;
+  background: var(--primary);
+  z-index: 1;
 `;
 
 const eventCSS = css`
