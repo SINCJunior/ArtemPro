@@ -104,9 +104,6 @@ export const EmptyCheckbox = styled(CheckBoxOutlineBlank)`
   fill: var(--white-text);
   cursor: pointer;
 
-  &:hover {
-    fill: var(--sinc-light-color);
-  }
   &.active {
     display: none;
   }
@@ -119,11 +116,7 @@ export const FilledCheckbox = styled(CheckBox)`
     display: flex;
     width: 24px;
     height: 24px;
-    fill: var(--sinc-light-color);
+    fill: var(--white-text);
     cursor: pointer;
-
-    &:hover {
-      fill: var(--sinc-dark-color);
-    }
   }
 `;

@@ -139,9 +139,17 @@ export const SelectInput = styled.select`
   font-size: 16px;
   margin-bottom: 16px;
   padding-left: 8px;
-
+  
   @media (min-width: 500px) {
     width: 500px;
+  }
+  
+  > option {
+    display: none;
+    
+    &.active {
+      display: flex;
+    }
   }
 `;
 

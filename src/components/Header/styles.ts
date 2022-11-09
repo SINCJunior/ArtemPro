@@ -8,12 +8,11 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 `;
 
 export const Wrapper = styled.div`
   background: var(--secondary);
-  /* z-index: 2; */
   width: 100vw;
   height: 64px;
 
@@ -26,11 +25,36 @@ export const Wrapper = styled.div`
   border-bottom: 1px solid var(--white);
 `;
 
+export const LeftWrapper = styled.div`
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+`;
+
 export const ArtemProLogo = styled.img`  
-  position: fixed;
-  top: 8px;
-  left: 16px;
+  margin: 8px 0 0 16px;
   height: 48px;
+`;
+
+export const VerticalBar = styled.div`
+  display: none;
+
+  @media (min-width: 500px) {
+    display: flex;
+    width: 1px;
+    height: 48px;
+    margin-top: 8px;
+    background: var(--white);
+  }
+`;
+
+export const SincLogo = styled.img`
+  display: none;
+
+  @media (min-width: 500px) {
+    display: flex;
+    height: 64px;
+  }
 `;
 
 export const ProfileIcon = styled(AccountCircle)`

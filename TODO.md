@@ -8,6 +8,7 @@
 ```
 [ ] Alterar as cores do calendário por dia (caso tenha mais de um evento no dia)
 
+
 ## Aparece a barra de movimento da esquerda para a direita no PC
 - Parcerias
 - Feedback

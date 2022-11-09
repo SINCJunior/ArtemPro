@@ -15,9 +15,9 @@ import {
 
 
 const DropDownMenu: React.FC = () => {
-  //Seleciona feedback para consultor ou para diretor
+  //Seleciona se ativa ou nao o drop down menu
   const [isDropDownMenu, setIsDropDownMenuActive] = useState(false);
-  const changeFeedbackTarget = () => {
+  const changeDDMTarget = () => {
     setIsDropDownMenuActive(!isDropDownMenu);
   }
 
@@ -180,9 +180,9 @@ const DropDownMenu: React.FC = () => {
 
   return (
     <Container>
-      <ExitArea onClick={changeFeedbackTarget} className={isDropDownMenu? 'active' : ''} />
+      <ExitArea onClick={changeDDMTarget} className={isDropDownMenu? 'active' : ''} />
       <Wrapper>
-        <DropMenuButton onClick={changeFeedbackTarget}>
+        <DropMenuButton onClick={changeDDMTarget}>
           <PersonIcon className={isDropDownMenu? 'active' : ''} />
           <PersonCheck className={isDropDownMenu? 'active' : ''} />
           <p className={isDropDownMenu? '' : 'active'}>Adicionar membros</p>

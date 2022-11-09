@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Container,
   Header,
-  CheckIcon,
   Contact,
   ActuationArea,
   Historic,
@@ -14,7 +13,6 @@ const PartnerTeachersArea: React.FC = () => {
     <Container>
       <Header>
         <h4>Robertão da Massa</h4>
-        <CheckIcon className='active'/>
       </Header>
       <Contact>
         <p>(51) 91234-5678</p>

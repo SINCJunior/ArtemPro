@@ -7,8 +7,6 @@ import {
   RadioButtonUnchecked,
 } from '../../styles/Icons';
 
-
-
 export const Container = styled.div`
   margin-left: 8px;
 `;

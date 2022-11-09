@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   Container,
   Header,
   TeachersName,
-  CheckIcon,
   Contact,
   PhoneNumber,
   Email,
@@ -14,11 +13,12 @@ import {
 } from './styles';
 
 const AddPartnerTeachersArea: React.FC = () => {
+  const [isShowToDirexsActive, setIsShowToDirexsActive] = useState(true);
+
   return (
-    <Container>
+    <Container className={isShowToDirexsActive? '' : 'active'}>
       <Header>
         <TeachersName placeholder='Nome do professor'/>
-        <CheckIcon />
       </Header>
       <Contact>
         <PhoneNumber placeholder='(51) 98765-4321'/>

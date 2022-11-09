@@ -27,18 +27,6 @@ export const Header = styled.div`
   }
 `;
 
-export const CheckIcon = styled(CheckCircle)`
-  width: 20px;
-  height: 20px;
-
-  margin-left: 16px;
-  fill: var(--secondary);
-
-  &.active {
-    fill: var(--check);
-  }
-`;
-
 export const Contact = styled.div`
   display: flex;
   flex-direction: column;

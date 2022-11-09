@@ -7,7 +7,6 @@ export {
   CloudQueue,
   InsertChartOutlined,
   Menu,
-  FilterAlt,
   CheckCircle,
   PlayCircle,
   PauseCircle,
@@ -16,6 +15,8 @@ export {
   RadioButtonChecked,
   RadioButtonUnchecked,
 } from 'styled-icons/material';
+
+export { FilterAlt } from 'styled-icons/material-outlined';
 
 export { CloseCircle } from 'styled-icons/ionicons-outline';
 

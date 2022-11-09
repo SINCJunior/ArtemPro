@@ -1,15 +1,16 @@
 import styled, { css } from "styled-components";
 
-import { CheckCircle } from '../../styles/Icons';
-
 export const Container = styled.div`
   width: 336px;
   height: 336px;
   border-radius: 4px;
   background: var(--secondary);
   padding: 8px;
-`;
 
+  &.active {
+    display: none;
+  }
+`;
 
 export const Header = styled.div`
   display: flex;
@@ -18,20 +19,6 @@ export const Header = styled.div`
   justify-content: space-between;
 
   border-bottom: 1px solid var(--white);
-`;
-
-export const CheckIcon = styled(CheckCircle)`
-  width: 20px;
-  height: 20px;
-
-  margin-left: 16px;
-  fill: var(--white);
-  cursor: pointer;
-
-  &:hover,
-  &.active {
-    fill: var(--check);
-  }
 `;
 
 export const Contact = styled.div`
