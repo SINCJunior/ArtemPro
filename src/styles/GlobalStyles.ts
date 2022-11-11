@@ -12,11 +12,13 @@ export default createGlobalStyle`
 
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
   }
   *::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     z-index: 2;
+
   }
   *::-webkit-scrollbar-track {
     background: rgb(255, 255, 255, 0.1);
