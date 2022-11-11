@@ -11,9 +11,3 @@
 [ ] Adicionar lista de membros no Cronometro
 
 [ ] Botar a quantidade de horas totais no apontamento, junto com atividade dessa semana e semana passada
-
-## Aparece a barra de movimento da esquerda para a direita no PC
-- Parcerias
-- Feedback
-- Diretoria
-- Calendario

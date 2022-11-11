@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 
-import { CheckCircle } from '../../styles/Icons';
-
 export const Container = styled.div`
   width: 336px;
   height: 336px;

@@ -31,19 +31,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   position: absolute;
 
-  padding-left: 8px;
   width: 350px;
   margin-top: 100px;
   border: 2px solid var(--secondary);
   border-radius: 8px;
-
-  @media (min-width: 500px) {
-    width: 450px;
-    margin-left: 50px;
-  }
-  @media (min-width: 990px) {
-    margin-left: 150px;
-  }
 `;
 
 //! DropDownMenu
