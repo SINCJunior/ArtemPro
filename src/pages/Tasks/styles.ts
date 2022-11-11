@@ -19,8 +19,6 @@ export const Container = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100vh;
-
-  overflow: hidden;
 `;
 
 export const Wrapper = styled.div`

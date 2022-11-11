@@ -16,6 +16,7 @@ export const Container = styled.div`
   padding-top: 28px;
   
   overflow-y: scroll;
+  overflow-x: hidden;
   flex: 0 0 300px;
 
   border: 2px solid var(--secondary);

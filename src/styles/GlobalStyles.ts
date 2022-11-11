@@ -10,15 +10,16 @@ export default createGlobalStyle`
     max-height: 100vh;
     max-width: 100vw;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
   *::-webkit-scrollbar {
     width: 8px;
     height: 8px;
+    z-index: 2;
   }
   *::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255, 0.1);
+    background: rgb(255, 255, 255, 0.05);
   }
   *::-webkit-scrollbar-thumb {
     background-color:  rgb(255, 255, 255, 0.3);
