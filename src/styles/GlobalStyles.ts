@@ -19,7 +19,7 @@ export default createGlobalStyle`
     z-index: 2;
   }
   *::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255, 0.05);
+    background: rgb(255, 255, 255, 0.1);
   }
   *::-webkit-scrollbar-thumb {
     background-color:  rgb(255, 255, 255, 0.3);

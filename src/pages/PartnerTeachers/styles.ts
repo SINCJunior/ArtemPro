@@ -18,8 +18,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 
-  overflow: hidden;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 `;
 
 export const Wrapper = styled.div`
@@ -46,17 +48,17 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: 960px) {
-    margin-left: 316px;
+    margin-left: 250px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: 1300px) {
-    margin-left: 316px;
+    margin-left: 250px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: 1650px) {
-    margin-left: 316px;
+    margin-left: 250px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
