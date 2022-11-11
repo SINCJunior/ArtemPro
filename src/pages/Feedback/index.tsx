@@ -94,8 +94,6 @@ const Feedback: React.FC = () => {
         <h3>Diretor?</h3>
         <EmptyCheckbox onClick={changeFeedbackTarget} className={isFeedbackForDirexActive? 'active' : ''} />
         <FilledCheckbox onClick={changeFeedbackTarget} className={isFeedbackForDirexActive? 'active' : ''} />
-        <p className={isFeedbackForDirexActive? '' : 'active'}>Não</p>
-        <p className={isFeedbackForDirexActive? 'active' : ''}>Sim</p>
       </TargetConfig>
 
 

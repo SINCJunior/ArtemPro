@@ -13,6 +13,17 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
   }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255, 0.1);
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color:  rgb(255, 255, 255, 0.3);
+    border-radius: 20px;
+  }
   *, button, input {
     border: 0;
     background: none;

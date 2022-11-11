@@ -38,14 +38,6 @@ export const TargetConfig = styled.div`
     font-weight: bold;
     margin-right: 32px;
   }
-  > p {
-    font-size: 0;
-    &.active{
-      color: var(--white-text);
-      font-size: 20px;
-      margin-left: 8px;
-    }
-  }
  
   @media (min-width: 500px) {
     left: 100px;
