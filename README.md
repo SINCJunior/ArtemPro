@@ -3,6 +3,7 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 
 # Como baixar?
 ``` javascript
+# Para Linux
 # Clone the repository
 $ git clone https://github.com/SINCJunior/ArtemPro
 
