@@ -7,13 +7,32 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 # Clone the repository
 $ git clone https://github.com/SINCJunior/ArtemPro
 
-# Enter directory
+# Entre no diretório
 $ cd ArtemPro
 
-# Install dependencies
+# Instale as dependências
 $ yarn
 
-# Start the project
+# Inicie o projeto
+$ yarn start
+
+
+# Para Windows
+# Instalar o NodeJS (baixando no site oficial) e depois o yarn (no Prompt de comando)
+
+# Ir até a pasta desejada e clonar o repositório
+$ git clone https://github.com/SINCJunior/ArtemPro
+
+# Abra o Powershell como administrador e execute o seguinte comando
+$ Set-ExecutionPolicy RemoteSigned
+
+# Entre no diretório
+$ cd ArtemPro
+
+# Instale as dependências
+$ yarn
+
+# Inicie o projeto
 $ yarn start
 ```
 
