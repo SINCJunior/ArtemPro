@@ -36,6 +36,19 @@ $ yarn
 $ yarn start
 ```
 
+# Para iniciar um projeto em typescript (se for estudar backend):
+``` javascript
+$ mkdir [NOME DA PASTA]
+
+$ cd [NOME DA PASTA]
+
+$ yarn init -y
+
+$ yarn add -D typescript
+
+$ yarn tsc --init
+```
+
 # Funções
 ### Em 2022 usa-se:
 - O Podio para _apontamento_;
