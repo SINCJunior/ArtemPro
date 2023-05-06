@@ -2,9 +2,12 @@
 Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade dos membros.
 
 # Como baixar?
-Para editar o código, é necessário um editor de código, geralmente usamos o VS Code.
-É necessario instalar o Git, instale-o baixando pelo site oficial.
-Os comandos abaixo podem ser instalados via Prompt de Compando e pelo PowerShell.
+- Para editar o código, é necessário um editor de código, geralmente usamos o VS Code.
+- É necessario instalar o Git, instale-o baixando pelo site oficial.
+- Os comandos abaixo podem ser instalados via Prompt de Compando e pelo PowerShell.
+- Sempre que instalar alguma coisa, feche o PowerShell/Prompt de Comando e reabra.
+- Para alterar de HD via Prompt de Comando, vá até a raiz do HD atual e digite (caso você esteja em C:\ e queira ir para D:\ ): cd D:\
+- Caso encontre algum erro para instalar o NodeJS, seguir o passo a passo do site: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa
 ### Para Windows:
 ``` javascript
 # Abra o Powershell como administrador e execute o seguinte comando
@@ -64,9 +67,7 @@ $ code .
 # No terminal do VS Code, inicie o projeto
 $ yarn start
 ```
-- Caso encontre algum erro para instalar o NodeJS, seguir o passo a passo do site: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa
 
-- Para alterar de HD via Prompt de Comando, vá até a raiz do HD atual e digite (caso você esteja em C:\ e queira ir para D:\): cd D:\
 # Para iniciar um projeto em typescript (se for estudar backend):
 ``` javascript
 $ mkdir [NOME DA PASTA]
