@@ -2,39 +2,62 @@
 Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade dos membros.
 
 # Como baixar?
+Para editar o código, é necessário um editor de código, geralmente usamos o VS Code.
+### Para Windows:
 ``` javascript
-# Para Linux
-# Clone the repository
-$ git clone https://github.com/SINCJunior/ArtemPro
-
-# Entre no diretório
-$ cd ArtemPro
-
-# Instale as dependências
-$ yarn
-
-# Inicie o projeto
-$ yarn start
-
-
-# Para Windows
-# Instalar o NodeJS (baixando no site oficial) e depois o yarn (no Prompt de comando)
-
-# Ir até a pasta desejada e clonar o repositório
-$ git clone https://github.com/SINCJunior/ArtemPro
-
 # Abra o Powershell como administrador e execute o seguinte comando
 $ Set-ExecutionPolicy RemoteSigned
 
+# Após executado, digite A para permitir a alteração e dê Enter
+
+# Instale a versão LTS do NodeJS baixando no site oficial
+
+# Depois de instalado o NodeJS, instale o Yarn pelo Prompt de Comando
+$ npm install --global yarn
+
+# Ainda no Prompt de Comando, vá até a pasta desejada e clone o repositório
+$ git clone https://github.com/SINCJunior/ArtemPro
+
 # Entre no diretório
 $ cd ArtemPro
 
 # Instale as dependências
 $ yarn
 
-# Inicie o projeto
+# Abra o projeto no VS Code
+$ code .
+
+# No terminal do VS Code, inicie o projeto
 $ yarn start
 ```
+
+### Para Ubuntu:
+``` javascript
+# Instale o NodeJS
+$ sudo apt install nodejs
+
+# E o instalador de pacotes NPM
+$ sudo apt install npm
+
+# E também o Yarn
+$ npm install --global yarn
+
+# Clone o repositório
+$ git clone https://github.com/SINCJunior/ArtemPro
+
+# Entre no diretório
+$ cd ArtemPro
+
+# Instale as dependências
+$ yarn
+
+# Abra o projeto no VS Code
+$ code .
+
+# No terminal do VS Code, inicie o projeto
+$ yarn start
+```
+Caso encontre algum erro para instalar o NodeJS, seguir o passo a passo do site: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa
 
 # Para iniciar um projeto em typescript (se for estudar backend):
 ``` javascript
@@ -73,7 +96,5 @@ $ yarn tsc --init
 
 # Seguem alguns links úteis que usei para me capacitar e construir a ArtemPro
 
-### Rocketseat: Twitter responsível com ReactJS 
+- Rocketseat: Twitter responsível com ReactJS 
 https://www.youtube.com/watch?v=K-8z_4xvT3o&t=778s
-
-### 
