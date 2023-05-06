@@ -3,6 +3,7 @@ Unificar as plataformas utilizadas pela SincJr, visando otimizar a produtividade
 
 # Como baixar?
 Para editar o código, é necessário um editor de código, geralmente usamos o VS Code.
+É necessario instalar o Git, instale-o baixando pelo site oficial.
 Os comandos abaixo podem ser instalados via Prompt de Compando e pelo PowerShell.
 ### Para Windows:
 ``` javascript
@@ -15,6 +16,11 @@ $ Set-ExecutionPolicy RemoteSigned
 
 # Depois de instalado o NodeJS, instale o Yarn pelo Prompt de Comando
 $ npm install --global yarn
+
+# Verifique se as instalações dos pacotes foram corretas e condizem com a versão do site
+$ node --version
+$ npm --version
+$ yarn --version
 
 # Ainda no Prompt de Comando, vá até a pasta desejada e clone o repositório
 $ git clone https://github.com/SINCJunior/ArtemPro
