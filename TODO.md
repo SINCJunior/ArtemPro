@@ -1,4 +1,5 @@
 [ ] Usar ... para mostrar ou não o que é da diretoria
+
 ``` js
     //Set Show to Direx
 
@@ -6,6 +7,7 @@
 
     <Direx className={isShowToDirexsActive? 'active' : ''}>
 ```
+
 [ ] Alterar as cores do calendário por dia (caso tenha mais de um evento no dia)
 
 [ ] Adicionar lista de membros no Cronometro

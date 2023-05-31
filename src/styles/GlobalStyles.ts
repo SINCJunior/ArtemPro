@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ export default createGlobalStyle`
     background: rgb(255, 255, 255, 0.1);
   }
   *::-webkit-scrollbar-thumb {
-    background-color:  rgb(255, 255, 255, 0.3);
+    background-color: rgb(255, 255, 255, 0.3);
     border-radius: 20px;
   }
   *, button, input {

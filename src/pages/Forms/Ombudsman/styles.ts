@@ -1,104 +1,112 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	top: 100px;
+	left: 120px;
 
-  left: 8%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-  @media (min-width: 500px) {
-    left: 36%;
-  }
+	left: 8%;
+
+	@media (min-width: 500px) {
+		left: 36%;
+	}
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: initial;
-  margin-top: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: initial;
 
-  > h3 {
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--white);
-    margin-bottom: 8px;
-  }
+	> h3 {
+		font-size: 20px;
+		font-weight: 400;
+		color: var(--white);
+		margin-bottom: 8px;
+	}
 `;
 
 export const Warning = styled.h2`
-  font-size: 24px;
-color: var(--white);
-  margin-bottom: 16px;
+	font-size: 24px;
+	color: var(--white);
+	margin-bottom: 16px;
 `;
 
 const ombudsmanInputCSS = css`
-  width: 340px;
-  height: 34px;
+	width: 340px;
+	height: 34px;
 
-  background: var(--secondary);
-  border-radius: 4px;
-  color: var(--white-text);
+	background: var(--secondary);
+	border-radius: 4px;
+	color: var(--white-text);
 
-  font-size: 16px;
-  margin-bottom: 32px;
-  padding-left: 8px;
+	font-size: 16px;
+	margin-bottom: 32px;
+	padding-left: 8px;
 
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+	&::placeholder {
+		color: var(--white);
+		opacity: 60%;
+	}
 `;
 
-export const RecognitionCategory = styled.select`${ombudsmanInputCSS}`;
-export const OmbudsmanCategory = styled.select`${ombudsmanInputCSS}`;
-export const OmbudsmanWho = styled.input`${ombudsmanInputCSS}`;
+export const RecognitionCategory = styled.select`
+	${ombudsmanInputCSS}
+`;
+export const OmbudsmanCategory = styled.select`
+	${ombudsmanInputCSS}
+`;
+export const OmbudsmanWho = styled.input`
+	${ombudsmanInputCSS}
+`;
 export const OmbudsmanReason = styled.textarea`
-  width: 336px;
-  height: 100px;
-  margin-bottom: 60px;
+	width: 336px;
+	height: 100px;
+	margin-bottom: 60px;
 
-  color: var(--white-text);
-  background: var(--secondary);
-  border-radius: 4px;
+	color: var(--white-text);
+	background: var(--secondary);
+	border-radius: 4px;
 
-  font-size: 16px;
-  padding: 8px;
+	font-size: 16px;
+	padding: 8px;
 
-  resize: none;
+	resize: none;
 
-  &::placeholder {
-    color: var(--white);
-    opacity: 60%;
-  }
+	&::placeholder {
+		color: var(--white);
+		opacity: 60%;
+	}
 `;
 
 export const ConfirmOmbudsmanButton = styled.div`
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
 
-  width: 120px;
-  height: 32px;
-  border-radius: 16px;
+	width: 120px;
+	height: 32px;
+	border-radius: 16px;
 
-  bottom: 10px;
-  right: 0;
+	bottom: 10px;
+	right: 0;
 
-  background: var(--sinc-light-color);
-  cursor: pointer;
+	background: var(--sinc-light-color);
+	cursor: pointer;
 
-  > p {
-    color: var(--primary);
-    font-size: 20px;
-    font-weight: 400;
-  }
+	> p {
+		color: var(--primary);
+		font-size: 20px;
+		font-weight: 400;
+	}
 
-  &:hover {
-    background: var(--sinc-button-hover);
-  }
+	&:hover {
+		background: var(--sinc-button-hover);
+	}
 `;
